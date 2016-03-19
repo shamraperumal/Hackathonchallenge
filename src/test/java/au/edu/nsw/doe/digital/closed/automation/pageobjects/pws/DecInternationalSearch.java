@@ -1,6 +1,6 @@
 package au.edu.nsw.doe.digital.closed.automation.pageobjects.pws;
 
-import au.edu.nsw.doe.digital.automation.setup.CapabilitiesBuilder;
+import au.edu.nsw.doe.digital.closed.automation.setup.CapabilitiesBuilder;
 import org.openqa.selenium.By;
 
 
