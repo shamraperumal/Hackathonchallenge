@@ -16,22 +16,22 @@ public class SquizTeachProductionTest extends CapabilitiesBuilder {
 
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
-        squizAction.getPage("teach-base", "", "", "");
+        squizAction.getPage("teach-base", "");
         eyes.checkWindow(System.getenv("EYES-TEACH-HOME"));
 
-        squizAction.getPage("teach-base", "teach-landing-page", "", "");
+        squizAction.getPage("teach-base", "teach-landing-page");
         eyes.checkWindow(System.getenv("EYES-TEACH-LANDING"));
 
-        squizAction.getPage("teach-base", "teach-standard-page", "", "");
+        squizAction.getPage("teach-base", "teach-standard-page");
         eyes.checkWindow(System.getenv("EYES-TEACH-STANDARD"));
 
-        squizAction.getPage("teach-base", "teach-get-paid-to-study-page", "", "");
+        squizAction.getPage("teach-base", "teach-get-paid-to-study-page");
         eyes.checkWindow(System.getenv("EYES-TEACH-GET-PAID-TO-STUDY"));
 
-        squizAction.getPage("teach-base", "teach-program-page", "", "");
+        squizAction.getPage("teach-base", "teach-program-page");
         eyes.checkWindow(System.getenv("EYES-TEACH-SCHOLARSHIP"));
 
-        squizAction.getPage("teach-base", "teach-faq-page", "", "");
+        squizAction.getPage("teach-base", "teach-faq-page");
         eyes.checkWindow(System.getenv("EYES-TEACH-FAQ"));
 
         eyes.close();

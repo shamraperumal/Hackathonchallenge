@@ -16,16 +16,16 @@ public class SquizWellbeingProductionTest extends CapabilitiesBuilder {
 
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
-        squizAction.getPage("wellbeing-base", "", "", "");
+        squizAction.getPage("wellbeing-base", "");
         eyes.checkWindow(System.getenv("EYES-WELLBEING-HOME"));
 
-        squizAction.getPage("wellbeing-base", "wellbeing-about", "", "");
+        squizAction.getPage("wellbeing-base", "wellbeing-about");
         eyes.checkWindow(System.getenv("EYES-WELLBEING-ABOUT"));
 
-        squizAction.getPage("wellbeing-base", "wellbeing-connect", "", "");
+        squizAction.getPage("wellbeing-base", "wellbeing-connect");
         eyes.checkWindow(System.getenv("EYES-WELLBEING-CONNECT"));
 
-        squizAction.getPage("wellbeing-base", "wellbeing-antibullying", "", "");
+        squizAction.getPage("wellbeing-base", "wellbeing-antibullying");
         eyes.checkWindow(System.getenv("EYES-WELLBEING-ANTI-BULLYING"));
 
         eyes.close();

@@ -13,7 +13,7 @@ public class SquizGefPatternsDefaultElementsTest extends CapabilitiesBuilder {
     public void gefPatternsDesktopDefaultElementsTest() throws Exception {
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
-        squizAction.getPage("gef-patterns-base", "gef-patterns-elements", "", "");
+        squizAction.getPage("gef-patterns-base", "gef-patterns-elements");
         eyes.checkWindow(System.getenv("EYES-GEF-PATTERNS-ELEMENTS"));
 
         eyes.close();

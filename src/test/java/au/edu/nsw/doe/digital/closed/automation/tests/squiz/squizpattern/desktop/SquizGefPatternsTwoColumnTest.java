@@ -13,7 +13,7 @@ public class SquizGefPatternsTwoColumnTest extends CapabilitiesBuilder {
     public void gefPatternsDesktopTwoColoumnTest() throws Exception {
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
-        squizAction.getPage("gef-patterns-base", "gef-patterns-two-column", "", "");
+        squizAction.getPage("gef-patterns-base", "gef-patterns-two-column");
         eyes.checkWindow(System.getenv("EYES-GEF-PATTERNS-TWO-COLUMN"));
 
         eyes.close();

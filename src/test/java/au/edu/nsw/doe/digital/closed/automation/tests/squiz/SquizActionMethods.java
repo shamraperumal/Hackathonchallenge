@@ -32,12 +32,11 @@ public class SquizActionMethods implements SquizActions {
         }
     }
 
-    public void getPage(final String domain, final String pageUrl, final String newPageA, final String newPageB) throws Exception {
+    public void getPage(final String domain, final String pageUrl) throws Exception {
         try {
+            String thisDomain = System.getenv(domain);
             String thisPageUrl = System.getenv(pageUrl);
-            String thisNewPageA = newPageA;
-            String thisNewPageB = newPageB;
-            driver.get(System.getenv(domain) + (thisPageUrl == null ? "" : thisPageUrl) + (thisNewPageA == null ? "" : thisNewPageA) + (thisNewPageB == null ? "" : thisNewPageB));
+            driver.get(thisDomain + (thisPageUrl == null ? "" : thisPageUrl));
             System.out.println("Loaded domain url");
 
         } catch (final Exception e) {

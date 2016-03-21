@@ -21,16 +21,16 @@ public class SquizWellbeingMobileProductionTest extends CapabilitiesBuilder {
 
         driver.manage().window().setSize(dimension);
 
-        squizAction.getPage("wellbeing-base", "", "", "");
+        squizAction.getPage("wellbeing-base", "");
         eyes.checkWindow("Wellbeing Mobile Production Home");
 
-        squizAction.getPage("wellbeing-base", "wellbeing-about", "", "");
+        squizAction.getPage("wellbeing-base", "wellbeing-about");
         eyes.checkWindow("Wellbeing Mobile Production About");
 
-        squizAction.getPage("wellbeing-base", "wellbeing-connect", "", "");
+        squizAction.getPage("wellbeing-base", "wellbeing-connect");
         eyes.checkWindow("Wellbeing Mobile Production Connect");
 
-        squizAction.getPage("wellbeing-base", "wellbeing-antibullying", "", "");
+        squizAction.getPage("wellbeing-base", "wellbeing-antibullying");
         eyes.checkWindow("Welbeing Mobile Production Anti-Bullying");
 
         eyes.close();

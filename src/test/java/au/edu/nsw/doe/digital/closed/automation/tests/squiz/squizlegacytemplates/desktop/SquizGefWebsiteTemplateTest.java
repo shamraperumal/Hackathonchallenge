@@ -14,16 +14,16 @@ public class SquizGefWebsiteTemplateTest extends CapabilitiesBuilder {
 
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
-        squizAction.getPage("gef-website-template-base", "gef-website-template-homepage", "", "");
+        squizAction.getPage("gef-website-template-base", "gef-website-template-homepage");
         eyes.checkWindow(System.getenv("EYES-GEF-WEBSITE-HOME"));
 
-        squizAction.getPage("gef-website-template-base", "gef-website-template-standardpage", "", "");
+        squizAction.getPage("gef-website-template-base", "gef-website-template-standardpage");
         eyes.checkWindow(System.getenv("EYES-GEF-WEBSITE-STANDARD"));
 
-        squizAction.getPage("gef-website-template-base", "gef-website-template-digitalfoundationspage", "", "");
+        squizAction.getPage("gef-website-template-base", "gef-website-template-digitalfoundationspage");
         eyes.checkWindow(System.getenv("EYES-GEF-WEBSITE-DIGITAL-FOUNDATIONS"));
 
-        squizAction.getPage("gef-website-template-base", "gef-website-template-landingpage", "", "");
+        squizAction.getPage("gef-website-template-base", "gef-website-template-landingpage");
         eyes.checkWindow(System.getenv("EYES-GEF-WEBSITE-LANDING"));
 
         eyes.close();

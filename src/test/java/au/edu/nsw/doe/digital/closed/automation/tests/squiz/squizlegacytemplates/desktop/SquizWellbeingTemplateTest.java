@@ -14,19 +14,19 @@ public class SquizWellbeingTemplateTest extends CapabilitiesBuilder {
 
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
-        squizAction.getPage("wellbeing-template-base", "wellbeing-template-homepage", "", "");
+        squizAction.getPage("wellbeing-template-base", "wellbeing-template-homepage");
         eyes.checkWindow(System.getenv("EYES-WELLBEING-HOME"));
 
-        squizAction.getPage("wellbeing-template-base", "wellbeing-template-about", "", "");
+        squizAction.getPage("wellbeing-template-base", "wellbeing-template-about");
         eyes.checkWindow(System.getenv("EYES-WELLBEING-ABOUT"));
 
-        squizAction.getPage("wellbeing-template-base", "wellbeing-template-connect", "", "");
+        squizAction.getPage("wellbeing-template-base", "wellbeing-template-connect");
         eyes.checkWindow(System.getenv("EYES-WELLBEING-CONNECT"));
 
-        squizAction.getPage("wellbeing-template-base", "wellbeing-template-antibullying", "", "");
+        squizAction.getPage("wellbeing-template-base", "wellbeing-template-antibullying");
         eyes.checkWindow(System.getenv("EYES-WELLBEING-ANTIBULLYING"));
 
-        squizAction.getPage("wellbeing-template-base", "wellbeing-template-search", "", "");
+        squizAction.getPage("wellbeing-template-base", "wellbeing-template-search");
         eyes.checkWindow(System.getenv("EYES-WELLBEING-SEARCH"));
 
         eyes.close();

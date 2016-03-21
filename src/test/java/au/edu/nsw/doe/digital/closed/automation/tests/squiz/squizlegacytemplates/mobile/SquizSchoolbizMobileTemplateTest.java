@@ -18,19 +18,19 @@ public class SquizSchoolbizMobileTemplateTest extends CapabilitiesBuilder {
         Dimension dimension = new Dimension(375, 650);
         driver.manage().window().setSize(dimension);
 
-        squizAction.getPage("schoolbiz-template-base", "schoolbiz-template-homepage", "", "");
+        squizAction.getPage("schoolbiz-template-base", "schoolbiz-template-homepage");
         eyes.checkWindow(System.getenv("EYES-SCHOOLBIZ-HOME"));
 
-        squizAction.getPage("schoolbiz-template-base", "schoolbiz-template-landingpage", "", "");
+        squizAction.getPage("schoolbiz-template-base", "schoolbiz-template-landingpage");
         eyes.checkWindow(System.getenv("EYES-SCHOOLBIZ-LANDING"));
 
-        squizAction.getPage("schoolbiz-template-base", "schoolbiz-template-issuepage", "", "");
+        squizAction.getPage("schoolbiz-template-base", "schoolbiz-template-issuepage");
         eyes.checkWindow(System.getenv("EYES-SCHOOLBIZ-ISSUE"));
 
-        squizAction.getPage("schoolbiz-template-base", "schoolbiz-template-articlepage", "", "");
+        squizAction.getPage("schoolbiz-template-base", "schoolbiz-template-articlepage");
         eyes.checkWindow(System.getenv("EYES-SCHOOLBIZ-ARTICLE"));
 
-        squizAction.getPage("schoolbiz-template-base", "schoolbiz-template-forms", "", "");
+        squizAction.getPage("schoolbiz-template-base", "schoolbiz-template-forms");
         eyes.checkWindow(System.getenv("EYES-SCHOOLBIZ-FORM"));
 
         eyes.close();

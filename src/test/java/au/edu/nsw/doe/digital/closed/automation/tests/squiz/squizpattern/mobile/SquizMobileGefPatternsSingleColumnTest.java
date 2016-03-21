@@ -19,7 +19,7 @@ public class SquizMobileGefPatternsSingleColumnTest extends CapabilitiesBuilder 
 
         driver.manage().window().setSize(dimension);
 
-        squizAction.getPage("gef-patterns-base", "gef-patterns-single-column", "", "");
+        squizAction.getPage("gef-patterns-base", "gef-patterns-single-column");
         eyes.checkWindow(System.getenv("EYES-GEF-PATTERNS-SINGLE-COLUMN"));
 
         eyes.close();

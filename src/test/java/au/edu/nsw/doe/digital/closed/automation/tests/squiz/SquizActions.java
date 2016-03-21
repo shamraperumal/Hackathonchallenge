@@ -9,7 +9,7 @@ import org.openqa.selenium.By;
 public interface SquizActions {
 
 
-    void getPage(final String domain, final String pageUrl, final String newPageA, final String newPageB) throws Exception;
+    void getPage(final String domain, final String pageUrl) throws Exception;
 
     void search(final String searchInput) throws Exception;
 

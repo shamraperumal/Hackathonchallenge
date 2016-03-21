@@ -13,7 +13,7 @@ public class SquizGefPatternsSingleColumnTest extends CapabilitiesBuilder {
     public void gefPatternsDesktopSingleColumnTest() throws Exception {
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
-        squizAction.getPage("gef-patterns-base", "gef-patterns-single-column", "", "");
+        squizAction.getPage("gef-patterns-base", "gef-patterns-single-column");
 
         eyes.checkWindow(System.getenv("EYES-GEF-PATTERNS-SINGLE-COLUMN"));
 

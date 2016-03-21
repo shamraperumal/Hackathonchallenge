@@ -21,19 +21,19 @@ public class SquizGefWebsiteMobileProductionTest extends CapabilitiesBuilder {
 
         driver.manage().window().setSize(dimension);
 
-        squizAction.getPage("gef-website-base", "", "", "");
+        squizAction.getPage("gef-website-base", "");
         eyes.checkWindow(System.getenv("EYES-GEF-WEBSITE-HOME"));
 
-        squizAction.getPage("gef-website-base", "gef-website-landing-page", "", "");
+        squizAction.getPage("gef-website-base", "gef-website-landing-page");
         eyes.checkWindow(System.getenv("EYES-GEF-WEBSITE-LANDING"));
 
-        squizAction.getPage("gef-website-base", "gef-website-standard-page", "", "");
+        squizAction.getPage("gef-website-base", "gef-website-standard-page");
         eyes.checkWindow(System.getenv("EYES-GEF-WEBSITE-STANDARD"));
 
-        squizAction.getPage("gef-website-base", "gef-website-digital-ecosystem-education-theme", "", "");
+        squizAction.getPage("gef-website-base", "gef-website-digital-ecosystem-education-theme");
         eyes.checkWindow(System.getenv("EYES-GEF-WEBSITE-DIGITAL-ECO-EDUCATION-THEME"));
 
-        squizAction.getPage("gef-website-base", "gef-website-pattern-library-component", "", "");
+        squizAction.getPage("gef-website-base", "gef-website-pattern-library-component");
         eyes.checkWindow(System.getenv("EYES-GEF-WEBSITE-PATTERN-COMPONENT"));
 
         eyes.close();

@@ -19,7 +19,7 @@ public class SquizMobileGefPatternsTwoColumnTest extends CapabilitiesBuilder {
 
         driver.manage().window().setSize(dimension);
 
-        squizAction.getPage("gef-patterns-base", "gef-patterns-two-column", "", "");
+        squizAction.getPage("gef-patterns-base", "gef-patterns-two-column");
         eyes.checkWindow(System.getenv("EYES-GEF-PATTERNS-TWO-COLUMN"));
 
         eyes.close();

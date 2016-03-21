@@ -19,7 +19,7 @@ public class SquizMobileGefPatternsDefaultElementsTest extends CapabilitiesBuild
 
         driver.manage().window().setSize(dimension);
 
-        squizAction.getPage("gef-patterns-base", "gef-patterns-elements", "", "");
+        squizAction.getPage("gef-patterns-base", "gef-patterns-elements");
         eyes.checkWindow(System.getenv("EYES-GEF-PATTERNS-ELEMENTS"));
 
         eyes.close();
