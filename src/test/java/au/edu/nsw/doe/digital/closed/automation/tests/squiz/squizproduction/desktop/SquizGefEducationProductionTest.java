@@ -15,39 +15,39 @@ public class SquizGefEducationProductionTest extends CapabilitiesBuilder {
 
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
-        squizAction.getPage("gef-framework-base", "");
-        eyes.checkWindow(System.getenv("EYES-GEF-FRAMEWORK-HOMEPAGE"));
+        squizAction.getPage("gef-education-base", "");
+        eyes.checkWindow(System.getenv("EYES-GEF-EDUCATION-HOMEPAGE"));
 
         squizAction.search(System.getenv("SEARCH-INPUT"));
-        eyes.checkWindow(System.getenv("EYES-GEF-FRAMEWORK-SEARCH"));
+        eyes.checkWindow(System.getenv("EYES-GEF-EDUCATION-SEARCH"));
 
-        squizAction.getPage("gef-framework-base", "gef-framework-landing");
-        eyes.checkWindow(System.getenv("EYES-GEF-FRAMEWORK-LANDING"));
+        squizAction.getPage("gef-education-base", "gef-education-landing");
+        eyes.checkWindow(System.getenv("EYES-GEF-EDUCATION-LANDING"));
 
-        squizAction.getPage("gef-framework-base", "gef-framework-standard");
+        squizAction.getPage("gef-education-base", "gef-education-standard");
         squizAction.showHide();
-        eyes.checkWindow(System.getenv("EYES-GEF-FRAMEWORK-STANDARD"));
+        eyes.checkWindow(System.getenv("EYES-GEF-EDUCATION-STANDARD"));
 
-        squizAction.getPage("gef-framework-base", "gef-framework-catalogue");
-        eyes.checkWindow(System.getenv(" EYES-GEF-FRAMEWORK-CATALOGUE"));
+        squizAction.getPage("gef-education-base", "gef-education-catalogue");
+        eyes.checkWindow(System.getenv(" EYES-GEF-EDUCATION-CATALOGUE"));
 
         squizAction.catalogueListView();
-        eyes.checkWindow(System.getenv("EYES-GEF-FRAMEWORK-CATALOGUE-LIST"));
+        eyes.checkWindow(System.getenv("EYES-GEF-EDUCATION-CATALOGUE-LIST"));
 
-        squizAction.getPage("gef-framework-base", "gef-framework-tab");
-        eyes.checkWindow(System.getenv("EYES-GEF-FRAMEWORK-TAB"));
+        squizAction.getPage("gef-education-base", "gef-education-tab");
+        eyes.checkWindow(System.getenv("EYES-GEF-EDUCATION-TAB"));
 
-        squizAction.getPage("gef-framework-base", "gef-framework-news-index");
-        eyes.checkWindow(System.getenv("EYES-GEF-FRAMEWORK-NEWS-INDEX"));
+        squizAction.getPage("gef-education-base", "gef-education-news-index");
+        eyes.checkWindow(System.getenv("EYES-GEF-EDUCATION-NEWS-INDEX"));
 
-        squizAction.getPage("gef-framework-base", "gef-framework-news-article");
-        eyes.checkWindow(System.getenv("EYES-GEF-FRAMEWORK-NEWS-ARTICLE"));
+        squizAction.getPage("gef-education-base", "gef-education-news-article");
+        eyes.checkWindow(System.getenv("EYES-GEF-EDUCATION-NEWS-ARTICLE"));
 
-        squizAction.getPage("gef-framework-base-default-banner", "");
-        eyes.checkWindow(System.getenv("EYES-GEF-FRAMEWORK-DEFAULT-BANNER"));
+        squizAction.getPage("gef-education-base-default-banner", "");
+        eyes.checkWindow(System.getenv("EYES-GEF-EDUCATION-DEFAULT-BANNER"));
 
-        squizAction.getPage("gef-framework-base-shallow-banner", "");
-        eyes.checkWindow(System.getenv("EYES-GEF-FRAMEWORK-SHALLOW-BANNER"));
+        squizAction.getPage("gef-education-base-shallow-banner", "");
+        eyes.checkWindow(System.getenv("EYES-GEF-EDUCATION-SHALLOW-BANNER"));
 
         eyes.close();
     }

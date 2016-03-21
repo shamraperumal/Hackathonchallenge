@@ -20,30 +20,30 @@ public class SquizGefEducationMobileProductionTest extends CapabilitiesBuilder {
 
         driver.manage().window().setSize(dimension);
 
-        squizAction.getPage("gef-framework-base", "");
-        eyes.checkWindow("Gef Framework Mobile Production Home Page");
+        squizAction.getPage("gef-education-base", "");
+        eyes.checkWindow(System.getenv("EYES-GEF-EDUCATION-HOME"));
 
         squizAction.mobileSearch(System.getenv("SEARCH-INPUT"));
-        eyes.checkWindow("Gef Framework Mobile Search Results Page");
+        eyes.checkWindow(System.getenv("EYES-GEF-EDUCATION-SEARCH"));
 
-        squizAction.getPage("gef-framework-base", "gef-framework-landing");
-        eyes.checkWindow("Gef Framework Mobile Production Landing Page");
+        squizAction.getPage("gef-education-base", "gef-education-landing");
+        eyes.checkWindow(System.getenv("EYES-GEF-EDUCATION-LANDING"));
 
-        squizAction.getPage("gef-framework-base", "gef-framework-standard");
+        squizAction.getPage("gef-education-base", "gef-education-standard");
         squizAction.showHide();
-        eyes.checkWindow("Gef Framework Mobile Production Standard Page");
+        eyes.checkWindow(System.getenv("EYES-GEF-EDUCATION-STANDARD"));
 
-        squizAction.getPage("gef-framework-base", "gef-framework-catalogue");
-        eyes.checkWindow("Gef Framework Mobile Production Catalogue Page");
+        squizAction.getPage("gef-education-base", "gef-education-catalogue");
+        eyes.checkWindow(System.getenv("EYES-GEF-EDUCATION-CATALOGUE"));
 
-        squizAction.getPage("gef-framework-base", "gef-framework-tab");
-        eyes.checkWindow("Gef Framework Mobile Production Tab Page");
+        squizAction.getPage("gef-education-base", "gef-education-tab");
+        eyes.checkWindow(System.getenv("EYES-GEF-EDUCATION-TAB"));
 
-        squizAction.getPage("gef-framework-base", "gef-framework-news-index");
+        squizAction.getPage("gef-education-base", "gef-education-news-index");
         eyes.checkWindow(System.getenv("EYES-GEF-FRAMEWORK-NEWS-INDEX"));
 
-        squizAction.getPage("gef-framework-base", "gef-framework-news-article");
-        eyes.checkWindow(System.getenv("EYES-GEF-FRAMEWORK-NEWS-ARTICLE"));
+        squizAction.getPage("gef-education-base", "gef-education-news-article");
+        eyes.checkWindow(System.getenv("EYES-GEF-EDUCATION-NEWS-ARTICLE"));
 
         eyes.close();
 
