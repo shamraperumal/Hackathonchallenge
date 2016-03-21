@@ -18,9 +18,6 @@ public class SquizGefEducationProductionTest extends CapabilitiesBuilder {
         squizAction.getPage("gef-education-base", "");
         eyes.checkWindow(System.getenv("EYES-GEF-EDUCATION-HOMEPAGE"));
 
-        squizAction.search(System.getenv("SEARCH-INPUT"));
-        eyes.checkWindow(System.getenv("EYES-GEF-EDUCATION-SEARCH"));
-
         squizAction.getPage("gef-education-base", "gef-education-landing");
         eyes.checkWindow(System.getenv("EYES-GEF-EDUCATION-LANDING"));
 
@@ -48,6 +45,10 @@ public class SquizGefEducationProductionTest extends CapabilitiesBuilder {
 
         squizAction.getPage("gef-education-base-shallow-banner", "");
         eyes.checkWindow(System.getenv("EYES-GEF-EDUCATION-SHALLOW-BANNER"));
+
+        squizAction.getPage("road-safety-education-baseline","");
+        squizAction.search(System.getenv("SEARCH-INPUT"));
+        eyes.checkWindow(System.getenv("EYES-GEF-EDUCATION-SEARCH"));
 
         eyes.close();
     }
