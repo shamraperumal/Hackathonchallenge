@@ -3,7 +3,7 @@ package au.edu.nsw.doe.digital.closed.automation.tests.swsedit;
 import au.edu.nsw.doe.digital.closed.automation.pageobjects.pws.SwsHomePage;
 import au.edu.nsw.doe.digital.closed.automation.pageobjects.pws.SwsNewsIndexPage;
 import au.edu.nsw.doe.digital.closed.automation.pageobjects.pws.SwsPageNotFound;
-import au.edu.nsw.doe.digital.closed.automation.setup.CapabilitiesBuilder;
+import au.edu.nsw.doe.digital.closed.automation.setup.LocalSetup;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -19,11 +19,10 @@ import static org.junit.Assert.assertEquals;
 /**
  * Created by cpigden on 8/10/2015.
  */
-public class PwsAddDeleteAFeaturedNewsArticleTest extends CapabilitiesBuilder {
+public class PwsAddDeleteAFeaturedNewsArticleTest extends LocalSetup {
 
     private PwsActions action;
 
-    @Override
     public void doSetUp() {
         action = new PwsActionMethods(driver);
     }
