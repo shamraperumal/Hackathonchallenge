@@ -1,5 +1,9 @@
 package au.edu.nsw.doe.digital.closed.automation.setup;
 
+import com.applitools.eyes.Eyes;
+import com.applitools.eyes.MatchLevel;
+import com.applitools.eyes.ProxySettings;
+import com.applitools.eyes.RectangleSize;
 import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.WebDriver;
@@ -15,6 +19,30 @@ public abstract class LocalSetup {
 
     protected WebDriver driver;
     public String baseUrl;
+    protected Eyes eyes;
+    public String proxy = System.getenv("PROXYURL");
+
+    protected MatchLevel getMatchLevel() {
+        String matchLevel = System.getenv("MATCH_LEVEL");
+        return MatchLevel.valueOf(matchLevel);
+    }
+
+    protected RectangleSize getRectangleSize() {
+        String rectangleHeight = System.getenv("RECTANGLE_HEIGHT");
+        String rectangleWidth = System.getenv("RECTANGLE_WIDTH");
+        return new RectangleSize(Integer.parseInt(rectangleWidth), Integer.parseInt(rectangleHeight));
+    }
+
+    private Eyes createApliToolsEyes() {
+        final Eyes eyes = new Eyes();
+        eyes.setApiKey(System.getenv("APPLITOOLS.APIKEY"));
+        eyes.setMatchLevel(getMatchLevel());
+        eyes.setForceFullPageScreenshot(true);
+        if(proxy != null) {
+            eyes.setProxy(new ProxySettings(proxy));
+        }
+        return eyes;
+    }
 
     @Before
     public void setUp() throws Exception {
@@ -27,6 +55,7 @@ public abstract class LocalSetup {
 
     @After
     public void tearDown() throws Exception {
+        System.out.println("Performing clean up");
         driver.quit();
         cleanUp();
     }

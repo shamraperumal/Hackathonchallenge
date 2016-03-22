@@ -1,6 +1,7 @@
 package au.edu.nsw.doe.digital.closed.automation.tests.swsedit;
 
-import au.edu.nsw.doe.digital.closed.automation.setup.CapabilitiesBuilder;
+import au.edu.nsw.doe.digital.closed.automation.setup.LocalSetup;
+import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 
@@ -9,15 +10,12 @@ import static org.junit.Assert.assertEquals;
 /**
  * Created by cpigden on 23/11/2015.
  */
-public class PwsAddDeleteAnAlbumTest extends CapabilitiesBuilder {
+public class PwsAddDeleteAnAlbumTest extends LocalSetup {
 
     private PwsActions action;
 
-    @Override
-    public void doSetUp() {
-        action = new PwsActionMethods(driver);
-    }
-
+    @Before
+    public void doSetUp() { action = new PwsActionMethods(driver);}
     @Ignore
 
     @Test

@@ -26,6 +26,7 @@ public class PwsAddDeleteAFeaturedNewsArticleTest extends LocalSetup {
     @Before
     public void doSetUp() { action = new PwsActionMethods(driver);}
 
+
     @Test
     public void testAddDeleteAFeaturedNewsArticle() throws Exception {
 
@@ -89,7 +90,9 @@ public class PwsAddDeleteAFeaturedNewsArticleTest extends LocalSetup {
         assertEquals("Status - Automated Regression Testing", driver.getTitle());
         System.out.println("Confirmed " + newPageA + " has been deleted");
 
-
     }
+
+
+
 }
 

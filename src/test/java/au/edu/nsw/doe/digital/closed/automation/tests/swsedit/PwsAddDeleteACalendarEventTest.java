@@ -1,8 +1,9 @@
 package au.edu.nsw.doe.digital.closed.automation.tests.swsedit;
 
 import au.edu.nsw.doe.digital.closed.automation.pageobjects.pws.SwsCalendarPage;
-import au.edu.nsw.doe.digital.closed.automation.setup.CapabilitiesBuilder;
+import au.edu.nsw.doe.digital.closed.automation.setup.LocalSetup;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -12,15 +13,12 @@ import java.util.List;
 /**
  * Created by cpigden on 5/01/2016.
  */
-public class PwsAddDeleteACalendarEventTest extends CapabilitiesBuilder {
+public class PwsAddDeleteACalendarEventTest extends LocalSetup {
 
     private PwsActions action;
 
-    @Override
-    public void doSetUp() {
-        action = new PwsActionMethods(driver);
-    }
-
+    @Before
+    public void doSetUp() { action = new PwsActionMethods(driver);}
 
     @Test
     public void testAddEditDeleteACalendarEvent() throws Exception {
