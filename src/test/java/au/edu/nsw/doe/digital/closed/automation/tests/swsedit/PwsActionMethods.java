@@ -25,6 +25,7 @@ public class PwsActionMethods implements PwsActions {
 
     public void ssoLoginEntry() throws Exception {
         try {
+            System.out.print("get page");
             driver.get(System.getenv("SSOURL"));
             wait(SsoLogin.username);
             wait(SsoLogin.password);
@@ -33,11 +34,13 @@ public class PwsActionMethods implements PwsActions {
             driver.findElement(SsoLogin.password).sendKeys(System.getenv("PASSWORD"));
             driver.findElement(SsoLogin.submitButton).click();
         } catch (final Exception e) {
+            System.out.println("Login failed");
             throw e;
         }
     }
 
     public void ssoLogin() throws Exception {
+        System.out.println("Attempting login...");
         int count = 0;
         int maxTries = 3;
         while (true) {

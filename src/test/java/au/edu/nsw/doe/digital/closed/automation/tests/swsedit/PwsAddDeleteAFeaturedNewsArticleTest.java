@@ -5,11 +5,10 @@ import au.edu.nsw.doe.digital.closed.automation.pageobjects.pws.SwsNewsIndexPage
 import au.edu.nsw.doe.digital.closed.automation.pageobjects.pws.SwsPageNotFound;
 import au.edu.nsw.doe.digital.closed.automation.setup.LocalSetup;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
@@ -23,14 +22,12 @@ public class PwsAddDeleteAFeaturedNewsArticleTest extends LocalSetup {
 
     private PwsActions action;
 
-    public void doSetUp() {
-        action = new PwsActionMethods(driver);
-    }
+
+    @Before
+    public void doSetUp() { action = new PwsActionMethods(driver);}
 
     @Test
     public void testAddDeleteAFeaturedNewsArticle() throws Exception {
-
-        WebDriverWait wait = new WebDriverWait(driver, 30);
 
         action.ssoLogin();
 
@@ -88,7 +85,7 @@ public class PwsAddDeleteAFeaturedNewsArticleTest extends LocalSetup {
         action.getPage("SWS-BASE-LIVE", "sws-news", newPageA, "");
 
         // Asserts that news article has been deleted
-        WebElement pageTitleNotFound = wait.until(ExpectedConditions.elementToBeClickable(SwsPageNotFound.pageTitleNotFound));
+        action.wait(SwsPageNotFound.pageTitleNotFound);
         assertEquals("Status - Automated Regression Testing", driver.getTitle());
         System.out.println("Confirmed " + newPageA + " has been deleted");
 
