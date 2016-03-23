@@ -35,11 +35,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LocalSetup.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LocalSetup.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/setup/LocalSetup.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.2350597">
+            <state vertical-scroll-proportion="0.0">
               <caret line="62" column="32" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testEyes.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/testEyes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.45816734">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,8 +73,10 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/swsedit/PwsAddDeleteAFeaturedNewsArticleTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="26" selection-end-column="67" />
-              <folding />
+              <caret line="28" column="70" selection-start-line="22" selection-start-column="4" selection-end-line="28" selection-end-column="70" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -104,7 +118,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/pwsview/PwsDecSchoolAToZTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/pwsview/PwsDecVolunteeringTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/pwsview/PwsSmartAndSkilledTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/pageobjects/blah/PwsActionMethods.java" />
@@ -141,7 +154,6 @@
         <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/squizsearch/desktop/gefEducationDesktopSearchTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/squizsearch/mobile/gefEducationMobileSearchTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/swsedit/PwsActionMethods.java" />
-        <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/swsedit/PwsAddDeleteAFeaturedNewsArticleTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/swsedit/PwsAddDeleteACalendarEventTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/swsedit/PwsAddDeleteAnAlbumTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/swsedit/PwsAddDeleteANewsArticleTest.java" />
@@ -155,6 +167,8 @@
         <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/squizproduction/desktop/SquizGefEducationProductionTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/pageobjects/pws/AddPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/setup/LocalSetup.java" />
+        <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/swsedit/PwsAddDeleteAFeaturedNewsArticleTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/testEyes.java" />
       </list>
     </option>
   </component>
@@ -253,120 +267,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Doe-Automation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="automation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="automation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="squiz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Doe-Automation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="automation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="automation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="squiz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="squizproduction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Doe-Automation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="automation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="automation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="squiz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="squizproduction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="desktop" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -759,13 +659,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/pageobjects/pws/SwsGalleryPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/pageobjects/pws/SwsNewsIndexPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1070,14 +963,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/swsedit/PwsAddDeleteAFeaturedNewsArticleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="26" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/swsedit/PwsAddDeleteACalendarEventTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1122,6 +1007,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/setup/LocalSetup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="62" column="32" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/squizproduction/desktop/SquizTeachProductionTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1130,10 +1025,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/setup/LocalSetup.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/swsedit/PwsAddDeleteAFeaturedNewsArticleTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2350597">
-          <caret line="62" column="32" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="70" selection-start-line="22" selection-start-column="4" selection-end-line="28" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/testEyes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45816734">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

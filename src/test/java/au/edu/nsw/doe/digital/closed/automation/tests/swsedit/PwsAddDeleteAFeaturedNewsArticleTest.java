@@ -22,10 +22,8 @@ public class PwsAddDeleteAFeaturedNewsArticleTest extends LocalSetup {
 
     private PwsActions action;
 
-
     @Before
     public void doSetUp() { action = new PwsActionMethods(driver);}
-
 
     @Test
     public void testAddDeleteAFeaturedNewsArticle() throws Exception {
