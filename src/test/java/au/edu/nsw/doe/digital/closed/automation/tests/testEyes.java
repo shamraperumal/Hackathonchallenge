@@ -10,6 +10,7 @@ import org.junit.Test;
  * Created by christopherpigden on 23/03/2016.
  */
 public class TestEyes extends LocalSetup {
+
     private PwsActions action;
 
     @Before
@@ -19,5 +20,6 @@ public class TestEyes extends LocalSetup {
     public void testEyes() throws Exception {
         action.getPage("http://studionedgip", "", "", "");
         eyes.checkWindow("Homepage");
+        eyes.close();
     }
 }
