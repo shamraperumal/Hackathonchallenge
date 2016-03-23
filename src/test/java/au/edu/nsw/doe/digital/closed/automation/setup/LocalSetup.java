@@ -40,6 +40,12 @@ public abstract class LocalSetup {
         }
     };
 
+    protected RectangleSize rectangle() {
+        String rectangleHeight = System.getenv("RECTANGLE_HEIGHT");
+        String rectangleWidth = System.getenv("RECTANGLE_WIDTH");
+        return new RectangleSize(Integer.parseInt(rectangleWidth), Integer.parseInt(rectangleHeight));
+    }
+
     @Before
     public void setUp() throws Exception {
         driver = new FirefoxDriver();
@@ -50,7 +56,7 @@ public abstract class LocalSetup {
         if (proxy != null) {
             eyes.setProxy(new ProxySettings(proxy));
         }
-        driver = eyes.open(driver, "DoE", testName + new RectangleSize(Integer.parseInt(rectangleWidth), Integer.parseInt(rectangleHeight)));
+        driver = eyes.open(driver, "DoE", testName + rectangle());
         MatchLevel.valueOf(matchLevel);
         System.out.println("Starting test...");
         doSetup();
