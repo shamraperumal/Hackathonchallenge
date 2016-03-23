@@ -9,7 +9,7 @@ import org.junit.Test;
 /**
  * Created by christopherpigden on 23/03/2016.
  */
-public class TestEyes extends LocalSetup {
+public class EyesTest extends LocalSetup {
 
     private PwsActions action;
 
@@ -17,7 +17,7 @@ public class TestEyes extends LocalSetup {
     public void doSetUp() { action = new PwsActionMethods(driver);}
 
     @Test
-    public void testEyes() throws Exception {
+    public void testEyesTest() throws Exception {
         action.getPage("http://studionedgip", "", "", "");
         eyes.checkWindow("Homepage");
         eyes.close();
