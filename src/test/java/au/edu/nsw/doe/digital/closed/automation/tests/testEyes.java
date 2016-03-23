@@ -9,15 +9,15 @@ import org.junit.Test;
 /**
  * Created by christopherpigden on 23/03/2016.
  */
-public class testEyes extends LocalSetup {
+public class TestEyes extends LocalSetup {
     private PwsActions action;
 
     @Before
     public void doSetUp() { action = new PwsActionMethods(driver);}
 
     @Test
-    public void testAddDeleteAFeaturedNewsArticle() throws Exception {
-        action.getPage("http://studionedgip","","","");
+    public void testEyes() throws Exception {
+        action.getPage("http://studionedgip", "", "", "");
         eyes.checkWindow("Homepage");
     }
 }
