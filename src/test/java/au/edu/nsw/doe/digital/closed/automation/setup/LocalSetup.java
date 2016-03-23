@@ -28,15 +28,11 @@ public abstract class LocalSetup {
     protected Eyes eyes;
     protected String testName;
     protected String matchLevel = System.getenv("MATCH_LEVEL");
-    protected String rectangleHeight = System.getenv("RECTANGLE_HEIGHT");
-    protected String rectangleWidth = System.getenv("RECTANGLE_WIDTH");
-
 
     @Rule
     public TestRule watcher = new TestWatcher() {
         protected void starting(Description description) {
             testName = description.getMethodName() + " on " + environment;
-
         }
     };
 
@@ -50,7 +46,7 @@ public abstract class LocalSetup {
     public void setUp() throws Exception {
         driver = new FirefoxDriver();
         baseUrl = System.getenv("BASEURL");
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(90, TimeUnit.SECONDS);
         Eyes eyes = new Eyes();
         eyes.setApiKey(System.getenv("APPLITOOLS.APIKEY"));
         if (proxy != null) {
@@ -68,7 +64,6 @@ public abstract class LocalSetup {
         driver.quit();
         eyes.abortIfNotClosed();
     }
-
 
     protected void doSetup() {
     }
