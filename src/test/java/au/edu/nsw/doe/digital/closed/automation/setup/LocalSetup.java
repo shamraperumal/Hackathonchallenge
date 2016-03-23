@@ -6,6 +6,10 @@ import com.applitools.eyes.ProxySettings;
 import com.applitools.eyes.RectangleSize;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Rule;
+import org.junit.rules.TestRule;
+import org.junit.rules.TestWatcher;
+import org.junit.runner.Description;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -19,36 +23,35 @@ public abstract class LocalSetup {
 
     protected WebDriver driver;
     public String baseUrl;
-    protected Eyes eyes;
     public String proxy = System.getenv("PROXYURL");
+    public String environment = System.getenv("ENVIRONMENT");
+    protected Eyes eyes;
+    protected String testName;
+    protected String matchLevel = System.getenv("MATCH_LEVEL");
+    protected String rectangleHeight = System.getenv("RECTANGLE_HEIGHT");
+    protected String rectangleWidth = System.getenv("RECTANGLE_WIDTH");
 
-    protected MatchLevel getMatchLevel() {
-        String matchLevel = System.getenv("MATCH_LEVEL");
-        return MatchLevel.valueOf(matchLevel);
-    }
 
-    protected RectangleSize getRectangleSize() {
-        String rectangleHeight = System.getenv("RECTANGLE_HEIGHT");
-        String rectangleWidth = System.getenv("RECTANGLE_WIDTH");
-        return new RectangleSize(Integer.parseInt(rectangleWidth), Integer.parseInt(rectangleHeight));
-    }
+    @Rule
+    public TestRule watcher = new TestWatcher() {
+        protected void starting(Description description) {
+            testName = description.getMethodName() + " on " + environment;
 
-    private Eyes createApliToolsEyes() {
-        final Eyes eyes = new Eyes();
-        eyes.setApiKey(System.getenv("APPLITOOLS.APIKEY"));
-        eyes.setMatchLevel(getMatchLevel());
-        eyes.setForceFullPageScreenshot(true);
-        if(proxy != null) {
-            eyes.setProxy(new ProxySettings(proxy));
         }
-        return eyes;
-    }
+    };
 
     @Before
     public void setUp() throws Exception {
         driver = new FirefoxDriver();
         baseUrl = System.getenv("BASEURL");
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        Eyes eyes = new Eyes();
+        eyes.setApiKey(System.getenv("APPLITOOLS.APIKEY"));
+        if (proxy != null) {
+            eyes.setProxy(new ProxySettings(proxy));
+        }
+        driver = eyes.open(driver, "DoE", testName + new RectangleSize(Integer.parseInt(rectangleWidth), Integer.parseInt(rectangleHeight)));
+        MatchLevel.valueOf(matchLevel);
         System.out.println("Starting test...");
         doSetup();
     }
@@ -57,12 +60,9 @@ public abstract class LocalSetup {
     public void tearDown() throws Exception {
         System.out.println("Performing clean up");
         driver.quit();
-        cleanUp();
+        eyes.abortIfNotClosed();
     }
 
-
-    protected void cleanUp() {
-    }
 
     protected void doSetup() {
     }
