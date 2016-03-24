@@ -62,7 +62,6 @@ public abstract class LocalSetup {
     public void tearDown() throws Exception {
         System.out.println("Performing clean up");
         driver.quit();
-        eyes.abortIfNotClosed();
     }
 
     protected void doSetup() {
