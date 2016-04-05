@@ -23,46 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SquizGefEducationProductionTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/squizproduction/desktop/SquizGefEducationProductionTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SquizGefWebsiteProductionTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/squizproduction/desktop/SquizGefWebsiteProductionTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SquizTeachProductionTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/squizproduction/desktop/SquizTeachProductionTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SquizGefEducationMobileProductionTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SquizGefEducationMobileProductionTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/squizproduction/mobile/SquizGefEducationMobileProductionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32270917">
+            <state vertical-scroll-proportion="0.0">
               <caret line="20" column="0" selection-start-line="17" selection-start-column="9" selection-end-line="20" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -71,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SquizGefWebsiteMobileProductionTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/squizproduction/mobile/SquizGefWebsiteMobileProductionTest.java">
+      <file leaf-file-name="SquizGefWebsiteProductionTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/squizproduction/desktop/SquizGefWebsiteProductionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.2988048">
+              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -83,13 +47,54 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SquizWellbeingProductionTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/squizproduction/desktop/SquizWellbeingProductionTest.java">
+      <file leaf-file-name="TestBase.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/setup/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <caret line="214" column="0" selection-start-line="214" selection-start-column="0" selection-end-line="214" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2070#2071#0" expanded="true" />
+                <element signature="e#2151#2152#0" expanded="true" />
+                <element signature="e#8080#8081#0" expanded="true" />
+                <element signature="e#8120#8121#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RetryRule.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/setup/RetryRule.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="54" column="1" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Retry.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/setup/Retry.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SauceHelpers.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/setup/SauceHelpers.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+              <folding>
+                <element signature="e#1703#1704#0" expanded="true" />
+                <element signature="e#1754#1755#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -154,10 +159,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/swsview/mobile/SwsDesign11MobileTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/swsview/desktop/SwsDesignTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/pageobjects/pws/DecInternationalSearch.java" />
-        <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/SquizActionMethods.java" />
         <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/SquizActions.java" />
         <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/squizpattern/desktop/SquizGefPatternsDefaultElementsTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/squizpattern/desktop/SquizGefPatternsSingleColumnTest.java" />
@@ -197,7 +198,6 @@
         <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/setup/LocalSetup.java" />
         <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/pageobjects/pws/AddPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/squizproduction/desktop/SquizGefEducationProductionTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/squizproduction/desktop/SquizGefWebsiteProductionTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/squizproduction/desktop/SquizTeachProductionTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/squizproduction/desktop/SquizWellbeingProductionTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/squizproduction/mobile/SquizGefWebsiteMobileProductionTest.java" />
@@ -205,6 +205,11 @@
         <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/squizproduction/mobile/SquizWellbeingMobileProductionTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/setup/CapabilitiesBuilder.java" />
         <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/squizproduction/mobile/SquizGefEducationMobileProductionTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/setup/SauceHelpers.java" />
+        <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/setup/RetryRule.java" />
+        <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/setup/Retry.java" />
+        <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/setup/TestBase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/squizproduction/desktop/SquizGefWebsiteProductionTest.java" />
       </list>
     </option>
   </component>
@@ -335,40 +340,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="swsedit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Doe-Automation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="automation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="automation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="squiz" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -408,10 +379,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="squizproduction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobile" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -480,40 +447,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="automation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="setup" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Doe-Automation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="automation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="automation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pageobjects" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -879,34 +812,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/pageobjects/pws/SwsNewsIndexPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/pageobjects/pws/SwsHomePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/SquizActions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/squizpattern/desktop/SquizGefPatternsDefaultElementsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="72" selection-start-line="15" selection-start-column="72" selection-end-line="15" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/squizpattern/desktop/SquizGefPatternsSingleColumnTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1176,16 +1081,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/squizproduction/desktop/SquizGefWebsiteProductionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/squizproduction/desktop/SquizTeachProductionTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1234,14 +1129,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/setup/Setup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/setup/CapabilitiesBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1252,8 +1139,71 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/squizproduction/mobile/SquizGefEducationMobileProductionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32270917">
+        <state vertical-scroll-proportion="0.0">
           <caret line="20" column="0" selection-start-line="17" selection-start-column="9" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/setup/SauceHelpers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding>
+            <element signature="e#1703#1704#0" expanded="true" />
+            <element signature="e#1754#1755#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/setup/Setup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/setup/RetryRule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="54" column="1" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/setup/Retry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/setup/TestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="214" column="0" selection-start-line="214" selection-start-column="0" selection-end-line="214" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2070#2071#0" expanded="true" />
+            <element signature="e#2151#2152#0" expanded="true" />
+            <element signature="e#8080#8081#0" expanded="true" />
+            <element signature="e#8120#8121#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/squizproduction/desktop/SquizGefWebsiteProductionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2988048">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
