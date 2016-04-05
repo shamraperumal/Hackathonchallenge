@@ -116,7 +116,7 @@ import java.util.LinkedList;
         @ConcurrentParameterized.Parameters
         public static LinkedList browsersStrings() {
             LinkedList browsers = new LinkedList();
-            
+
             browsers.add(new String[]{System.getenv("SELENIUM_PLATFORM"), System.getenv("SELENIUM_VERSION"), System.getenv("SELENIUM_BROWSER"), null, null});
 
 //            // windows xp, IE 8
