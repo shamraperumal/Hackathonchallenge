@@ -3,7 +3,6 @@ package au.edu.nsw.doe.digital.closed.automation.tests.squiz.squizproduction.mob
 
 import au.edu.nsw.doe.digital.closed.automation.setup.CapabilitiesBuilder;
 import au.edu.nsw.doe.digital.closed.automation.tests.squiz.SquizActionMethods;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.openqa.selenium.Dimension;
 
@@ -12,7 +11,7 @@ import org.openqa.selenium.Dimension;
  */
 
 public class SquizWellbeingMobileProductionTest extends CapabilitiesBuilder {
-    @Ignore
+
     @Test
     public void wellbeingMobileProductionEyesTest() throws Exception {
 

@@ -3,7 +3,6 @@ package au.edu.nsw.doe.digital.closed.automation.tests.squiz.squizproduction.des
 
 import au.edu.nsw.doe.digital.closed.automation.setup.CapabilitiesBuilder;
 import au.edu.nsw.doe.digital.closed.automation.tests.squiz.SquizActionMethods;
-import org.junit.Ignore;
 import org.junit.Test;
 
 /**
@@ -11,7 +10,6 @@ import org.junit.Test;
  */
 public class SquizGefEducationProductionTest extends CapabilitiesBuilder {
 
-    @Ignore
     @Test
     public void gefEducationDesktopProductionEyesTest() throws Exception {
 
