@@ -3,10 +3,8 @@ package au.edu.nsw.doe.digital.closed.automation.setup;
 /**
  * Created by christopherpigden on 5/04/2016.
  */
-import org.junit.rules.MethodRule;
 import org.junit.rules.TestRule;
 import org.junit.runner.Description;
-import org.junit.runners.model.FrameworkMethod;
 import org.junit.runners.model.Statement;
 
 import java.util.concurrent.atomic.AtomicInteger;

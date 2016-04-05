@@ -116,33 +116,32 @@ import java.util.LinkedList;
         @ConcurrentParameterized.Parameters
         public static LinkedList browsersStrings() {
             LinkedList browsers = new LinkedList();
+            
+            browsers.add(new String[]{System.getenv("SELENIUM_PLATFORM"), System.getenv("SELENIUM_VERSION"), System.getenv("SELENIUM_BROWSER"), null, null});
 
-            // windows 7, Chrome 41
-            browsers.add(new String[]{"Windows 7", "41", "chrome", null, null});
-
-            // windows xp, IE 8
-            browsers.add(new String[]{"Windows XP", "8", "internet explorer", null, null});
-
-            // windows 7, IE 9
-            browsers.add(new String[]{"Windows 7", "9", "internet explorer", null, null});
-
-            // windows 8, IE 10
-            browsers.add(new String[]{"Windows 8", "10", "internet explorer", null, null});
-
-            // windows 8.1, IE 11
-            browsers.add(new String[]{"Windows 8.1", "11", "internet explorer", null, null});
-
-            // OS X 10.8, Safari 6
-            browsers.add(new String[]{"OSX 10.8", "6", "safari", null, null});
-
-            // OS X 10.9, Safari 7
-            browsers.add(new String[]{"OSX 10.9", "7", "safari", null, null});
-
-            // OS X 10.10, Safari 7
-            browsers.add(new String[]{"OSX 10.10", "8", "safari", null, null});
-
-            // Linux, Firefox 37
-            browsers.add(new String[]{"Linux", "37", "firefox", null, null});
+//            // windows xp, IE 8
+//            browsers.add(new String[]{"Windows XP", "8", "internet explorer", null, null});
+//
+//            // windows 7, IE 9
+//            browsers.add(new String[]{"Windows 7", "9", "internet explorer", null, null});
+//
+//            // windows 8, IE 10
+//            browsers.add(new String[]{"Windows 8", "10", "internet explorer", null, null});
+//
+//            // windows 8.1, IE 11
+//            browsers.add(new String[]{"Windows 8.1", "11", "internet explorer", null, null});
+//
+//            // OS X 10.8, Safari 6
+//            browsers.add(new String[]{"OSX 10.8", "6", "safari", null, null});
+//
+//            // OS X 10.9, Safari 7
+//            browsers.add(new String[]{"OSX 10.9", "7", "safari", null, null});
+//
+//            // OS X 10.10, Safari 7
+//            browsers.add(new String[]{"OSX 10.10", "8", "safari", null, null});
+//
+//            // Linux, Firefox 37
+//            browsers.add(new String[]{"Linux", "37", "firefox", null, null});
 
             //emus
             browsers.add(new String[]{"Linux", "4.4", "android", "Android Emulator", "portrait"});
