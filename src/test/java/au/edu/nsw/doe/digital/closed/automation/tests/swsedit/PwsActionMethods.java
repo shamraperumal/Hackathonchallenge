@@ -401,13 +401,15 @@ public class PwsActionMethods implements PwsActions {
             System.out.println("Clicked next button");
             wait.until(ExpectedConditions.visibilityOfElementLocated(SwsGalleryPage.albumUploadText));
             System.out.println("Expected text is visible");
-            driver.findElement(SwsGalleryPage.albumUpload).click();
+            WebElement upload = driver.findElement(SwsGalleryPage.albumUpload);
+            upload.sendKeys("/images/1209.png");
+            upload.click();
             System.out.println("Clicked Upload button");
-            WebElement submit = wait.until(ExpectedConditions.visibilityOfElementLocated(SwsGalleryPage.albumSubmitButton));
+            wait.until(ExpectedConditions.visibilityOfElementLocated(SwsGalleryPage.albumSubmitButton));
             System.out.println("Submit button loaded");
             driver.findElement(SwsGalleryPage.albumSubmitButton).click();
             System.out.println("Clicked submit button");
-            WebElement done = wait.until(ExpectedConditions.visibilityOfElementLocated(SwsGalleryPage.albumUploadDoneButton));
+            wait.until(ExpectedConditions.visibilityOfElementLocated(SwsGalleryPage.albumUploadDoneButton));
             System.out.println("Loaded done button");
             driver.findElement(SwsGalleryPage.albumUploadDoneButton).click();
             System.out.println("Clicked Done button");

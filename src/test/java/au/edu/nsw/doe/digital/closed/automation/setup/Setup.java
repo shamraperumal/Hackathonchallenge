@@ -2,6 +2,7 @@ package au.edu.nsw.doe.digital.closed.automation.setup;
 
 import com.applitools.eyes.Eyes;
 import com.applitools.eyes.MatchLevel;
+import com.applitools.eyes.ProxySettings;
 import com.applitools.eyes.RectangleSize;
 import com.saucelabs.common.SauceOnDemandAuthentication;
 import com.saucelabs.common.SauceOnDemandSessionIdProvider;
@@ -13,9 +14,7 @@ import org.junit.rules.TestRule;
 import org.junit.rules.TestWatcher;
 import org.junit.runner.Description;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import com.applitools.eyes.ProxySettings;
+import org.openqa.selenium.remote.*;
 
 import java.net.URL;
 
@@ -53,7 +52,6 @@ public abstract class Setup implements SauceOnDemandSessionIdProvider {
 
     @Before
     public void setUp() throws Exception {
-        // Create the connection to Sauce Labs to run the tests
         eyes = createApliToolsEyes();
         final WebDriver browser = createWebDriver();
         this.driver = eyes.open(browser, "DoE", testName + testBrowserVersion, getRectangleSize());

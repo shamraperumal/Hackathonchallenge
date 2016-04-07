@@ -2,7 +2,6 @@ package au.edu.nsw.doe.digital.closed.automation.tests.swsedit;
 
 import au.edu.nsw.doe.digital.closed.automation.setup.LocalSetup;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -16,7 +15,6 @@ public class PwsAddDeleteAnAlbumTest extends LocalSetup {
 
     @Before
     public void doSetUp() { action = new PwsActionMethods(driver);}
-    @Ignore
 
     @Test
     public void testAddDeleteAnAlbum() throws Exception {

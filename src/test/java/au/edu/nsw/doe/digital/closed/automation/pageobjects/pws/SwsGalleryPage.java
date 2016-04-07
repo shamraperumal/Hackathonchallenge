@@ -10,7 +10,7 @@ public class SwsGalleryPage {
     public static By albumDescriptionField = By.xpath("//textarea[@id='desc']");
     public static By albumNextButton = By.xpath("//span[contains(.,'Next')]");
     public static By albumUploadText = By.xpath("//label[@class='active']");
-    public static By albumUpload = By.xpath("//object[@id='SWFUpload_0']");
+    public static By albumUpload = By.xpath("//input[@name='qqfile']");
     public static By albumSubmitButton = By.xpath("//span[contains(.,'Upload images')]");
     public static By albumUploadDoneButton = By.xpath("//span[contains(.,'Done')]");
 
