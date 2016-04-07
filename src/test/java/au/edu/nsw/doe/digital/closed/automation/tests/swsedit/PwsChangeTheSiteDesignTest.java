@@ -2,7 +2,6 @@ package au.edu.nsw.doe.digital.closed.automation.tests.swsedit;
 
 import au.edu.nsw.doe.digital.closed.automation.pageobjects.pws.SwsDesignPage;
 import au.edu.nsw.doe.digital.closed.automation.setup.CapabilitiesBuilder;
-import au.edu.nsw.doe.digital.closed.automation.setup.LocalSetup;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -10,7 +9,7 @@ import org.junit.Test;
 /**
  * Created by cpigden on 26/11/2015.
  */
-public class PwsChangeTheSiteDesignTest extends LocalSetup {
+public class PwsChangeTheSiteDesignTest extends CapabilitiesBuilder {
 
     private PwsActions action;
 

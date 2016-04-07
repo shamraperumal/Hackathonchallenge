@@ -1,14 +1,13 @@
 package au.edu.nsw.doe.digital.closed.automation.tests.swsedit;
 
 import au.edu.nsw.doe.digital.closed.automation.setup.CapabilitiesBuilder;
-import au.edu.nsw.doe.digital.closed.automation.setup.LocalSetup;
 import org.junit.Before;
 import org.junit.Test;
 
 /**
  * Created by kmason26 on 12/01/2016.
  */
-public class PwsAddRemoveSocialProfile extends LocalSetup {
+public class PwsAddRemoveSocialProfile extends CapabilitiesBuilder {
 
     private PwsActions action;
 

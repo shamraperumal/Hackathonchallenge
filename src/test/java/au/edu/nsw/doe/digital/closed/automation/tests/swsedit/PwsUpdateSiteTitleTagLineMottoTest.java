@@ -1,7 +1,7 @@
 package au.edu.nsw.doe.digital.closed.automation.tests.swsedit;
 
 import au.edu.nsw.doe.digital.closed.automation.pageobjects.pws.SwsHomePage;
-import au.edu.nsw.doe.digital.closed.automation.setup.LocalSetup;
+import au.edu.nsw.doe.digital.closed.automation.setup.CapabilitiesBuilder;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -11,7 +11,7 @@ import static org.junit.Assert.assertTrue;
 /**
  * Created by cpigden on 15/12/2015.
  */
-public class PwsUpdateSiteTitleTagLineMottoTest extends LocalSetup {
+public class PwsUpdateSiteTitleTagLineMottoTest extends CapabilitiesBuilder {
 
     private PwsActions action;
 

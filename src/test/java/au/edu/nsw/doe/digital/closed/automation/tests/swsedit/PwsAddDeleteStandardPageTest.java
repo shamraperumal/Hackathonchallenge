@@ -1,7 +1,7 @@
 package au.edu.nsw.doe.digital.closed.automation.tests.swsedit;
 
 
-import au.edu.nsw.doe.digital.closed.automation.setup.LocalSetup;
+import au.edu.nsw.doe.digital.closed.automation.setup.CapabilitiesBuilder;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -11,7 +11,7 @@ import static org.junit.Assert.assertEquals;
  * Tests adding and deleting a page and confirms that changes are visible on the view node.
  */
 
-public class PwsAddDeleteStandardPageTest extends LocalSetup {
+public class PwsAddDeleteStandardPageTest extends CapabilitiesBuilder {
 
     private PwsActions action;
 

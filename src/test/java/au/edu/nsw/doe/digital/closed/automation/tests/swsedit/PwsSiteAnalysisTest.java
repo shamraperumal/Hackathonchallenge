@@ -1,14 +1,13 @@
 package au.edu.nsw.doe.digital.closed.automation.tests.swsedit;
 
 import au.edu.nsw.doe.digital.closed.automation.setup.CapabilitiesBuilder;
-import au.edu.nsw.doe.digital.closed.automation.setup.LocalSetup;
 import org.junit.Before;
 import org.junit.Test;
 
 /**
  * Created by cpigden on 11/12/2015.
  */
-public class PwsSiteAnalysisTest extends LocalSetup {
+public class PwsSiteAnalysisTest extends CapabilitiesBuilder {
 
     private PwsActions action;
 

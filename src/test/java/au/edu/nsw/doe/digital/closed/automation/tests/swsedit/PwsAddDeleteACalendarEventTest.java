@@ -1,7 +1,7 @@
 package au.edu.nsw.doe.digital.closed.automation.tests.swsedit;
 
 import au.edu.nsw.doe.digital.closed.automation.pageobjects.pws.SwsCalendarPage;
-import au.edu.nsw.doe.digital.closed.automation.setup.LocalSetup;
+import au.edu.nsw.doe.digital.closed.automation.setup.CapabilitiesBuilder;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * Created by cpigden on 5/01/2016.
  */
-public class PwsAddDeleteACalendarEventTest extends LocalSetup {
+public class PwsAddDeleteACalendarEventTest extends CapabilitiesBuilder {
 
     private PwsActions action;
 
