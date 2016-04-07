@@ -66,7 +66,7 @@ public abstract class Setup implements SauceOnDemandSessionIdProvider {
         final Eyes eyes = new Eyes();
         eyes.setApiKey(System.getenv("APPLITOOLS.APIKEY"));
         eyes.setMatchLevel(getMatchLevel());
-       // eyes.setForceFullPageScreenshot(true);
+        eyes.setForceFullPageScreenshot(true);
         if(proxy != null) {
             eyes.setProxy(new ProxySettings(proxy));
         }
