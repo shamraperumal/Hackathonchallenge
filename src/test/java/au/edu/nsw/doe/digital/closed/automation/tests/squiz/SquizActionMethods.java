@@ -110,6 +110,16 @@ public class SquizActionMethods implements SquizActions {
         }
     }
 
+    public void getNewInstance() throws Exception{
+        try {
+            driver.get("https://cms.det.nsw.edu.au/__lib/web/sup_switcher.php");
+            wait(By.xpath("//input[@value='New Instance']"));
+            driver.findElement(By.xpath("//input[@value='New Instance']")).click();
+        }catch(final Exception e){
+            throw e;
+        }
+    }
+
 
 }
 

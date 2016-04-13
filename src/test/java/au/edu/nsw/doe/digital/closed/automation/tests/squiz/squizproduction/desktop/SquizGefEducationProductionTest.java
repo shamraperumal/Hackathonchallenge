@@ -15,6 +15,8 @@ public class SquizGefEducationProductionTest extends CapabilitiesBuilder {
 
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
+        squizAction.getNewInstance();
+
         squizAction.getPage("gef-education-base", "");
         eyes.checkWindow(System.getenv("EYES-GEF-EDUCATION-HOMEPAGE"));
 

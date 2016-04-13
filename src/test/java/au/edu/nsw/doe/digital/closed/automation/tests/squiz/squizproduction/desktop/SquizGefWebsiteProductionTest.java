@@ -16,6 +16,8 @@ public class SquizGefWebsiteProductionTest extends CapabilitiesBuilder {
 
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
+        squizAction.getNewInstance();
+
         squizAction.getPage("gef-website-base", "");
         eyes.checkWindow(System.getenv("EYES-GEF-WEBSITE-HOME"));
 

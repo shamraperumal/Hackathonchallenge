@@ -23,5 +23,5 @@ public interface SquizActions {
 
     void showHide() throws Exception;
 
-
+    void getNewInstance() throws Exception;
 }
