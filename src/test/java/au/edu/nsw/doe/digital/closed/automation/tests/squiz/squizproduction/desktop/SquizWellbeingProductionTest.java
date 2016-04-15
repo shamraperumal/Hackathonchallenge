@@ -16,8 +16,6 @@ public class SquizWellbeingProductionTest extends CapabilitiesBuilder {
 
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
-        squizAction.getNewInstance();
-
         squizAction.getPage("wellbeing-base", "");
         eyes.checkWindow(System.getenv("EYES-WELLBEING-HOME"));
 

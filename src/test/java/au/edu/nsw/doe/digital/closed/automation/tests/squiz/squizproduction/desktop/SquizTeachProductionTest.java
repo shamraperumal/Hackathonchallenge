@@ -16,8 +16,6 @@ public class SquizTeachProductionTest extends CapabilitiesBuilder {
 
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
-        squizAction.getNewInstance();
-
         squizAction.getPage("teach-base", "");
         eyes.checkWindow(System.getenv("EYES-TEACH-HOME"));
 
