@@ -34,9 +34,6 @@ public class CapabilitiesBuilder extends Setup {
         capabilities.setCapability("screenResolution", System.getenv("SCREEN_RESOLUTION"));
         capabilities.setCapability("name", testName);
         capabilities.setCapability("build", System.getenv("JOB_NAME") + "__" + System.getenv("BUILD_NUMBER"));
-        capabilities.setCapability("deviceName",System.getenv("SELENIUM_DEVICE"));
-        capabilities.setCapability("deviceType",System.getenv("SELENIUM_DEVICE_TYPE"));
-        capabilities.setCapability("deviceOrientation",System.getenv("SELENIUM_DEVICE_ORIENTATION"));
 
         return capabilities;
     }
