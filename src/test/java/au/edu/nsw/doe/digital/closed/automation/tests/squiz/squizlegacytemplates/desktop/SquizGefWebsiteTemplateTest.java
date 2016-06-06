@@ -23,6 +23,12 @@ public class SquizGefWebsiteTemplateTest extends CapabilitiesBuilder {
         squizAction.getPage("gef-website-template-base", "gef-website-template-landingpage");
         eyes.checkWindow(System.getenv("EYES-GEF-WEBSITE-LANDING"));
 
+        squizAction.getPage("gef-website-template-base", "gef-website-template-newsindexpage");
+        eyes.checkWindow(System.getenv("EYES-GEF-WEBSITE-NEWS-INDEX"));
+
+        squizAction.getPage("gef-website-template-base", "gef-website-template-newsarticlepage");
+        eyes.checkWindow(System.getenv("EYES-GEF-WEBSITE-NEWS-ARTICLE"));
+
         eyes.close();
     }
 
