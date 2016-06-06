@@ -57,17 +57,17 @@
     <dependencies>
 
 
-        <dependency>
-            <groupId>com.applitools</groupId>
-            <artifactId>eyes-selenium-java</artifactId>
-            <version>RELEASE</version>
-        </dependency>
-        <!--&lt;!&ndash; http://mvnrepository.com/artifact/com.applitools/eyes-selenium-java &ndash;&gt;-->
         <!--<dependency>-->
             <!--<groupId>com.applitools</groupId>-->
             <!--<artifactId>eyes-selenium-java</artifactId>-->
-            <!--<version>2.33</version>-->
+            <!--<version>RELEASE</version>-->
         <!--</dependency>-->
+        <!-- http://mvnrepository.com/artifact/com.applitools/eyes-selenium-java -->
+        <dependency>
+            <groupId>com.applitools</groupId>
+            <artifactId>eyes-selenium-java</artifactId>
+            <version>2.33</version>
+        </dependency>
 
 
         <dependency>
