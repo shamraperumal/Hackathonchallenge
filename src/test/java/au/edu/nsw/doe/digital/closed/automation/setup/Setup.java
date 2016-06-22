@@ -36,8 +36,7 @@ public abstract class Setup implements SauceOnDemandSessionIdProvider {
     protected Eyes eyes;
     protected String testName;
     
-
-
+    
     @Rule
     //JUnit Rule which will mark the sauce Job as passed/failed when the test succeeds or fails.
     public SauceOnDemandTestWatcher resultReportingTestWatcher = new SauceOnDemandTestWatcher(this, authentication);
