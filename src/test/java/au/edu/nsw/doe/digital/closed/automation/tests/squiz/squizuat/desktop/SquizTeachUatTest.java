@@ -12,7 +12,7 @@ import org.junit.Test;
 public class SquizTeachUatTest extends CapabilitiesBuilder {
 
     @Test
-    public void teachDesktopProductionEyesTest() throws Exception {
+    public void teachDesktopUatEyesTest() throws Exception {
 
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 

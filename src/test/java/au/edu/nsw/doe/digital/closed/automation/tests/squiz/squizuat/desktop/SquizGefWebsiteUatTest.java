@@ -12,7 +12,7 @@ import org.junit.Test;
 public class SquizGefWebsiteUatTest extends CapabilitiesBuilder {
 
     @Test
-    public void gefWebsiteDesktopProductionEyesTest() throws Exception {
+    public void gefWebsiteDesktopUatEyesTest() throws Exception {
 
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 

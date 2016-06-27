@@ -13,7 +13,7 @@ import org.openqa.selenium.Dimension;
 public class SquizGefWebsiteMobileUatTest extends CapabilitiesBuilder {
 
     @Test
-    public void gefWebsiteMobileProductionEyesTest() throws Exception {
+    public void gefWebsiteMobileUatEyesTest() throws Exception {
 
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
