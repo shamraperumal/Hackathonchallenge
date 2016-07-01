@@ -402,7 +402,7 @@ public class PwsActionMethods implements PwsActions {
             wait.until(ExpectedConditions.visibilityOfElementLocated(SwsGalleryPage.albumUploadText));
             System.out.println("Expected text is visible");
             WebElement upload = driver.findElement(SwsGalleryPage.albumUpload);
-            upload.sendKeys("/images/1209.png");
+            upload.sendKeys(System.getenv("SWS-ALBUM-IMAGE"));
             wait.until(ExpectedConditions.visibilityOfElementLocated(SwsGalleryPage.albumSubmitButton));
             System.out.println("Submit button loaded");
             driver.findElement(SwsGalleryPage.albumSubmitButton).click();
