@@ -13,7 +13,7 @@ import org.junit.Rule;
 import org.junit.rules.TestRule;
 import org.junit.rules.TestWatcher;
 import org.junit.runner.Description;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.remote.*;
 
 import java.net.URL;
@@ -35,6 +35,7 @@ public abstract class Setup implements SauceOnDemandSessionIdProvider {
     protected String sessionId;
     protected Eyes eyes;
     protected String testName;
+
     
 
     @Rule
@@ -55,6 +56,7 @@ public abstract class Setup implements SauceOnDemandSessionIdProvider {
         final WebDriver browser = createWebDriver();
         this.driver = eyes.open(browser, "DoE", testName + testBrowserVersion, getRectangleSize());
         this.sessionId = ((RemoteWebDriver) browser).getSessionId().toString();
+        ((RemoteWebDriver) browser).setFileDetector(new LocalFileDetector());
         doSetUp();
         System.out.println("Starting test...");
     }
