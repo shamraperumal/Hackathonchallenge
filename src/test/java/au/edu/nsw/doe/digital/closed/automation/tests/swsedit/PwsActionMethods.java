@@ -380,7 +380,7 @@ public class PwsActionMethods implements PwsActions {
     public String pwsAddAlbum() throws Exception {
         try {
             WebDriverWait wait = new WebDriverWait(driver, 30);
-            final String newAlbum = "Regression Album-" + Math.round(Math.random() * 1000000);
+            final String newAlbum = "regression-album-" + Math.round(Math.random() * 1000000);
             wait(SwsGalleryPage.addAlbumButton);
             System.out.println("Add Album button loaded");
             driver.findElement(SwsGalleryPage.addAlbumButton).click();
