@@ -46,7 +46,7 @@ public class PwsAddDeleteAnAlbumTest extends LocalSetup {
 
         action.getPage("SWS-BASE-LIVE", "sws-gallery", newPageA, "");
 
-        assertEquals(newPageA + " - Automated Regression Testing", driver.getTitle());
+        assertEquals("Status - Automated Regression Testing", driver.getTitle());
         System.out.println("New album has been deleted");
 
 
