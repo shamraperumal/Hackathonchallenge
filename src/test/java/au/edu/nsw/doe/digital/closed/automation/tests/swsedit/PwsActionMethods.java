@@ -140,15 +140,14 @@ public class PwsActionMethods implements PwsActions {
 
     public String addPage() throws Exception {
         try {
-            WebDriverWait wait = new WebDriverWait(driver, 30);
             final String newPageA = "Regression-" + Math.round(Math.random() * 1000000);
-            WebElement addPageButton = wait.until(ExpectedConditions.elementToBeClickable(AddPage.addPageButton));
+            wait(AddPage.addPageButton);
             System.out.println("Add page button loaded");
             driver.findElement(AddPage.addPageButton).click();
-            WebElement standardPageTitleField = wait.until(ExpectedConditions.elementToBeClickable(AddPage.standardPageTitleField));
+            wait(AddPage.standardPageTitleField);
             System.out.println("Title field loaded");
             driver.findElement(AddPage.standardPageTitleField).sendKeys(newPageA);
-            WebElement okButton = wait.until(ExpectedConditions.elementToBeClickable(CommonLightbox.okButton));
+            wait(CommonLightbox.okButton);
             System.out.println("Ok button loaded");
             driver.findElement(CommonLightbox.okButton).click();
             System.out.println("Added a new page titled " + newPageA);
