@@ -143,6 +143,9 @@ public class PwsActionMethods implements PwsActions {
             final String newPageA = "Regression-" + Math.round(Math.random() * 1000000);
             wait(AddPage.addPageButton);
             System.out.println("Add page button loaded");
+            WebElement element = driver.findElement(AddPage.addPageButton);
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+            System.out.println("Scrolled to add page button");
             driver.findElement(AddPage.addPageButton).click();
             wait(AddPage.standardPageTitleField);
             System.out.println("Title field loaded");
