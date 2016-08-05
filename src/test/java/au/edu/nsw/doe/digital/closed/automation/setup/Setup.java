@@ -30,7 +30,7 @@ public abstract class Setup implements SauceOnDemandSessionIdProvider {
     public String testBrowser = getCapabilities().getBrowserName();
     public String testVersion = getCapabilities().getVersion();
     public String testBrowserVersion = " - "+ testBrowser + " "+testVersion;
-    public String crossBrowserTest = System.getenv("CROSSBROWSER");
+   // public String crossBrowserTest = System.getenv("CROSSBROWSER");
     protected SauceOnDemandAuthentication authentication = new SauceOnDemandAuthentication(userName, accessKey);
     protected WebDriver driver;
     protected String sessionId;
@@ -67,9 +67,9 @@ public abstract class Setup implements SauceOnDemandSessionIdProvider {
         eyes.setApiKey(System.getenv("APPLITOOLS.APIKEY"));
         eyes.setMatchLevel(getMatchLevel());
         eyes.setForceFullPageScreenshot(true);
-        if (crossBrowserTest != null ) {
-            eyes.setBaselineName(testName + testBrowserVersion);
-        }
+//        if (crossBrowserTest != null ) {
+//            eyes.setBaselineName(testName + testBrowserVersion);
+//        }
         if(proxy != null) {
             eyes.setProxy(new ProxySettings(proxy));
         }
