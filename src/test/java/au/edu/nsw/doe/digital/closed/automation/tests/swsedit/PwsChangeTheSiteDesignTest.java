@@ -15,8 +15,7 @@ public class PwsChangeTheSiteDesignTest extends CapabilitiesBuilder {
 
     @Before
     public void doSetUp() { action = new PwsActionMethods(driver);}
-
-    @Ignore
+    
     @Test
     public void testChangeTheSiteDesign() throws Exception {
         action.ssoLogin();
