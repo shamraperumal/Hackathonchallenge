@@ -490,14 +490,16 @@ public class PwsActionMethods implements PwsActions {
 
     public void pwsChangeSiteDesign(By design, By primary, By secondary) throws Exception {
         try {
-            WebDriverWait wait = new WebDriverWait(driver, 30);
             wait(design);
             driver.findElement(design).click();
             System.out.println("Selected design");
             wait(primary);
             driver.findElement(primary).click();
-            driver.findElement(secondary).click();
-            System.out.println("Selected primary and secondary colours");
+            if (secondary !=null) {
+                driver.findElement(secondary).click();
+                System.out.println("Selected primary and secondary colours");
+            }
+            System.out.println("Selected primary colours");
             driver.findElement(SwsDesignPage.designSubmitButton).click();
             System.out.println("Clicked design button");
             wait(SwsDesignPage.designSubmitConfirmationButton);
