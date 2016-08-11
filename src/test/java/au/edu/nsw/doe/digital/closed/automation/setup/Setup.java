@@ -52,7 +52,7 @@ public abstract class Setup implements SauceOnDemandSessionIdProvider {
     public void setUp() throws Exception {
         eyes = createApliToolsEyes();
         final WebDriver browser = createWebDriver();
-        this.driver = eyes.open(browser, "DoE", testName + testBrowserVersion, getRectangleSize());
+        this.driver = eyes.open(browser, "DoE", testName, getRectangleSize());
         this.sessionId = ((RemoteWebDriver) browser).getSessionId().toString();
         ((RemoteWebDriver) browser).setFileDetector(new LocalFileDetector());
         doSetUp();
