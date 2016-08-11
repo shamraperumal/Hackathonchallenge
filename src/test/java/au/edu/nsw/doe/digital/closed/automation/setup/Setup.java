@@ -54,7 +54,9 @@ public abstract class Setup implements SauceOnDemandSessionIdProvider {
         final WebDriver browser = createWebDriver();
         if (crossBrowserTest != null ) {
         this.driver = eyes.open(browser, "DoE", testName, getRectangleSize());
-        } this.driver = eyes.open(browser, "DoE", testName + testBrowserVersion, getRectangleSize());
+        } else {
+            this.driver = eyes.open(browser, "DoE", testName + testBrowserVersion, getRectangleSize());
+        }
         this.sessionId = ((RemoteWebDriver) browser).getSessionId().toString();
         ((RemoteWebDriver) browser).setFileDetector(new LocalFileDetector());
         doSetUp();
