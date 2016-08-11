@@ -69,7 +69,7 @@ public abstract class Setup implements SauceOnDemandSessionIdProvider {
         eyes.setMatchLevel(getMatchLevel());
         eyes.setForceFullPageScreenshot(true);
         if (crossBrowserTest != null ) {
-        eyes.setBaselineName(testName + testBrowserVersion);
+        eyes.setBaselineName(testName);
         }
         if(proxy != null) {
             eyes.setProxy(new ProxySettings(proxy));
