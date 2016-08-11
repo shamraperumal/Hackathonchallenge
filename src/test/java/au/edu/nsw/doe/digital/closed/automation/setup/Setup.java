@@ -18,9 +18,7 @@ import org.openqa.selenium.remote.*;
 
 import java.net.URL;
 
-/**
- * Created by ededios on 3/09/15.
- */
+
 public abstract class Setup implements SauceOnDemandSessionIdProvider {
 
     public String userName = System.getenv("SAUCELABS.USER");
@@ -38,8 +36,6 @@ public abstract class Setup implements SauceOnDemandSessionIdProvider {
     protected String testName;
 
 
-    
-
     @Rule
     //JUnit Rule which will mark the sauce Job as passed/failed when the test succeeds or fails.
     public SauceOnDemandTestWatcher resultReportingTestWatcher = new SauceOnDemandTestWatcher(this, authentication);
@@ -56,7 +52,7 @@ public abstract class Setup implements SauceOnDemandSessionIdProvider {
     public void setUp() throws Exception {
         eyes = createApliToolsEyes();
         final WebDriver browser = createWebDriver();
-        this.driver = eyes.open(browser, "DoE", testName, getRectangleSize());
+        this.driver = eyes.open(browser, "DoE", testName + testBrowserVersion, getRectangleSize());
         this.sessionId = ((RemoteWebDriver) browser).getSessionId().toString();
         ((RemoteWebDriver) browser).setFileDetector(new LocalFileDetector());
         doSetUp();
