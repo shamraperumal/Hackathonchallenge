@@ -22,8 +22,6 @@ public class PwsAddRemoveSocialProfile extends CapabilitiesBuilder {
 
         action.getPage("SWS-BASE-STAGING", "SWS-SOCIAL-PROFILE", "", "");
 
-        action.killPopup();
-
         action.pwsAddSocial("twitter", "SWS-TWITTER-ACCOUNT");
 
         action.pwsAddSocial("facebook", "SWS-FACEBOOK-ACCOUNT");

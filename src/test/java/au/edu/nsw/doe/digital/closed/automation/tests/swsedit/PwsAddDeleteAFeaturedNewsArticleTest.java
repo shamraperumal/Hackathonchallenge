@@ -32,8 +32,6 @@ public class PwsAddDeleteAFeaturedNewsArticleTest extends CapabilitiesBuilder {
 
         action.getPage("SWS-BASE-STAGING", "sws-news", "", "");
 
-        action.killPopup();
-
         final String newPageA = action.pwsAddFeaturedNews();
 
         //Pause to allow cache to clear

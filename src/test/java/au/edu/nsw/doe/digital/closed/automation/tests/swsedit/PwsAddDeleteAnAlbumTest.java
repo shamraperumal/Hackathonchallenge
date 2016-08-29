@@ -24,8 +24,6 @@ public class PwsAddDeleteAnAlbumTest extends CapabilitiesBuilder {
 
         action.getPage("SWS-BASE-STAGING", "sws-gallery", "", "");
 
-        action.killPopup();
-
         final String newPageA = action.pwsAddAlbum();
 
         action.publishPage();

@@ -25,8 +25,6 @@ public class PwsAddDeleteStandardPageTest extends CapabilitiesBuilder {
 
         action.getPage("SWS-BASE-STAGING", "sws-ourschool", "", "");
 
-        action.killPopup();
-
         final String newPageA = action.addPage();
 
         action.enterText();

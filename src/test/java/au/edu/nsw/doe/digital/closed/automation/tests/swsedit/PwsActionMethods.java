@@ -82,23 +82,6 @@ public class PwsActionMethods implements PwsActions {
         }
     }
 
-    public void killPopup() throws Exception {
-        try {
-            wait(WelcomeLightBox.checkBox);
-            System.out.println("Pop Up checkbox loaded");
-            wait(WelcomeLightBox.closeButton);
-            System.out.println("Pop Up close button loaded");
-            driver.findElement(WelcomeLightBox.checkBox).click();
-            System.out.println("Ticked the check box");
-            driver.findElement(WelcomeLightBox.closeButton).click();
-            System.out.println("Closed the welcome popup...");
-
-        } catch (final Exception e) {
-            System.out.println("Failed to close welcome popup.");
-            throw e;
-        }
-    }
-
     public void updateTitle(String title) throws Exception {
         try {
             wait(SwsHomePage.editTitle);

@@ -27,8 +27,6 @@ public class PwsAddDeleteACalendarEventTest extends CapabilitiesBuilder {
 
         action.getPage("SWS-BASE-STAGING", "SWS-CALENDAR", "", "");
 
-        action.killPopup();
-
         final String newEventA = action.pwsAddEvent();
 
         Thread.sleep(10000);

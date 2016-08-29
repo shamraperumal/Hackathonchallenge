@@ -32,8 +32,6 @@ public class PwsAddRenameDeleteSiteMapPageTest extends CapabilitiesBuilder {
 
         action.getPage("SWS-BASE-STAGING", "sws-sitemap", "", "");
 
-        action.killPopup();
-
         final String newPageA = action.pwsAddPageOnSitemap();
 
         Thread.sleep(3000);

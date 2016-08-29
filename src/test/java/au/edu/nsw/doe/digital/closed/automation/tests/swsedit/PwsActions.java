@@ -13,8 +13,6 @@ public interface PwsActions {
 
     void wait(final By element) throws Exception;
 
-    void killPopup() throws Exception;
-
     void updateTitle(String title) throws Exception;
 
     void updateMotto(String tag) throws Exception;

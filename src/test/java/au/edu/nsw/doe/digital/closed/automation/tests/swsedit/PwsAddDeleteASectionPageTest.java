@@ -25,8 +25,6 @@ public class PwsAddDeleteASectionPageTest extends CapabilitiesBuilder {
 
         action.getPage("SWS-BASE-STAGING", "", "", "");
 
-        action.killPopup();
-
         final String newPageA = action.addSectionPage();
 
         //Pause to allow cache to clear

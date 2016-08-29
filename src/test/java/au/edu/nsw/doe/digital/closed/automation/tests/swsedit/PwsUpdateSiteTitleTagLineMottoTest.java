@@ -25,8 +25,6 @@ public class PwsUpdateSiteTitleTagLineMottoTest extends CapabilitiesBuilder {
 
         action.getPage("SWS-BASE-STAGING", "", "", "");
 
-        action.killPopup();
-
         String siteTitle1 = System.getenv("SWS-SITE-TITLE-1");
         String siteTitle2 = System.getenv("SWS-SITE-TITLE-2");
         String siteMotto1 = System.getenv("SWS-SITE-MOTTO-1");

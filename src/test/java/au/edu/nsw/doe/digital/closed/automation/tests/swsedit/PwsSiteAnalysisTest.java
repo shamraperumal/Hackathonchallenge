@@ -21,8 +21,6 @@ public class PwsSiteAnalysisTest extends CapabilitiesBuilder {
 
         action.getPage("SWS-BASE-STAGING", "SWS-SITE-ANALYSIS", "", "");
 
-        action.killPopup();
-
         eyes.checkWindow(System.getenv("EYES-SWS-SITE-ANALYSIS"));
 
         eyes.close();

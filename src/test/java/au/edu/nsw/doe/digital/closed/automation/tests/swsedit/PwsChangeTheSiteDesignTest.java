@@ -19,17 +19,25 @@ public class PwsChangeTheSiteDesignTest extends CapabilitiesBuilder {
     @Test
     public void testChangeTheSiteDesign() throws Exception {
         action.ssoLogin();
+
         action.getPage("SWS-BASE-STAGING", "sws-design", "", "");
-        action.killPopup();
+
         action.pwsChangeSiteDesign(SwsDesignPage.design4, SwsDesignPage.primaryColour1, SwsDesignPage.secondaryColour1);
         Thread.sleep(15000);
+
         action.getPage("SWS-BASE-LIVE", "", "", "");
+
         eyes.checkWindow("SWS Change Site Design Test - Design 4");
+
         action.getPage("SWS-BASE-STAGING", "sws-design", "", "");
+
         action.pwsChangeSiteDesign(SwsDesignPage.design7, SwsDesignPage.primaryColour2, SwsDesignPage.secondaryColour2);
         Thread.sleep(15000);
+
         action.getPage("SWS-BASE-LIVE", "", "", "");
+
         eyes.checkWindow("SWS Change Site Design Test - Design 7");
+
         eyes.close();
     }
 
