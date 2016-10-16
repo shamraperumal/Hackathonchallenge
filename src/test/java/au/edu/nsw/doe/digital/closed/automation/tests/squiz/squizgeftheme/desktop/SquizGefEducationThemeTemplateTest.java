@@ -15,8 +15,8 @@ public class SquizGefEducationThemeTemplateTest extends CapabilitiesBuilder {
 
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
-        squizAction.getPage("gef-framework-template-base", "gef-framework-template-home-default");
-        eyes.checkWindow(System.getenv("EYES-GEF-FRAMEWORK-DEFAULT"));
+        squizAction.getPage("gef-framework-template-base", "gef-framework-template-education-home");
+        eyes.checkWindow(System.getenv("EYES-GEF-FRAMEWORK-EDUCATION-HOME"));
 
         squizAction.getPage("gef-framework-template-base", "gef-framework-template-home");
         eyes.checkWindow(System.getenv("EYES-GEF-FRAMEWORK-HOME"));
@@ -38,6 +38,15 @@ public class SquizGefEducationThemeTemplateTest extends CapabilitiesBuilder {
 
         squizAction.getPage("gef-framework-template-base", "gef-framework-template-catalogue");
         eyes.checkWindow(System.getenv("EYES-GEF-FRAMEWORK-CATALOGUE"));
+
+        squizAction.getPage("gef-framework-template-base", "gef-framework-template-erm");
+        eyes.checkWindow(System.getenv("EYES-GEF-FRAMEWORK-ERM"));
+
+        squizAction.getPage("gef-framework-template-base", "gef-framework-template-policies-standard");
+        eyes.checkWindow(System.getenv("EYES-GEF-FRAMEWORK-POLICY-STANDARD"));
+
+        squizAction.getPage("gef-framework-template-base", "gef-framework-template-policy-implementation-document");
+        eyes.checkWindow(System.getenv("EYES-GEF-FRAMEWORK-POLICY-IMPLEMENTATION-DOCUMENT"));
 
         eyes.close();
 
