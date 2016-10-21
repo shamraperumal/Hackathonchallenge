@@ -50,7 +50,5 @@ public class SquizMobileGefEducationThemeTemplateTest extends CapabilitiesBuilde
 
         eyes.close();
 
-        eyes.close();
-
     }
 }
