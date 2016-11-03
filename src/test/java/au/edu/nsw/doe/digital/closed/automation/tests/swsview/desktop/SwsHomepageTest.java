@@ -8,7 +8,7 @@ import org.junit.Test;
 /**
  * Created by cpigden on 25/09/2015.
  */
-public class SwsDesignTest extends CapabilitiesBuilder {
+public class SwsHomepageTest extends CapabilitiesBuilder {
 
     private PwsActions action;
 
@@ -18,7 +18,7 @@ public class SwsDesignTest extends CapabilitiesBuilder {
     }
 
     @Test
-    public void swsDesignTest() throws Exception {
+    public void swsHomepageTest() throws Exception {
         {
 
             action.getPage("SWS-BASE-VIEW", "sws-design-1", "", "");
