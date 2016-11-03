@@ -21,38 +21,38 @@ public class SwsAlbumTest extends CapabilitiesBuilder {
     public void swsAlbumTest() throws Exception {
         {
 
-            action.getPage("SWS-BASE-VIEW", "sws-design-1", "sws-album", "");
-            eyes.checkWindow(System.getenv("SWS Design 1 - Album"));
+            action.getPage("SWS-BASE-VIEW", "sws-design-1", "album-1/", "");
+            eyes.checkWindow("SWS Design 1 - Album");
 
-            action.getPage("SWS-BASE-VIEW", "sws-design-2", "sws-album", "");
-            eyes.checkWindow(System.getenv("SWS Design 2 - Album"));
+            action.getPage("SWS-BASE-VIEW", "sws-design-2", "album-1/", "");
+            eyes.checkWindow("SWS Design 2 - Album");
 
-            action.getPage("SWS-BASE-VIEW", "sws-design-3", "sws-album", "");
-            eyes.checkWindow(System.getenv("SWS Design 3 - Album"));
+            action.getPage("SWS-BASE-VIEW", "sws-design-3", "album-1/", "");
+            eyes.checkWindow("SWS Design 3 - Album");
 
-            action.getPage("SWS-BASE-VIEW", "sws-design-4", "sws-album", "");
-            eyes.checkWindow(System.getenv("SWS Design 4 - Album"));
+            action.getPage("SWS-BASE-VIEW", "sws-design-4", "album-1/", "");
+            eyes.checkWindow("SWS Design 4 - Album");
 
-            action.getPage("SWS-BASE-VIEW", "sws-design-5", "sws-album", "");
-            eyes.checkWindow(System.getenv("SWS Design 5 - Album"));
+            action.getPage("SWS-BASE-VIEW", "sws-design-5", "album-1/", "");
+            eyes.checkWindow("SWS Design 5 - Album");
 
-            action.getPage("SWS-BASE-VIEW", "sws-design-6", "sws-album", "");
-            eyes.checkWindow(System.getenv("SWS Design 6 - Album"));
+            action.getPage("SWS-BASE-VIEW", "sws-design-6", "album-1/", "");
+            eyes.checkWindow("SWS Design 6 - Album");
 
-            action.getPage("SWS-BASE-VIEW", "sws-design-7", "sws-album", "");
-            eyes.checkWindow(System.getenv("SWS Design 7 - Album"));
+            action.getPage("SWS-BASE-VIEW", "sws-design-7", "album-1/", "");
+            eyes.checkWindow("SWS Design 7 - Album");
 
-            action.getPage("SWS-BASE-VIEW", "sws-design-8", "sws-album", "");
-            eyes.checkWindow(System.getenv("SWS Design 8 - Album"));
+            action.getPage("SWS-BASE-VIEW", "sws-design-8", "album-1/", "");
+            eyes.checkWindow("SWS Design 8 - Album");
 
-            action.getPage("SWS-BASE-VIEW", "sws-design-9", "sws-album", "");
-            eyes.checkWindow(System.getenv("SWS Design 9 - Album"));
+            action.getPage("SWS-BASE-VIEW", "sws-design-9", "album-1/", "");
+            eyes.checkWindow("SWS Design 9 - Album");
 
-            action.getPage("SWS-BASE-VIEW", "sws-design-10", "sws-album", "");
-            eyes.checkWindow(System.getenv("SWS Design 10 - Album"));
+            action.getPage("SWS-BASE-VIEW", "sws-design-10", "album-1/", "");
+            eyes.checkWindow("SWS Design 10 - Album");
 
-            action.getPage("SWS-BASE-VIEW", "sws-design-11", "sws-album", "");
-            eyes.checkWindow(System.getenv("SWS Design 11 - Album"));
+            action.getPage("SWS-BASE-VIEW", "sws-design-11", "album-1/", "");
+            eyes.checkWindow("SWS Design 11 - Album");
 
             eyes.close();
         }

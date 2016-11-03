@@ -21,38 +21,38 @@ public class SwsCalendarTest extends CapabilitiesBuilder {
     public void swsCalendarTest() throws Exception {
         {
 
-            action.getPage("SWS-BASE-VIEW", "sws-design-1", "sws-calendar", "");
-            eyes.checkWindow(System.getenv("SWS Design 1 - Calendar"));
+            action.getPage("SWS-BASE-VIEW", "sws-design-1", "calendar/", "");
+            eyes.checkWindow("SWS Design 1 - Calendar");
 
-            action.getPage("SWS-BASE-VIEW", "sws-design-2", "sws-calendar", "");
-            eyes.checkWindow(System.getenv("SWS Design 2 - Calendar"));
+            action.getPage("SWS-BASE-VIEW", "sws-design-2", "calendar/", "");
+            eyes.checkWindow("SWS Design 2 - Calendar");
 
-            action.getPage("SWS-BASE-VIEW", "sws-design-3", "sws-calendar", "");
-            eyes.checkWindow(System.getenv("SWS Design 3 - Calendar"));
+            action.getPage("SWS-BASE-VIEW", "sws-design-3", "calendar/", "");
+            eyes.checkWindow("SWS Design 3 - Calendar");
 
-            action.getPage("SWS-BASE-VIEW", "sws-design-4", "sws-calendar", "");
-            eyes.checkWindow(System.getenv("SWS Design 4 - Calendar"));
+            action.getPage("SWS-BASE-VIEW", "sws-design-4", "calendar/", "");
+            eyes.checkWindow("SWS Design 4 - Calendar");
 
-            action.getPage("SWS-BASE-VIEW", "sws-design-5", "sws-calendar", "");
-            eyes.checkWindow(System.getenv("SWS Design 5 - Calendar"));
+            action.getPage("SWS-BASE-VIEW", "sws-design-5", "calendar/", "");
+            eyes.checkWindow("SWS Design 5 - Calendar");
 
-            action.getPage("SWS-BASE-VIEW", "sws-design-6", "sws-calendar", "");
-            eyes.checkWindow(System.getenv("SWS Design 6 - Calendar"));
+            action.getPage("SWS-BASE-VIEW", "sws-design-6", "calendar/", "");
+            eyes.checkWindow("SWS Design 6 - Calendar");
 
-            action.getPage("SWS-BASE-VIEW", "sws-design-7", "sws-calendar", "");
-            eyes.checkWindow(System.getenv("SWS Design 7 - Calendar"));
+            action.getPage("SWS-BASE-VIEW", "sws-design-7", "calendar/", "");
+            eyes.checkWindow("SWS Design 7 - Calendar");
 
-            action.getPage("SWS-BASE-VIEW", "sws-design-8", "sws-calendar", "");
-            eyes.checkWindow(System.getenv("SWS Design 8 - Calendar"));
+            action.getPage("SWS-BASE-VIEW", "sws-design-8", "calendar/", "");
+            eyes.checkWindow("SWS Design 8 - Calendar");
 
-            action.getPage("SWS-BASE-VIEW", "sws-design-9", "sws-calendar", "");
-            eyes.checkWindow(System.getenv("SWS Design 9 - Calendar"));
+            action.getPage("SWS-BASE-VIEW", "sws-design-9", "calendar/", "");
+            eyes.checkWindow("SWS Design 9 - Calendar");
 
-            action.getPage("SWS-BASE-VIEW", "sws-design-10", "sws-calendar", "");
-            eyes.checkWindow(System.getenv("SWS Design 10 - Calendar"));
+            action.getPage("SWS-BASE-VIEW", "sws-design-10", "calendar/", "");
+            eyes.checkWindow("SWS Design 10 - Calendar");
 
-            action.getPage("SWS-BASE-VIEW", "sws-design-11", "sws-calendar", "");
-            eyes.checkWindow(System.getenv("SWS Design 11 - Calendar"));
+            action.getPage("SWS-BASE-VIEW", "sws-design-11", "calendar/", "");
+            eyes.checkWindow("SWS Design 11 - Calendar");
 
             eyes.close();
         }

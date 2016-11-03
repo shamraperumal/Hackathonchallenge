@@ -22,37 +22,37 @@ public class SwsHomepageTest extends CapabilitiesBuilder {
         {
 
             action.getPage("SWS-BASE-VIEW", "sws-design-1", "", "");
-            eyes.checkWindow(System.getenv("SWS Design 1"));
+            eyes.checkWindow("SWS Design 1");
 
             action.getPage("SWS-BASE-VIEW", "sws-design-2", "", "");
-            eyes.checkWindow(System.getenv("SWS Design 2"));
+            eyes.checkWindow("SWS Design 2");
 
             action.getPage("SWS-BASE-VIEW", "sws-design-3", "", "");
-            eyes.checkWindow(System.getenv("SWS Design 3"));
+            eyes.checkWindow("SWS Design 3");
 
             action.getPage("SWS-BASE-VIEW", "sws-design-4", "", "");
-            eyes.checkWindow(System.getenv("SWS Design 4"));
+            eyes.checkWindow("SWS Design 4");
 
             action.getPage("SWS-BASE-VIEW", "sws-design-5", "", "");
-            eyes.checkWindow(System.getenv("SWS Design 5"));
+            eyes.checkWindow("SWS Design 5");
 
             action.getPage("SWS-BASE-VIEW", "sws-design-6", "", "");
-            eyes.checkWindow(System.getenv("SWS Design 6"));
+            eyes.checkWindow("SWS Design 6");
 
             action.getPage("SWS-BASE-VIEW", "sws-design-7", "", "");
-            eyes.checkWindow(System.getenv("SWS Design 7"));
+            eyes.checkWindow("SWS Design 7");
 
             action.getPage("SWS-BASE-VIEW", "sws-design-8", "", "");
-            eyes.checkWindow(System.getenv("SWS Design 8"));
+            eyes.checkWindow("SWS Design 8");
 
             action.getPage("SWS-BASE-VIEW", "sws-design-9", "", "");
-            eyes.checkWindow(System.getenv("SWS Design 9"));
+            eyes.checkWindow("SWS Design 9");
 
             action.getPage("SWS-BASE-VIEW", "sws-design-10", "", "");
-            eyes.checkWindow(System.getenv("SWS Design 10"));
+            eyes.checkWindow("SWS Design 10");
 
             action.getPage("SWS-BASE-VIEW", "sws-design-11", "", "");
-            eyes.checkWindow(System.getenv("SWS Design 11"));
+            eyes.checkWindow("SWS Design 11");
 
             eyes.close();
         }

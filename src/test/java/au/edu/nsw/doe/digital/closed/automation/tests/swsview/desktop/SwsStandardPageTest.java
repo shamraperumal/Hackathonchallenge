@@ -21,38 +21,38 @@ public class SwsStandardPageTest extends CapabilitiesBuilder {
     public void swsStandardPageTest() throws Exception {
         {
 
-            action.getPage("SWS-BASE-VIEW", "sws-design-1", "sws-standard-page", "");
-            eyes.checkWindow(System.getenv("SWS Design 1 - Standard"));
+            action.getPage("SWS-BASE-VIEW", "sws-design-1", "standard/", "");
+            eyes.checkWindow("SWS Design 1 - Standard");
 
-            action.getPage("SWS-BASE-VIEW", "sws-design-2", "sws-standard-page", "");
-            eyes.checkWindow(System.getenv("SWS Design 2 - Standard"));
+            action.getPage("SWS-BASE-VIEW", "sws-design-2", "standard/", "");
+            eyes.checkWindow("SWS Design 2 - Standard");
 
-            action.getPage("SWS-BASE-VIEW", "sws-design-3", "sws-standard-page", "");
-            eyes.checkWindow(System.getenv("SWS Design 3 - Standard"));
+            action.getPage("SWS-BASE-VIEW", "sws-design-3", "standard/", "");
+            eyes.checkWindow("SWS Design 3 - Standard");
 
-            action.getPage("SWS-BASE-VIEW", "sws-design-4", "sws-standard-page", "");
-            eyes.checkWindow(System.getenv("SWS Design 4 - Standard"));
+            action.getPage("SWS-BASE-VIEW", "sws-design-4", "standard/", "");
+            eyes.checkWindow("SWS Design 4 - Standard");
 
-            action.getPage("SWS-BASE-VIEW", "sws-design-5", "sws-standard-page", "");
-            eyes.checkWindow(System.getenv("SWS Design 5 - Standard"));
+            action.getPage("SWS-BASE-VIEW", "sws-design-5", "standard/", "");
+            eyes.checkWindow("SWS Design 5 - Standard");
 
-            action.getPage("SWS-BASE-VIEW", "sws-design-6", "sws-standard-page", "");
-            eyes.checkWindow(System.getenv("SWS Design 6 - Standard"));
+            action.getPage("SWS-BASE-VIEW", "sws-design-6", "standard/", "");
+            eyes.checkWindow("SWS Design 6 - Standard");
 
-            action.getPage("SWS-BASE-VIEW", "sws-design-7", "sws-standard-page", "");
-            eyes.checkWindow(System.getenv("SWS Design 7 - Standard"));
+            action.getPage("SWS-BASE-VIEW", "sws-design-7", "standard/", "");
+            eyes.checkWindow("SWS Design 7 - Standard");
 
-            action.getPage("SWS-BASE-VIEW", "sws-design-8", "sws-standard-page", "");
-            eyes.checkWindow(System.getenv("SWS Design 8 - Standard"));
+            action.getPage("SWS-BASE-VIEW", "sws-design-8", "standard/", "");
+            eyes.checkWindow("SWS Design 8 - Standard");
 
-            action.getPage("SWS-BASE-VIEW", "sws-design-9", "sws-standard-page", "");
-            eyes.checkWindow(System.getenv("SWS Design 9 - Standard"));
+            action.getPage("SWS-BASE-VIEW", "sws-design-9", "standard/", "");
+            eyes.checkWindow("SWS Design 9 - Standard");
 
-            action.getPage("SWS-BASE-VIEW", "sws-design-10", "sws-standard-page", "");
-            eyes.checkWindow(System.getenv("SWS Design 10 - Standard"));
+            action.getPage("SWS-BASE-VIEW", "sws-design-10", "standard/", "");
+            eyes.checkWindow("SWS Design 10 - Standard");
 
-            action.getPage("SWS-BASE-VIEW", "sws-design-11", "sws-standard-page", "");
-            eyes.checkWindow(System.getenv("SWS Design 11 - Standard"));
+            action.getPage("SWS-BASE-VIEW", "sws-design-11", "standard/", "");
+            eyes.checkWindow("SWS Design 11 - Standard");
 
             eyes.close();
         }
