@@ -56,6 +56,9 @@ public class SquizGefEducationUatTest extends CapabilitiesBuilder {
         squizAction.getPage("gef-education-base", "gef-A-Z-Gov");
         eyes.checkWindow(System.getenv("EYES-GEF-EDUCATION-A-Z-GOV"));
 
+        squizAction.getPage("gef-education-base", "gef-content");
+        eyes.checkWindow(System.getenv("EYES-GEF-EDUCATION-CONTENT"));
+
         eyes.close();
     }
 }
