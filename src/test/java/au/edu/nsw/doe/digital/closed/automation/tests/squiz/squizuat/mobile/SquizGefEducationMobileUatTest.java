@@ -42,6 +42,18 @@ public class SquizGefEducationMobileUatTest extends CapabilitiesBuilder {
         squizAction.getPage("gef-education-base", "gef-education-news-article");
         eyes.checkWindow(System.getenv("EYES-GEF-EDUCATION-NEWS-ARTICLE"));
 
+        squizAction.getPage("gef-education-base", "gef-education-az-link");
+        eyes.checkWindow(System.getenv("EYES-GEF-EDUCATION-AZ-LINK"));
+
+        squizAction.getPage("gef-education-base", "gef-education-az-link-description");
+        eyes.checkWindow(System.getenv("EYES-GEF-EDUCATION-AZ-LINK-DESCRIPTION"));
+
+        squizAction.getPage("gef-education-base", "gef-education-az-nolink-description");
+        eyes.checkWindow(System.getenv("EYES-GEF-EDUCATION-AZ-NOLINK-DESCRIPTION"));
+
+        squizAction.getPage("gef-education-base", "gef-education-az-link-type");
+        eyes.checkWindow(System.getenv("EYES-GEF-EDUCATION-AZ-LINK-TYPE"));
+
         squizAction.getPage("gef-education-base","gef-A-Z-Asset");
         eyes.checkWindow(System.getenv("EYES-GEF-EDUCATION-A-Z-ASSET"));
 
