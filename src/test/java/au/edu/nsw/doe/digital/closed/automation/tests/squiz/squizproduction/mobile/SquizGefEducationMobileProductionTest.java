@@ -42,6 +42,15 @@ public class SquizGefEducationMobileProductionTest extends CapabilitiesBuilder {
         squizAction.getPage("gef-education-base", "gef-education-news-article");
         eyes.checkWindow(System.getenv("EYES-GEF-EDUCATION-NEWS-ARTICLE"));
 
+        squizAction.getPage("gef-education-base-curriculum", "");
+        eyes.checkWindow(System.getenv("EYES-GEF-EDUCATION-CURRICULUM"));
+
+        squizAction.getPage("gef-education-base-curriculum", "gef-education-curriculum-landing");
+        eyes.checkWindow(System.getenv("EYES-GEF-EDUCATION-CURRICULUM-LANDING"));
+
+        squizAction.getPage("gef-education-base-curriculum", "gef-education-curriculum-standard");
+        eyes.checkWindow(System.getenv("EYES-GEF-EDUCATION-CURRICULUM-STANDARD"));
+
         eyes.close();
 
     }
