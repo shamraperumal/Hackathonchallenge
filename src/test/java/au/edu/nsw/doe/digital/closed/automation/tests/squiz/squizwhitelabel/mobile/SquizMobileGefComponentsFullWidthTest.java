@@ -1,4 +1,4 @@
-package au.edu.nsw.doe.digital.closed.automation.tests.squiz.squizpattern.mobile;
+package au.edu.nsw.doe.digital.closed.automation.tests.squiz.squizwhitelabel.mobile;
 
 import au.edu.nsw.doe.digital.closed.automation.setup.CapabilitiesBuilder;
 import au.edu.nsw.doe.digital.closed.automation.tests.squiz.SquizActionMethods;
@@ -8,10 +8,10 @@ import org.openqa.selenium.Dimension;
 /**
  * Created by cpigden on 14/03/2016.
  */
-public class SquizMobileGefPatternsSingleColumnTest extends CapabilitiesBuilder {
+public class SquizMobileGefComponentsFullWidthTest extends CapabilitiesBuilder {
 
     @Test
-    public void gefPatternsMobileSingleColumnTest() throws Exception {
+    public void gefComponentsMobileFullWidthTest() throws Exception {
 
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
@@ -19,8 +19,8 @@ public class SquizMobileGefPatternsSingleColumnTest extends CapabilitiesBuilder 
 
         driver.manage().window().setSize(dimension);
 
-        squizAction.getPage("gef-patterns-base", "gef-patterns-single-column");
-        eyes.checkWindow(System.getenv("EYES-GEF-PATTERNS-SINGLE-COLUMN"));
+        squizAction.getPage("gef-components-base", "gef-components-full");
+        eyes.checkWindow(System.getenv("EYES-GEF-COMPONENTS-FULL"));
 
         eyes.close();
     }
