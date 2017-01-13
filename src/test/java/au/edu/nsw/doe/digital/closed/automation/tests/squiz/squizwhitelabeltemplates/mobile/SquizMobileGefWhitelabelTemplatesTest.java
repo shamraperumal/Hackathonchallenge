@@ -1,4 +1,4 @@
-package au.edu.nsw.doe.digital.closed.automation.tests.squiz.squizwhitelabeltemplates.desktop;
+package au.edu.nsw.doe.digital.closed.automation.tests.squiz.squizwhitelabeltemplates.mobile;
 
 import au.edu.nsw.doe.digital.closed.automation.setup.CapabilitiesBuilder;
 import au.edu.nsw.doe.digital.closed.automation.tests.squiz.SquizActionMethods;
@@ -7,10 +7,10 @@ import org.junit.Test;
 /**
  * Created by cpigden on 5/02/2016.
  */
-public class SquizGefWhitelabelTemplates extends CapabilitiesBuilder {
+public class SquizMobileGefWhitelabelTemplatesTest extends CapabilitiesBuilder {
 
     @Test
-    public void gefWhitelabelTemplatesDesktopTest() throws Exception {
+    public void gefWhitelabelTemplatesMobileTest() throws Exception {
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
         squizAction.getPage("gef-components-base", "gef-whitelabel-sectionhome");
