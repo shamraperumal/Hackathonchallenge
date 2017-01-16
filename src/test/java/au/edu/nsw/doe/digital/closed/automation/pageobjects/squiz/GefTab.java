@@ -7,6 +7,8 @@ import org.openqa.selenium.By;
  */
 public class GefTab {
 
-    public static By tab = By.id("tltabs136111");
+    public static By tab = By.id("tab136111");
+    public static By tabContent = By.id("tabs136111");
+
 
 }
