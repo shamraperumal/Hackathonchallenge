@@ -35,7 +35,7 @@ public class GefShowHideTest extends CapabilitiesBuilder {
         }
 
         try {
-            Assert.assertEquals("The show/hide automated test has passed.", driver.findElement(GefShowHide.showHideContent1).getText());
+            Assert.assertEquals("SH Content 1", driver.findElement(GefShowHide.showHideContent1).getText());
             System.out.println("Expected text was found");
 
         }catch(Exception e){
