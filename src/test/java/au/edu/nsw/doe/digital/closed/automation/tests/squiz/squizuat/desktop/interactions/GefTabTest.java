@@ -34,7 +34,7 @@ public class GefTabTest extends CapabilitiesBuilder {
         }
 
         try {
-            Assert.assertEquals("The tab automated test has passed.", driver.findElement(GefTab.tabContent).getText());
+            Assert.assertEquals("Tab 2 Content", driver.findElement(GefTab.tabContent).getText());
             System.out.println("Expected text was found");
 
         }catch(Exception e){
