@@ -19,7 +19,11 @@ public interface SquizActions {
 
     void tab() throws Exception;
 
+    void catalogueGroupSelect(final String group) throws Exception;
+
     void catalogueListView() throws Exception;
+
+    void catalogueSort(final String order) throws Exception;
 
     void showHide() throws Exception;
 

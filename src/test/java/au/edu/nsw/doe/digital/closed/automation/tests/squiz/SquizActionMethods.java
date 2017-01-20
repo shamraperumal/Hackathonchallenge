@@ -100,6 +100,19 @@ public class SquizActionMethods implements SquizActions {
         }
     }
 
+    public void catalogueGroupSelect(final String group) throws Exception{
+        String thisGroup = group;
+        try {
+            if(thisGroup == "automation"){
+            driver.findElement(GefCatalogue.automationGroup).click();
+            }
+        }catch(final Exception e){
+            System.out.println();
+            throw e;
+        }
+
+    }
+
     public void catalogueListView() throws Exception {
         try {
             wait(GefCatalogue.listViewButton);
@@ -107,6 +120,34 @@ public class SquizActionMethods implements SquizActions {
             Thread.sleep(500);
         } catch (final Exception e) {
             throw e;
+        }
+    }
+
+    public void catalogueSort(String order) throws Exception {
+       String thisOrder = order;
+
+        try {
+            if (thisOrder == "High") {
+                driver.findElement(GefCatalogue.highOrder).click();
+                System.out.println("Sorted from highest to lowest");
+            }
+            if (thisOrder == "Low") {
+                driver.findElement(GefCatalogue.lowOrder).click();
+                System.out.println("Sorted from lowest to highest");
+            }
+            if (thisOrder == "AZ") {
+                driver.findElement(GefCatalogue.azOrder).click();
+                System.out.println("Sorted from a to z");
+            }
+            if (thisOrder == "ZA") {
+                driver.findElement(GefCatalogue.zaOrder).click();
+                System.out.println("Sorted from z to a");
+            }
+
+        }catch (final Exception e){
+            System.out.println("Failed to sort the list");
+            throw e;
+
         }
     }
 
