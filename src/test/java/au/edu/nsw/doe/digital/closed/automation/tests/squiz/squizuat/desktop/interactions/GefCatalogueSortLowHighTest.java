@@ -1,6 +1,6 @@
 package au.edu.nsw.doe.digital.closed.automation.tests.squiz.squizuat.desktop.interactions;
 
-import au.edu.nsw.doe.digital.closed.automation.setup.LocalSetup;
+import au.edu.nsw.doe.digital.closed.automation.setup.CapabilitiesBuilder;
 import au.edu.nsw.doe.digital.closed.automation.tests.squiz.SquizActionMethods;
 import org.junit.Assert;
 import org.junit.Test;
@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * Created by christopherpigden on 16/1/17.
  */
-public class GefCatalogueSortLowHighTest extends LocalSetup {
+public class GefCatalogueSortLowHighTest extends CapabilitiesBuilder {
 
 
     @Test
@@ -45,7 +45,9 @@ public class GefCatalogueSortLowHighTest extends LocalSetup {
                         "$1000000 (exc. GST)";
                 Assert.assertEquals(expected,actual);
                 System.out.println("The order when set from low to high is\n" + actual);
-            }} catch(Exception e){
+            }
+
+        } catch(Exception e){
             System.out.println("List is not as expected");
             throw e;
         }

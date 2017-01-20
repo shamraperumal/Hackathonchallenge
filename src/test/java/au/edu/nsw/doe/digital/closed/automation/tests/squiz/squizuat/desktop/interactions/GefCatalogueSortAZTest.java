@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * Created by christopherpigden on 16/1/17.
  */
-public class GefCatalogueSortAZTest extends CapabilitiesBuilder {
+public class GefCatalogueSortAzTest extends CapabilitiesBuilder {
 
 
     @Test
