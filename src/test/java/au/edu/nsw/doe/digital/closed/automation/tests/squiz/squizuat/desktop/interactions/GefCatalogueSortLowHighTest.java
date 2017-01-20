@@ -25,6 +25,9 @@ public class GefCatalogueSortLowHighTest extends CapabilitiesBuilder {
 
         squizAction.catalogueSort("Low");
 
+        Thread.sleep(3000);
+
+
         try {
             ArrayList<String> obtainedList = new ArrayList<>();
             List<WebElement> elementList = driver.findElements(By.xpath("//ul[@class='gef-flex-grid gef-flex-grid--columns uk-margin-bottom']"));

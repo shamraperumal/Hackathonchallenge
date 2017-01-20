@@ -25,6 +25,9 @@ public class GefCatalogueSortZaTest extends CapabilitiesBuilder {
 
         squizAction.catalogueSort("ZA");
 
+        Thread.sleep(3000);
+
+
         try {
             ArrayList<String> obtainedList = new ArrayList<>();
             List<WebElement> elementList = driver.findElements(By.xpath("//ul[@class='gef-flex-grid gef-flex-grid--columns uk-margin-bottom']"));
