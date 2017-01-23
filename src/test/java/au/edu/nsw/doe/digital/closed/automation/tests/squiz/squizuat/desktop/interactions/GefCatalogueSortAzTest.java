@@ -35,7 +35,7 @@ public class GefCatalogueSortAzTest extends CapabilitiesBuilder {
                 String actual = we.getText();
                 String expected = "A\n" +
                         "A\n" +
-                        "$10.0 (exc. GST)\n" +
+                        "$10.00 (exc. GST)\n" +
                         "Highest\n" +
                         "Expensive\n" +
                         "$1000000 (exc. GST)\n" +
@@ -44,7 +44,7 @@ public class GefCatalogueSortAzTest extends CapabilitiesBuilder {
                         "$0.01 (exc. GST)\n" +
                         "Z\n" +
                         "Z\n" +
-                        "$10.00 (exc. GST)";
+                        "$10.0 (exc. GST)";
                 Assert.assertEquals(expected,actual);
                 System.out.println("The order when set from a - z is\n" + actual);
             }
