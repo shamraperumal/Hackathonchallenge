@@ -36,12 +36,12 @@ public class GefCatalogueSortAzTest extends CapabilitiesBuilder {
                 String expected = "A\n" +
                         "A\n" +
                         "$10.0 (exc. GST)\n" +
-                        "Lowest\n" +
-                        "Cheap\n" +
-                        "$0.01 (exc. GST)\n" +
                         "Highest\n" +
                         "Expensive\n" +
                         "$1000000 (exc. GST)\n" +
+                        "Lowest\n" +
+                        "Cheap\n" +
+                        "$0.01 (exc. GST)\n" +
                         "Z\n" +
                         "Z\n" +
                         "$10.00 (exc. GST)";
