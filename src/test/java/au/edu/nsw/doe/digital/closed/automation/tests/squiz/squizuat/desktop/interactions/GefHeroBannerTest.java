@@ -16,7 +16,7 @@ public class GefHeroBannerTest extends CapabilitiesBuilder {
 
 
     @Test
-    public void gefEducationDesktopTabTest() throws Exception {
+    public void gefEducationHeroBannerButtonTest() throws Exception {
 
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
