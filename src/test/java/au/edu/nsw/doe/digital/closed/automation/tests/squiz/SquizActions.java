@@ -27,5 +27,7 @@ public interface SquizActions {
 
     void showHide() throws Exception;
 
+    void clickWebElement(By locator) throws Exception;
+
     void getNewInstance() throws Exception;
 }

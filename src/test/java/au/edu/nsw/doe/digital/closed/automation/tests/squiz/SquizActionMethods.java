@@ -1,11 +1,9 @@
 package au.edu.nsw.doe.digital.closed.automation.tests.squiz;
 
-import au.edu.nsw.doe.digital.closed.automation.pageobjects.squiz.GefCatalogue;
-import au.edu.nsw.doe.digital.closed.automation.pageobjects.squiz.GefSearch;
-import au.edu.nsw.doe.digital.closed.automation.pageobjects.squiz.GefShowHide;
-import au.edu.nsw.doe.digital.closed.automation.pageobjects.squiz.GefTab;
+import au.edu.nsw.doe.digital.closed.automation.pageobjects.squiz.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -157,6 +155,15 @@ public class SquizActionMethods implements SquizActions {
             wait(By.xpath("//input[@value='New Instance']"));
             driver.findElement(By.xpath("//input[@value='New Instance']")).click();
         }catch(final Exception e){
+            throw e;
+        }
+    }
+
+    public void clickWebElement(By locator) throws Exception{
+        By thisLocator = locator;
+        try {
+            driver.findElement(thisLocator).click();
+        }catch (final Exception e){
             throw e;
         }
     }
