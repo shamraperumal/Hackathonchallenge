@@ -8,5 +8,5 @@ import org.openqa.selenium.By;
 public class GefGlobalHeader {
     public static By searchField = By.xpath("//input[@id='search']");
     public static By searchButton = By.id("btnSearch17");
-    
+
 }
