@@ -10,11 +10,11 @@ import org.junit.Test;
 /**
  * Created by christopherpigden on 16/1/17.
  */
-public class GefProvideFeedbackButtonTest extends LocalSetup {
+public class GefProvideFeedbackButtonTest extends CapabilitiesBuilder {
 
 
     @Test
-    public void gefEducationProvideFeedbackButtonTest() throws Exception {
+    public void gefEducationDesktopProvideFeedbackButtonTest() throws Exception {
 
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
