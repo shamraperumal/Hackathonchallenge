@@ -30,4 +30,6 @@ public interface SquizActions {
     void clickWebElement(By locator) throws Exception;
 
     void getNewInstance() throws Exception;
+
+    void maximiseWindow() throws Exception;
 }

@@ -163,9 +163,20 @@ public class SquizActionMethods implements SquizActions {
         By thisLocator = locator;
         try {
             driver.findElement(thisLocator).click();
+            System.out.println("Clicked on element");
         }catch (final Exception e){
+            System.out.println("Failed to click element");
             throw e;
         }
+    }
+
+    public void maximiseWindow() throws Exception{
+       try{ driver.manage().window().maximize();
+           System.out.println("Window maximised");
+    }
+       catch (final Exception e){
+           System.out.println("Failed to maxmise window");
+       }
     }
 
 
