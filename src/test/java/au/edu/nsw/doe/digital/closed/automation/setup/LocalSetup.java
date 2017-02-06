@@ -45,15 +45,15 @@ public abstract class LocalSetup {
     @Before
     public void setUp() throws Exception {
         driver = new FirefoxDriver();
-//        baseUrl = System.getenv("BASEURL");
-//        driver.manage().timeouts().implicitlyWait(90, TimeUnit.SECONDS);
-//        Eyes eyes = new Eyes();
-//        eyes.setApiKey("rIAas8LXlLDwbaIsnz9gfvuJlRqblSfTyNxsLDATS6Y110");
-//        if (proxy != null) {
-//            eyes.setProxy(new ProxySettings(proxy));
-//        }
-//        driver = eyes.open(driver, "DoE", testName + rectangle());
-//        MatchLevel.valueOf(matchLevel);
+        baseUrl = System.getenv("BASEURL");
+        driver.manage().timeouts().implicitlyWait(90, TimeUnit.SECONDS);
+        Eyes eyes = new Eyes();
+        eyes.setApiKey(System.getenv("APPLITOOLS.APIKEY"));
+        if (proxy != null) {
+            eyes.setProxy(new ProxySettings(proxy));
+        }
+        driver = eyes.open(driver, "DoE", testName + rectangle());
+        MatchLevel.valueOf(matchLevel);
         System.out.println("Starting test...");
         doSetup();
     }
