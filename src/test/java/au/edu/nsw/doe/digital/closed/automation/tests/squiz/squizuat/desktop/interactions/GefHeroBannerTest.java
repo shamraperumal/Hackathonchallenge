@@ -11,7 +11,7 @@ import org.junit.Test;
 /**
  * Created by christopherpigden on 16/1/17.
  */
-public class GefHeroBannerTest extends LocalSetup {
+public class GefHeroBannerTest extends CapabilitiesBuilder {
 
 
     @Test
