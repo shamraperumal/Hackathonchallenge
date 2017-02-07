@@ -20,8 +20,8 @@ public class GefHeroBannerTest extends CapabilitiesBuilder {
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
         squizAction.getPage("gef-education-base", "");
-       // squizAction.clickWebElement(GefHomepage.heroBannerButton);
-        driver.findElement(GefHomepage.heroBannerButton).click();
+        squizAction.clickWebElement(GefHomepage.heroBannerButton);
+//        driver.findElement(GefHomepage.heroBannerButton).click();
         Assert.assertEquals("https://uat.education.nsw.gov.au/test-automation/lorem-ipsum",driver.getCurrentUrl());
 
 
