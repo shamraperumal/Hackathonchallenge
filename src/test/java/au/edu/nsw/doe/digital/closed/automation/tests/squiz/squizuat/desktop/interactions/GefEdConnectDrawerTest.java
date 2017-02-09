@@ -25,12 +25,14 @@ public class GefEdConnectDrawerTest extends CapabilitiesBuilder{
             String ariaExpanded = driver.findElement(GefEdConnect.edConnectButton).getAttribute("aria-expanded");
             Assert.assertEquals("true", ariaExpanded);
             eyes.checkRegion(GefEdConnect.edconnectDrawer);
+            eyes.close();
             System.out.println("Aria expanded ="+ariaExpanded);
 
         }catch (final Exception e){
             System.out.println("Ed Connect is not expanded");
             throw e;
         }
+
 
         }
 }
