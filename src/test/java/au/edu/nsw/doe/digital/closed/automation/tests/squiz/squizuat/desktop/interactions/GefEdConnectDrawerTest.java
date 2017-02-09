@@ -16,7 +16,7 @@ public class GefEdConnectDrawerTest extends CapabilitiesBuilder{
     public void gefEducationDesktopEdConnectDrawerTest() throws Exception {
 
         SquizActionMethods squizAction = new SquizActionMethods(driver);
-
+        String regionOnly = "yes";
         squizAction.getPage("gef-education-base", "");
 //        squizAction.maximiseWindow();
 //        driver.get("https://uat.education.nsw.gov.au/test-automation");
