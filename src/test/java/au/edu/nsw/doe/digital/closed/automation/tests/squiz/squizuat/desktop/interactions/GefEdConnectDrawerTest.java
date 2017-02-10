@@ -12,11 +12,12 @@ import org.junit.Test;
  * Created by christopherpigden on 7/2/17.
  */
 public class GefEdConnectDrawerTest extends CapabilitiesBuilder{
+
     @Test
     public void gefEducationDesktopEdConnectDrawerTest() throws Exception {
 
         SquizActionMethods squizAction = new SquizActionMethods(driver);
-        String regionOnly = "yes";
+
         squizAction.getPage("gef-education-base", "");
 //        squizAction.maximiseWindow();
 //        driver.get("https://uat.education.nsw.gov.au/test-automation");
