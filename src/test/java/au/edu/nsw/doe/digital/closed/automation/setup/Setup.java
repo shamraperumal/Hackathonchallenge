@@ -34,7 +34,7 @@ public abstract class Setup implements SauceOnDemandSessionIdProvider {
     protected String sessionId;
     protected Eyes eyes;
     protected String testName;
-    protected String fullPageScreenshot = System.getenv("FULLPAGE");
+    protected String elementOnly = System.getenv("ELEMENTSCREENSHOT");
 
 
     @Rule
@@ -68,11 +68,10 @@ public abstract class Setup implements SauceOnDemandSessionIdProvider {
         final Eyes eyes = new Eyes();
         eyes.setApiKey(System.getenv("APPLITOOLS.APIKEY"));
         eyes.setMatchLevel(getMatchLevel());
-        if (fullPageScreenshot == "true"){
-            eyes.setForceFullPageScreenshot(true);
-        }
-        if (fullPageScreenshot == "false"){
+        if (elementOnly != null){
             eyes.setForceFullPageScreenshot(false);
+        }else {
+            eyes.setForceFullPageScreenshot(true);
         }
         if (crossBrowserTest != null ) {
         eyes.setBaselineName(testName);
