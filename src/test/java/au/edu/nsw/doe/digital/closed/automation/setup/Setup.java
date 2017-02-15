@@ -34,7 +34,7 @@ public abstract class Setup implements SauceOnDemandSessionIdProvider {
     protected String sessionId;
     protected Eyes eyes;
     protected String testName;
-    protected String elementOnly = System.getenv("ELEMENTSCREENSHOT");
+    public String elementOnly;
 
 
     @Rule
@@ -86,6 +86,7 @@ public abstract class Setup implements SauceOnDemandSessionIdProvider {
         String sauceUrl = String.format(saucelabsUrl, userName, accessKey);
         return new RemoteWebDriver(new URL(sauceUrl), getCapabilities());
     }
+
 
     @After
     public void tearDown() throws Exception {
