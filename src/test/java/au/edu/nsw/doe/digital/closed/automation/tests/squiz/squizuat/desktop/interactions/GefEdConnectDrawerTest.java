@@ -14,9 +14,6 @@ import au.edu.nsw.doe.digital.closed.automation.setup.Setup;
  */
 public class GefEdConnectDrawerTest extends CapabilitiesBuilder{
 
-   GefEdConnectDrawerTest(String elementOnly){
-       elementOnly = "true";
-   }
 
     @Test
     public void gefEducationDesktopEdConnectDrawerTest() throws Exception {
@@ -30,6 +27,7 @@ public class GefEdConnectDrawerTest extends CapabilitiesBuilder{
         try{
             String ariaExpanded = driver.findElement(GefEdConnect.edConnectButton).getAttribute("aria-expanded");
             Assert.assertEquals("true", ariaExpanded);
+            eyes.setForceFullPageScreenshot(false);
             eyes.checkRegion(GefEdConnect.edConnect);
             eyes.close();
             System.out.println("Aria expanded ="+ariaExpanded);

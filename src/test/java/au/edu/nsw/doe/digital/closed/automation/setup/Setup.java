@@ -68,11 +68,7 @@ public abstract class Setup implements SauceOnDemandSessionIdProvider {
         final Eyes eyes = new Eyes();
         eyes.setApiKey(System.getenv("APPLITOOLS.APIKEY"));
         eyes.setMatchLevel(getMatchLevel());
-        if (elementOnly != null){
-            eyes.setForceFullPageScreenshot(false);
-        }else {
-            eyes.setForceFullPageScreenshot(true);
-        }
+        eyes.setForceFullPageScreenshot(true);
         if (crossBrowserTest != null ) {
         eyes.setBaselineName(testName);
         }
