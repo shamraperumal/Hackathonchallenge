@@ -20,9 +20,6 @@ public class GefEdConnectDrawerTest extends CapabilitiesBuilder{
 
         SquizActionMethods squizAction = new SquizActionMethods(driver);
         squizAction.getPage("gef-education-base", "");
-//        squizAction.maximiseWindow();
-//        driver.get("https://uat.education.nsw.gov.au/test-automation");
-
         squizAction.clickWebElement(GefEdConnect.edConnectButton);
         try{
             String ariaExpanded = driver.findElement(GefEdConnect.edConnectButton).getAttribute("aria-expanded");
