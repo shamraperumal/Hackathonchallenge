@@ -42,11 +42,29 @@ public class SquizMobileGefEducationThemeTemplateTest extends CapabilitiesBuilde
         squizAction.getPage("gef-framework-template-base", "gef-framework-template-erm");
         eyes.checkWindow(System.getenv("EYES-GEF-FRAMEWORK-ERM"));
 
+        squizAction.getPage("gef-framework-template-base", "gef-framework-template-policies-landing-az");
+        eyes.checkWindow(System.getenv("EYES-GEF-FRAMEWORK-POLICY-LANDING-AZ"));
+
+        squizAction.getPage("gef-framework-template-base", "gef-framework-template-policies-landing-topic");
+        eyes.checkWindow(System.getenv("EYES-GEF-FRAMEWORK-POLICY-LANDING-TOPIC"));
+
+        squizAction.getPage("gef-framework-template-base", "gef-framework-template-policies-topic");
+        eyes.checkWindow(System.getenv("EYES-GEF-FRAMEWORK-POLICY-TOPIC"));
+
         squizAction.getPage("gef-framework-template-base", "gef-framework-template-policies-standard");
         eyes.checkWindow(System.getenv("EYES-GEF-FRAMEWORK-POLICY-STANDARD"));
 
         squizAction.getPage("gef-framework-template-base", "gef-framework-template-policy-implementation-document");
         eyes.checkWindow(System.getenv("EYES-GEF-FRAMEWORK-POLICY-IMPLEMENTATION-DOCUMENT"));
+
+        squizAction.getPage("gef-framework-template-base", "gef-framework-template-az-variant1");
+        eyes.checkWindow(System.getenv("EYES-GEF-FRAMEWORK-A-Z-VARIANT-1"));
+
+        squizAction.getPage("gef-framework-template-base", "gef-framework-template-az-variant2");
+        eyes.checkWindow(System.getenv("EYES-GEF-FRAMEWORK-A-Z-VARIANT-2"));
+
+        squizAction.getPage("gef-framework-template-base", "gef-framework-template-az-variant3");
+        eyes.checkWindow(System.getenv("EYES-GEF-FRAMEWORK-A-Z-VARIANT-3"));
 
         eyes.close();
 

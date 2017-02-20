@@ -57,6 +57,15 @@ public class SquizGefEducationThemeTemplateTest extends CapabilitiesBuilder {
         squizAction.getPage("gef-framework-template-base", "gef-framework-template-policy-implementation-document");
         eyes.checkWindow(System.getenv("EYES-GEF-FRAMEWORK-POLICY-IMPLEMENTATION-DOCUMENT"));
 
+        squizAction.getPage("gef-framework-template-base", "gef-framework-template-az-variant1");
+        eyes.checkWindow(System.getenv("EYES-GEF-FRAMEWORK-A-Z-VARIANT-1"));
+
+        squizAction.getPage("gef-framework-template-base", "gef-framework-template-az-variant2");
+        eyes.checkWindow(System.getenv("EYES-GEF-FRAMEWORK-A-Z-VARIANT-2"));
+
+        squizAction.getPage("gef-framework-template-base", "gef-framework-template-az-variant3");
+        eyes.checkWindow(System.getenv("EYES-GEF-FRAMEWORK-A-Z-VARIANT-3"));
+
         eyes.close();
 
     }
