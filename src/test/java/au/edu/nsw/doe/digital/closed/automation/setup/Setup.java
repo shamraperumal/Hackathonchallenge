@@ -1,9 +1,6 @@
 package au.edu.nsw.doe.digital.closed.automation.setup;
 
-import com.applitools.eyes.Eyes;
-import com.applitools.eyes.MatchLevel;
-import com.applitools.eyes.ProxySettings;
-import com.applitools.eyes.RectangleSize;
+import com.applitools.eyes.*;
 import com.saucelabs.common.SauceOnDemandAuthentication;
 import com.saucelabs.common.SauceOnDemandSessionIdProvider;
 import com.saucelabs.junit.SauceOnDemandTestWatcher;
@@ -69,6 +66,7 @@ public abstract class Setup implements SauceOnDemandSessionIdProvider {
         eyes.setApiKey(System.getenv("APPLITOOLS.APIKEY"));
         eyes.setMatchLevel(getMatchLevel());
         eyes.setForceFullPageScreenshot(true);
+        eyes.setStitchMode(StitchMode.CSS);
         if (crossBrowserTest != null ) {
         eyes.setBaselineName(testName);
         }
