@@ -32,7 +32,7 @@ public class GefEdConnectDrawerTest extends CapabilitiesBuilder{
             System.out.println("Ed Connect is not expanded");
             throw e;
         }
-
+        eyes.close();
 
         }
 }
