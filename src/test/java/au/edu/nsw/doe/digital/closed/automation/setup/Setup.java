@@ -86,7 +86,7 @@ public abstract class Setup implements SauceOnDemandSessionIdProvider {
         if (crossBrowserTest != null ) {
             eyes.setBaselineName(testName);
         }
-        if(proxy != null) {
+        if (proxy != null) {
             eyes.setProxy(new ProxySettings(proxy));
         }
         return eyes;
