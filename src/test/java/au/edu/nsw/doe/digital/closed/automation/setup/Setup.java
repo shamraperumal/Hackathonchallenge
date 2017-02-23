@@ -84,7 +84,7 @@ public abstract class Setup implements SauceOnDemandSessionIdProvider {
             System.out.print("failed to set the full page screenshot");
         }
         if (crossBrowserTest != null ) {
-//        eyes.setBaselineName(testName);
+            eyes.setBaselineName(testName);
         }
         if(proxy != null) {
             eyes.setProxy(new ProxySettings(proxy));
