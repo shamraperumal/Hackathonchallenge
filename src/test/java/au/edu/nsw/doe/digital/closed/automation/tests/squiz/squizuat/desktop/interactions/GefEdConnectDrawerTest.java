@@ -11,10 +11,10 @@ import org.junit.Test;
  */
 public class GefEdConnectDrawerTest extends CapabilitiesBuilder{
 
-    @Override
-    public boolean getForceFullPageScreenshot() {
-        return false;
-    }
+//    @Override
+//    public boolean getForceFullPageScreenshot() {
+//        return false;
+//    }
 
     @Test
     public void gefEducationDesktopEdConnectDrawerTest() throws Exception {
