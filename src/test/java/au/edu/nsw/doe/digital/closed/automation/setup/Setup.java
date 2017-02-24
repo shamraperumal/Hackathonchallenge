@@ -80,6 +80,7 @@ public abstract class Setup implements SauceOnDemandSessionIdProvider {
         try {
             if (getForceFullPageScreenshot()== true) {
                 eyes.setForceFullPageScreenshot(getForceFullPageScreenshot());
+                System.out.println("Force Full Page Screenshot" + getForceFullPageScreenshot());
             }
         }catch (final Exception e){
             System.out.print("failed to set the full page screenshot");
