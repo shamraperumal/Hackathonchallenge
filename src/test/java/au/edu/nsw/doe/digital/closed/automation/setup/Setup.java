@@ -1,12 +1,17 @@
 package au.edu.nsw.doe.digital.closed.automation.setup;
 
-import com.applitools.eyes.*;
+
+import com.applitools.eyes.Eyes;
+import com.applitools.eyes.MatchLevel;
+import com.applitools.eyes.ProxySettings;
+import com.applitools.eyes.RectangleSize;
 import com.saucelabs.common.SauceOnDemandAuthentication;
 import com.saucelabs.common.SauceOnDemandSessionIdProvider;
 import com.saucelabs.junit.SauceOnDemandTestWatcher;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
+import org.junit.rules.TestName;
 import org.junit.rules.TestRule;
 import org.junit.rules.TestWatcher;
 import org.junit.runner.Description;
@@ -31,7 +36,9 @@ public abstract class Setup implements SauceOnDemandSessionIdProvider {
     protected String sessionId;
     protected Eyes eyes;
     protected String testName;
-    public String elementOnly;
+
+
+
 
 
     @Rule
@@ -46,8 +53,11 @@ public abstract class Setup implements SauceOnDemandSessionIdProvider {
         }
     };
 
+
+
     @Before
     public void setUp() throws Exception {
+
         eyes = createApliToolsEyes();
         final WebDriver browser = createWebDriver();
         if (crossBrowserTest != null ) {
@@ -61,12 +71,17 @@ public abstract class Setup implements SauceOnDemandSessionIdProvider {
         System.out.println("Starting test...");
     }
 
+    public abstract boolean getForceFullPageScreenshot();
+
     private Eyes createApliToolsEyes() {
-        final Eyes eyes = new Eyes();
+        Eyes eyes = new Eyes();
         eyes.setApiKey(System.getenv("APPLITOOLS.APIKEY"));
         eyes.setMatchLevel(getMatchLevel());
-        eyes.setForceFullPageScreenshot(true);
-        eyes.setStitchMode(StitchMode.CSS);
+        try {
+            eyes.setForceFullPageScreenshot(getForceFullPageScreenshot());
+        }catch (final Exception e){
+            System.out.print("failed to set the full page screenshot");
+        }
         if (crossBrowserTest != null ) {
         eyes.setBaselineName(testName);
         }
@@ -107,4 +122,5 @@ public abstract class Setup implements SauceOnDemandSessionIdProvider {
     protected abstract MatchLevel getMatchLevel();
 
     protected abstract DesiredCapabilities getCapabilities();
+
 }

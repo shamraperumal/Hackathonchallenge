@@ -1,5 +1,6 @@
 package au.edu.nsw.doe.digital.closed.automation.setup;
 
+import com.applitools.eyes.*;
 import com.applitools.eyes.MatchLevel;
 import com.applitools.eyes.RectangleSize;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -18,14 +19,21 @@ public class CapabilitiesBuilder extends Setup {
     }
 
     @Override
+    public boolean getForceFullPageScreenshot() {
+        return true;
+    }
+
+    @Override
     protected RectangleSize getRectangleSize() {
         String rectangleHeight = System.getenv("RECTANGLE_HEIGHT");
         String rectangleWidth = System.getenv("RECTANGLE_WIDTH");
         return new RectangleSize(Integer.parseInt(rectangleWidth), Integer.parseInt(rectangleHeight));
     }
 
-    @Override
 
+
+
+    @Override
     protected DesiredCapabilities getCapabilities() {
         final DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("platform", System.getenv("SELENIUM_PLATFORM"));
