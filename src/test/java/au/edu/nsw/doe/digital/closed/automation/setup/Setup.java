@@ -78,7 +78,9 @@ public abstract class Setup implements SauceOnDemandSessionIdProvider {
         eyes.setApiKey(System.getenv("APPLITOOLS.APIKEY"));
         eyes.setMatchLevel(getMatchLevel());
         try {
-            eyes.setForceFullPageScreenshot(getForceFullPageScreenshot());
+            if (getForceFullPageScreenshot()== true) {
+                eyes.setForceFullPageScreenshot(getForceFullPageScreenshot());
+            }
         }catch (final Exception e){
             System.out.print("failed to set the full page screenshot");
         }
