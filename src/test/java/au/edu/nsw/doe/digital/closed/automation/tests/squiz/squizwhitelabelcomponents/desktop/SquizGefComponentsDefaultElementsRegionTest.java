@@ -8,7 +8,10 @@ import org.junit.Test;
 /**
  * Created by cpigden on 5/02/2016.
  */
+
 public class SquizGefComponentsDefaultElementsRegionTest extends CapabilitiesBuilder {
+
+    SquizActionMethods squizAction = new SquizActionMethods(driver);
 
     @Override
     public boolean getForceFullPageScreenshot() {
@@ -17,7 +20,6 @@ public class SquizGefComponentsDefaultElementsRegionTest extends CapabilitiesBui
 
     @Test
     public void whitelabelLinksTest() throws Exception {
-        SquizActionMethods squizAction = new SquizActionMethods(driver);
 
         squizAction.getPage("gef-components-base", "gef-components-elements");
         eyes.checkRegion(DefaultElements.linkList);
@@ -28,7 +30,6 @@ public class SquizGefComponentsDefaultElementsRegionTest extends CapabilitiesBui
 
     @Test
     public void whitelabelTypographyTest() throws Exception {
-        SquizActionMethods squizAction = new SquizActionMethods(driver);
 
         squizAction.getPage("gef-components-base", "gef-components-elements");
         eyes.checkRegion(DefaultElements.typography);
@@ -39,7 +40,6 @@ public class SquizGefComponentsDefaultElementsRegionTest extends CapabilitiesBui
 
     @Test
     public void whitelabelBlockQuoteTest() throws Exception {
-        SquizActionMethods squizAction = new SquizActionMethods(driver);
 
         squizAction.getPage("gef-components-base", "gef-components-elements");
         eyes.checkRegion(DefaultElements.blockQuote);
@@ -49,7 +49,6 @@ public class SquizGefComponentsDefaultElementsRegionTest extends CapabilitiesBui
 
     @Test
     public void whitelabeliframeTest() throws Exception {
-        SquizActionMethods squizAction = new SquizActionMethods(driver);
 
         squizAction.getPage("gef-components-base", "gef-components-elements");
         eyes.checkRegion(DefaultElements.iFrame);
@@ -59,18 +58,15 @@ public class SquizGefComponentsDefaultElementsRegionTest extends CapabilitiesBui
 
     @Test
     public void whitelabelListsTest() throws Exception {
-        SquizActionMethods squizAction = new SquizActionMethods(driver);
 
         squizAction.getPage("gef-components-base", "gef-components-elements");
-        eyes.checkRegion(DefaultElements.bulletLists);
-        eyes.checkRegion(DefaultElements.numberLists);
+        eyes.checkRegion(DefaultElements.lists);
 
         eyes.close();
     }
 
     @Test
     public void whitelabelImageCaptionTest() throws Exception {
-        SquizActionMethods squizAction = new SquizActionMethods(driver);
 
         squizAction.getPage("gef-components-base", "gef-components-elements");
         eyes.checkRegion(DefaultElements.imageCaption);
@@ -80,7 +76,6 @@ public class SquizGefComponentsDefaultElementsRegionTest extends CapabilitiesBui
 
     @Test
     public void whitelabelButtonSubmit() throws Exception {
-        SquizActionMethods squizAction = new SquizActionMethods(driver);
 
         squizAction.getPage("gef-components-base", "gef-components-elements");
         eyes.checkRegion(DefaultElements.buttonSubmit);
@@ -90,7 +85,6 @@ public class SquizGefComponentsDefaultElementsRegionTest extends CapabilitiesBui
 
     @Test
     public void whitelabelTableTest() throws Exception {
-        SquizActionMethods squizAction = new SquizActionMethods(driver);
 
         squizAction.getPage("gef-components-base", "gef-components-elements");
         eyes.checkRegion(DefaultElements.table);
