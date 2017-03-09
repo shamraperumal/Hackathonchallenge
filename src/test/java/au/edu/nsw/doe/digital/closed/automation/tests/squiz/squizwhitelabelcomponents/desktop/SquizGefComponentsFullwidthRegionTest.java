@@ -20,7 +20,7 @@ public class SquizGefComponentsFullwidthRegionTest extends CapabilitiesBuilder{
     public void whitelabelContentBannerTest() throws Exception {
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
-        squizAction.getPage("gef-components-base", "gef-components-elements");
+        squizAction.getPage("gef-components-base", "gef-components-full");
         eyes.checkRegion(FullWidth.contentBanner);
 
         eyes.close();
@@ -30,7 +30,7 @@ public class SquizGefComponentsFullwidthRegionTest extends CapabilitiesBuilder{
     public void whitelabelBreadcrumbsTest() throws Exception {
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
-        squizAction.getPage("gef-components-base", "gef-components-elements");
+        squizAction.getPage("gef-components-base", "gef-components-full");
         eyes.checkRegion(FullWidth.breadcrumbs);
 
         eyes.close();
@@ -40,7 +40,7 @@ public class SquizGefComponentsFullwidthRegionTest extends CapabilitiesBuilder{
     public void whitelabelTeasersTest() throws Exception {
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
-        squizAction.getPage("gef-components-base", "gef-components-elements");
+        squizAction.getPage("gef-components-base", "gef-components-full");
         eyes.checkRegion(FullWidth.teasers);
 
         eyes.close();
@@ -50,7 +50,7 @@ public class SquizGefComponentsFullwidthRegionTest extends CapabilitiesBuilder{
     public void whitelabelLinkGroupTest() throws Exception {
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
-        squizAction.getPage("gef-components-base", "gef-components-elements");
+        squizAction.getPage("gef-components-base", "gef-components-full");
         eyes.checkRegion(FullWidth.linkGroup);
 
         eyes.close();
@@ -60,7 +60,7 @@ public class SquizGefComponentsFullwidthRegionTest extends CapabilitiesBuilder{
     public void whitelabelExpandedNav() throws Exception {
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
-        squizAction.getPage("gef-components-base", "gef-components-elements");
+        squizAction.getPage("gef-components-base", "gef-components-full");
         eyes.checkRegion(FullWidth.expandedNav);
 
         eyes.close();
@@ -70,7 +70,7 @@ public class SquizGefComponentsFullwidthRegionTest extends CapabilitiesBuilder{
     public void whitelabelAZAnchorsTest() throws Exception {
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
-        squizAction.getPage("gef-components-base", "gef-components-elements");
+        squizAction.getPage("gef-components-base", "gef-components-full");
         eyes.checkRegion(FullWidth.aZAnchors);
 
         eyes.close();
@@ -80,7 +80,7 @@ public class SquizGefComponentsFullwidthRegionTest extends CapabilitiesBuilder{
     public void whitelabelAZListTest() throws Exception {
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
-        squizAction.getPage("gef-components-base", "gef-components-elements");
+        squizAction.getPage("gef-components-base", "gef-components-full");
         eyes.checkRegion(FullWidth.aZList);
 
         eyes.close();
@@ -90,7 +90,7 @@ public class SquizGefComponentsFullwidthRegionTest extends CapabilitiesBuilder{
     public void whitelabelLandingHeaderTest() throws Exception {
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
-        squizAction.getPage("gef-components-base", "gef-components-elements");
+        squizAction.getPage("gef-components-base", "gef-components-full");
         eyes.checkRegion(FullWidth.landingHeader);
 
         eyes.close();
@@ -100,7 +100,7 @@ public class SquizGefComponentsFullwidthRegionTest extends CapabilitiesBuilder{
     public void whitelabelTableOfContentsTest() throws Exception {
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
-        squizAction.getPage("gef-components-base", "gef-components-elements");
+        squizAction.getPage("gef-components-base", "gef-components-ful");
         eyes.checkRegion(FullWidth.tableOfContents);
 
         eyes.close();
@@ -110,7 +110,7 @@ public class SquizGefComponentsFullwidthRegionTest extends CapabilitiesBuilder{
     public void whitelabelResultsTableTest() throws Exception {
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
-        squizAction.getPage("gef-components-base", "gef-components-elements");
+        squizAction.getPage("gef-components-base", "gef-components-full");
         eyes.checkRegion(FullWidth.resultsTable);
 
         eyes.close();
@@ -120,7 +120,7 @@ public class SquizGefComponentsFullwidthRegionTest extends CapabilitiesBuilder{
     public void whitelabelContentContainerTest() throws Exception {
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
-        squizAction.getPage("gef-components-base", "gef-components-elements");
+        squizAction.getPage("gef-components-base", "gef-components-full");
         eyes.checkRegion(FullWidth.contentContainer);
 
         eyes.close();
@@ -130,7 +130,7 @@ public class SquizGefComponentsFullwidthRegionTest extends CapabilitiesBuilder{
     public void whitelabelCatalogueTest() throws Exception {
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
-        squizAction.getPage("gef-components-base", "gef-components-elements");
+        squizAction.getPage("gef-components-base", "gef-components-full");
         eyes.checkRegion(FullWidth.catalogue);
 
         eyes.close();
@@ -140,7 +140,7 @@ public class SquizGefComponentsFullwidthRegionTest extends CapabilitiesBuilder{
     public void whitelabelDrawerTest() throws Exception {
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
-        squizAction.getPage("gef-components-base", "gef-components-elements");
+        squizAction.getPage("gef-components-base", "gef-components-full");
         eyes.checkRegion(FullWidth.drawer);
 
         eyes.close();
