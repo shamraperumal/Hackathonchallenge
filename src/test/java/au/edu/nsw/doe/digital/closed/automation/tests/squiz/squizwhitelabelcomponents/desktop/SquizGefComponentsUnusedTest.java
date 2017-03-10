@@ -1,5 +1,7 @@
 package au.edu.nsw.doe.digital.closed.automation.tests.squiz.squizwhitelabelcomponents.desktop;
 
+import au.edu.nsw.doe.digital.closed.automation.pageobjects.whitelabel.FullWidth;
+import au.edu.nsw.doe.digital.closed.automation.pageobjects.whitelabel.Unused;
 import au.edu.nsw.doe.digital.closed.automation.setup.CapabilitiesBuilder;
 import au.edu.nsw.doe.digital.closed.automation.tests.squiz.SquizActionMethods;
 import org.junit.Test;
@@ -9,16 +11,98 @@ import org.junit.Test;
  */
 public class SquizGefComponentsUnusedTest extends CapabilitiesBuilder {
 
+    @Override
+    public boolean getForceFullPageScreenshot() {
+        return false;
+    }
+
     @Test
-    public void gefComponentsDesktopUnusedTest() throws Exception {
+    public void whitelabelEduBannerTest() throws Exception {
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
-        squizAction.getPage("gef-components-base", "gef-components-unused-column");
-
-        eyes.checkWindow(System.getenv("EYES-GEF-COMPONENTS-UNUSED"));
+        squizAction.getPage("gef-components-base", "gef-components-full");
+        eyes.checkRegion(Unused.eduBanner);
 
         eyes.close();
     }
 
+    @Test
+    public void whitelabelExpandedNavTest() throws Exception {
+        SquizActionMethods squizAction = new SquizActionMethods(driver);
 
+        squizAction.getPage("gef-components-base", "gef-components-full");
+        eyes.checkRegion(Unused.expandedNav);
+
+        eyes.close();
+    }
+
+    @Test
+    public void whitelabelIconAndLabelTest() throws Exception {
+        SquizActionMethods squizAction = new SquizActionMethods(driver);
+
+        squizAction.getPage("gef-components-base", "gef-components-full");
+        eyes.checkRegion(Unused.iconAndLabel);
+
+        eyes.close();
+    }
+
+    @Test
+    public void whitelabelLoginLinkTest() throws Exception {
+        SquizActionMethods squizAction = new SquizActionMethods(driver);
+
+        squizAction.getPage("gef-components-base", "gef-components-full");
+        eyes.checkRegion(Unused.loginLink);
+
+        eyes.close();
+    }
+
+    @Test
+    public void whitelabelMaintenanceRibbonTest() throws Exception {
+        SquizActionMethods squizAction = new SquizActionMethods(driver);
+
+        squizAction.getPage("gef-components-base", "gef-components-full");
+        eyes.checkRegion(Unused.maintenanceRibbon);
+
+        eyes.close();
+    }
+
+    @Test
+    public void whitelabelNewsLetterSignUpTest() throws Exception {
+        SquizActionMethods squizAction = new SquizActionMethods(driver);
+
+        squizAction.getPage("gef-components-base", "gef-components-full");
+        eyes.checkRegion(Unused.newsLetterSignUp);
+
+        eyes.close();
+    }
+
+    @Test
+    public void whitelabelNoticeRibbonTest() throws Exception {
+        SquizActionMethods squizAction = new SquizActionMethods(driver);
+
+        squizAction.getPage("gef-components-base", "gef-components-full");
+        eyes.checkRegion(Unused.noticeRibbon);
+
+        eyes.close();
+    }
+
+    @Test
+    public void whitelabelPrimaryHubTest() throws Exception {
+        SquizActionMethods squizAction = new SquizActionMethods(driver);
+
+        squizAction.getPage("gef-components-base", "gef-components-full");
+        eyes.checkRegion(Unused.primaryHub);
+
+        eyes.close();
+    }
+
+    @Test
+    public void whitelabelRadioListTest() throws Exception {
+        SquizActionMethods squizAction = new SquizActionMethods(driver);
+
+        squizAction.getPage("gef-components-base", "gef-components-full");
+        eyes.checkRegion(Unused.radioList);
+
+        eyes.close();
+    }
 }
