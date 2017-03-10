@@ -20,7 +20,7 @@ public class SquizGefComponentsUnusedTest extends CapabilitiesBuilder {
     public void whitelabelEduBannerTest() throws Exception {
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
-        squizAction.getPage("gef-components-base", "gef-components-full");
+        squizAction.getPage("gef-components-base", "gef-components-unused-column");
         eyes.checkRegion(Unused.eduBanner);
 
         eyes.close();
@@ -30,7 +30,7 @@ public class SquizGefComponentsUnusedTest extends CapabilitiesBuilder {
     public void whitelabelExpandedNavTest() throws Exception {
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
-        squizAction.getPage("gef-components-base", "gef-components-full");
+        squizAction.getPage("gef-components-base", "gef-components-unused-column");
         eyes.checkRegion(Unused.expandedNav);
 
         eyes.close();
@@ -40,7 +40,7 @@ public class SquizGefComponentsUnusedTest extends CapabilitiesBuilder {
     public void whitelabelIconAndLabelTest() throws Exception {
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
-        squizAction.getPage("gef-components-base", "gef-components-full");
+        squizAction.getPage("gef-components-base", "gef-components-unused-column");
         eyes.checkRegion(Unused.iconAndLabel);
 
         eyes.close();
@@ -50,7 +50,7 @@ public class SquizGefComponentsUnusedTest extends CapabilitiesBuilder {
     public void whitelabelLoginLinkTest() throws Exception {
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
-        squizAction.getPage("gef-components-base", "gef-components-full");
+        squizAction.getPage("gef-components-base", "gef-components-unused-column");
         eyes.checkRegion(Unused.loginLink);
 
         eyes.close();
@@ -60,7 +60,7 @@ public class SquizGefComponentsUnusedTest extends CapabilitiesBuilder {
     public void whitelabelMaintenanceRibbonTest() throws Exception {
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
-        squizAction.getPage("gef-components-base", "gef-components-full");
+        squizAction.getPage("gef-components-base", "gef-components-unused-column");
         eyes.checkRegion(Unused.maintenanceRibbon);
 
         eyes.close();
@@ -70,7 +70,7 @@ public class SquizGefComponentsUnusedTest extends CapabilitiesBuilder {
     public void whitelabelNewsLetterSignUpTest() throws Exception {
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
-        squizAction.getPage("gef-components-base", "gef-components-full");
+        squizAction.getPage("gef-components-base", "gef-components-unused-column");
         eyes.checkRegion(Unused.newsLetterSignUp);
 
         eyes.close();
@@ -80,7 +80,7 @@ public class SquizGefComponentsUnusedTest extends CapabilitiesBuilder {
     public void whitelabelNoticeRibbonTest() throws Exception {
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
-        squizAction.getPage("gef-components-base", "gef-components-full");
+        squizAction.getPage("gef-components-base", "gef-components-unused-column");
         eyes.checkRegion(Unused.noticeRibbon);
 
         eyes.close();
@@ -90,7 +90,7 @@ public class SquizGefComponentsUnusedTest extends CapabilitiesBuilder {
     public void whitelabelPrimaryHubTest() throws Exception {
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
-        squizAction.getPage("gef-components-base", "gef-components-full");
+        squizAction.getPage("gef-components-base", "gef-components-unused-column");
         eyes.checkRegion(Unused.primaryHub);
 
         eyes.close();
@@ -100,7 +100,7 @@ public class SquizGefComponentsUnusedTest extends CapabilitiesBuilder {
     public void whitelabelRadioListTest() throws Exception {
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
-        squizAction.getPage("gef-components-base", "gef-components-full");
+        squizAction.getPage("gef-components-base", "gef-components-unused-column");
         eyes.checkRegion(Unused.radioList);
 
         eyes.close();
