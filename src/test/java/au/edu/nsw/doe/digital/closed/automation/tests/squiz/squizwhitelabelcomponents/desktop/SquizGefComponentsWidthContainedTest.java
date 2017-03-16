@@ -9,7 +9,7 @@ import org.junit.Test;
 /**
  * Created by christopherpigden on 10/3/17.
  */
-public class SquizGefComponentsWidthContainedRegionTest extends CapabilitiesBuilder{
+public class SquizGefComponentsWidthContainedTest extends CapabilitiesBuilder{
 
     @Override
     public boolean getForceFullPageScreenshot() {

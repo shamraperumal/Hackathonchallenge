@@ -9,7 +9,7 @@ import org.junit.Test;
  * Created by cpigden on 5/02/2016.
  */
 
-public class SquizGefComponentsDefaultElementsRegionTest extends CapabilitiesBuilder {
+public class SquizGefComponentsDefaultElementsTest extends CapabilitiesBuilder {
 
 
     @Override
