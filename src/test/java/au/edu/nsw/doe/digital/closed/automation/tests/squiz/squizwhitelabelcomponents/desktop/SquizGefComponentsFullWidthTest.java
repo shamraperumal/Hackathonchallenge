@@ -100,7 +100,7 @@ public class SquizGefComponentsFullWidthTest extends CapabilitiesBuilder{
     public void whitelabelTableOfContentsTest() throws Exception {
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
-        squizAction.getPage("gef-components-base", "gef-components-ful");
+        squizAction.getPage("gef-components-base", "gef-components-full");
         eyes.checkRegion(FullWidth.tableOfContents);
 
         eyes.close();
