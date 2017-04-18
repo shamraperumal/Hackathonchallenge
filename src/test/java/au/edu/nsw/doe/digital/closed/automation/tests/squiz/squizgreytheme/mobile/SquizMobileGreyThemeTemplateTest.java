@@ -10,7 +10,7 @@ import org.junit.Test;
 public class SquizMobileGreyThemeTemplateTest extends CapabilitiesBuilder {
 
     @Test
-    public void greyThemeTemplateEyesTest() throws Exception {
+    public void greyMobileThemeTemplateEyesTest() throws Exception {
 
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
