@@ -3,6 +3,7 @@ package au.edu.nsw.doe.digital.closed.automation.tests.squiz.squizgreytheme.mobi
 import au.edu.nsw.doe.digital.closed.automation.setup.CapabilitiesBuilder;
 import au.edu.nsw.doe.digital.closed.automation.tests.squiz.SquizActionMethods;
 import org.junit.Test;
+import org.openqa.selenium.Dimension;
 
 /**
  * Created by christopherpigden on 21/3/17.
@@ -13,6 +14,10 @@ public class SquizMobileGreyThemeTemplateTest extends CapabilitiesBuilder {
     public void greyMobileThemeTemplateEyesTest() throws Exception {
 
         SquizActionMethods squizAction = new SquizActionMethods(driver);
+
+        Dimension dimension = new Dimension(375, 650);
+
+        driver.manage().window().setSize(dimension);
 
         squizAction.getPage("grey-theme-template-base", "grey-theme-template-home");
         eyes.checkWindow(System.getenv("EYES-GREY-THEME-HOME"));
