@@ -11,20 +11,20 @@ import org.junit.Test;
 public class SquizHSCMobileProductionTest extends CapabilitiesBuilder {
 
     @Test
-    public void squizHSCMobileProductionEyesTest() throws Exception {
+    public void hSCMobileProductionEyesTest() throws Exception {
 
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
-        squizAction.getPage("hsc-template-base", "hsc-template-home");
+        squizAction.getPage("hsc-base", "hsc-home");
         eyes.checkWindow(System.getenv("EYES-HSC-HOME"));
 
-        squizAction.getPage("hsc-template-base", "hsc-template-landing");
+        squizAction.getPage("hsc-base", "hsc-landing");
         eyes.checkWindow(System.getenv("EYES-HSC-LANDING"));
 
-        squizAction.getPage("hsc-template-base", "hsc-template-standard");
+        squizAction.getPage("hsc-base", "hsc-standard");
         eyes.checkWindow(System.getenv("EYES-HSC-Standard"));
 
-        squizAction.getPage("hsc-template-base", "hsc-template-catalogue");
+        squizAction.getPage("hsc-base", "hsc-catalogue");
         eyes.checkWindow(System.getenv("EYES-HSC-CATALOGUE"));
 
 
