@@ -6,8 +6,7 @@ import org.openqa.selenium.By;
  * Created by christopherpigden on 10/3/17.
  */
 public class Unused {
-    public static By eduBanner = By.id("eduBanner_auto");
-    public static By noticeRibbon = By.id("noticeRibbon_auto");
+
     public static By maintenanceRibbon = By.id("maintenanceRibbon_auto");
     public static By iconAndLabel = By.id("iconAndLabel_auto");
     public static By primaryHub = By.id("examplePrimaryHub_auto");

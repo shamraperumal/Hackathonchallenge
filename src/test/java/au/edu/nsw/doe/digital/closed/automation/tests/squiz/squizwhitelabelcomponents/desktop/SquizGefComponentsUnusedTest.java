@@ -16,15 +16,6 @@ public class SquizGefComponentsUnusedTest extends CapabilitiesBuilder {
         return false;
     }
 
-    @Test
-    public void whitelabelEduBannerTest() throws Exception {
-        SquizActionMethods squizAction = new SquizActionMethods(driver);
-
-        squizAction.getPage("gef-components-base", "gef-components-unused-column");
-        eyes.checkRegion(Unused.eduBanner);
-
-        eyes.close();
-    }
 
     @Test
     public void whitelabelExpandedNavTest() throws Exception {
@@ -76,15 +67,7 @@ public class SquizGefComponentsUnusedTest extends CapabilitiesBuilder {
         eyes.close();
     }
 
-    @Test
-    public void whitelabelNoticeRibbonTest() throws Exception {
-        SquizActionMethods squizAction = new SquizActionMethods(driver);
 
-        squizAction.getPage("gef-components-base", "gef-components-unused-column");
-        eyes.checkRegion(Unused.noticeRibbon);
-
-        eyes.close();
-    }
 
     @Test
     public void whitelabelPrimaryHubTest() throws Exception {

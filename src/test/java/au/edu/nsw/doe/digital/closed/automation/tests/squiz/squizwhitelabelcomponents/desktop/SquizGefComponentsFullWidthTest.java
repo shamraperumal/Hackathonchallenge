@@ -2,6 +2,7 @@ package au.edu.nsw.doe.digital.closed.automation.tests.squiz.squizwhitelabelcomp
 
 import au.edu.nsw.doe.digital.closed.automation.pageobjects.whitelabel.DefaultElements;
 import au.edu.nsw.doe.digital.closed.automation.pageobjects.whitelabel.FullWidth;
+import au.edu.nsw.doe.digital.closed.automation.pageobjects.whitelabel.Unused;
 import au.edu.nsw.doe.digital.closed.automation.setup.CapabilitiesBuilder;
 import au.edu.nsw.doe.digital.closed.automation.tests.squiz.SquizActionMethods;
 import org.junit.Test;
@@ -142,6 +143,26 @@ public class SquizGefComponentsFullWidthTest extends CapabilitiesBuilder{
 
         squizAction.getPage("gef-components-base", "gef-components-full");
         eyes.checkRegion(FullWidth.drawer);
+
+        eyes.close();
+    }
+
+    @Test
+    public void whitelabelEduBannerTest() throws Exception {
+        SquizActionMethods squizAction = new SquizActionMethods(driver);
+
+        squizAction.getPage("gef-components-base", "gef-components-full");
+        eyes.checkRegion(FullWidth.eduBanner);
+
+        eyes.close();
+    }
+
+    @Test
+    public void whitelabelNoticeRibbonTest() throws Exception {
+        SquizActionMethods squizAction = new SquizActionMethods(driver);
+
+        squizAction.getPage("gef-components-base", "gef-components-full");
+        eyes.checkRegion(FullWidth.noticeRibbon);
 
         eyes.close();
     }

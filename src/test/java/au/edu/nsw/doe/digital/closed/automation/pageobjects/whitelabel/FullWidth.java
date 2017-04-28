@@ -20,5 +20,7 @@ public class FullWidth {
     public static By contentContainer = By.id("contentContainer_auto");
     public static By catalogue = By.id("catalogue_auto");
     public static By drawer = By.id("drawer_auto");
+    public static By eduBanner = By.id("eduBanner_auto");
+    public static By noticeRibbon = By.id("noticeRibbon_auto");
 
 }
