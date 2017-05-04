@@ -22,7 +22,6 @@ public class SquizGefEducationPreProductionTest extends CapabilitiesBuilder {
         eyes.checkWindow(System.getenv("EYES-GEF-EDUCATION-LANDING"));
 
         squizAction.getPage("gef-education-base", "gef-education-standard");
-        squizAction.showHide();
         eyes.checkWindow(System.getenv("EYES-GEF-EDUCATION-STANDARD"));
 
         squizAction.getPage("gef-education-base", "gef-education-catalogue");
