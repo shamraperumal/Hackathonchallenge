@@ -1,5 +1,6 @@
 package au.edu.nsw.doe.digital.closed.automation.tests.squiz.squizwhitelabelcomponents.mobile;
 
+import au.edu.nsw.doe.digital.closed.automation.pageobjects.whitelabel.Unused;
 import au.edu.nsw.doe.digital.closed.automation.setup.CapabilitiesBuilder;
 import au.edu.nsw.doe.digital.closed.automation.tests.squiz.SquizActionMethods;
 import org.junit.Test;
@@ -11,16 +12,87 @@ import org.openqa.selenium.Dimension;
 public class SquizMobileGefComponentsUnusedTest extends CapabilitiesBuilder {
 
     @Test
-    public void gefComponentsMobileUnusedTest() throws Exception {
-
+    public void whitelabelExpandedNavTest() throws Exception {
         SquizActionMethods squizAction = new SquizActionMethods(driver);
-
         Dimension dimension = new Dimension(375, 650);
-
         driver.manage().window().setSize(dimension);
 
         squizAction.getPage("gef-components-base", "gef-components-unused-column");
-        eyes.checkWindow(System.getenv("EYES-GEF-COMPONENTS-UNUSED"));
+        eyes.checkRegion(Unused.expandedNav);
+
+        eyes.close();
+    }
+
+    @Test
+    public void whitelabelIconAndLabelTest() throws Exception {
+        SquizActionMethods squizAction = new SquizActionMethods(driver);
+        Dimension dimension = new Dimension(375, 650);
+        driver.manage().window().setSize(dimension);
+
+        squizAction.getPage("gef-components-base", "gef-components-unused-column");
+        eyes.checkRegion(Unused.iconAndLabel);
+
+        eyes.close();
+    }
+
+    @Test
+    public void whitelabelLoginLinkTest() throws Exception {
+        SquizActionMethods squizAction = new SquizActionMethods(driver);
+        Dimension dimension = new Dimension(375, 650);
+        driver.manage().window().setSize(dimension);
+
+        squizAction.getPage("gef-components-base", "gef-components-unused-column");
+        eyes.checkRegion(Unused.loginLink);
+
+        eyes.close();
+    }
+
+    @Test
+    public void whitelabelMaintenanceRibbonTest() throws Exception {
+        SquizActionMethods squizAction = new SquizActionMethods(driver);
+        Dimension dimension = new Dimension(375, 650);
+        driver.manage().window().setSize(dimension);
+
+        squizAction.getPage("gef-components-base", "gef-components-unused-column");
+        eyes.checkRegion(Unused.maintenanceRibbon);
+
+        eyes.close();
+    }
+
+    @Test
+    public void whitelabelNewsLetterSignUpTest() throws Exception {
+        SquizActionMethods squizAction = new SquizActionMethods(driver);
+        Dimension dimension = new Dimension(375, 650);
+        driver.manage().window().setSize(dimension);
+
+        squizAction.getPage("gef-components-base", "gef-components-unused-column");
+        eyes.checkRegion(Unused.newsLetterSignUp);
+
+        eyes.close();
+    }
+
+
+
+    @Test
+    public void whitelabelPrimaryHubTest() throws Exception {
+        SquizActionMethods squizAction = new SquizActionMethods(driver);
+        Dimension dimension = new Dimension(375, 650);
+        driver.manage().window().setSize(dimension);
+
+        squizAction.getPage("gef-components-base", "gef-components-unused-column");
+        eyes.checkRegion(Unused.primaryHub);
+
+        eyes.close();
+    }
+
+    @Test
+    public void whitelabelRadioListTest() throws Exception {
+        SquizActionMethods squizAction = new SquizActionMethods(driver);
+        Dimension dimension = new Dimension(375, 650);
+        driver.manage().window().setSize(dimension);
+
+        squizAction.getPage("gef-components-base", "gef-components-unused-column");
+        eyes.checkRegion(Unused.radioList);
 
         eyes.close();
     }
