@@ -15,7 +15,7 @@ public class SquizMobileGefComponentsDefaultElementsTest extends CapabilitiesBui
 
 
         @Test
-        public void whitelabelLinksTest() throws Exception {
+        public void whitelabelMobileLinksTest() throws Exception {
             SquizActionMethods squizAction = new SquizActionMethods(driver);
             Dimension dimension = new Dimension(375, 650);
 
@@ -29,7 +29,7 @@ public class SquizMobileGefComponentsDefaultElementsTest extends CapabilitiesBui
 
 
         @Test
-        public void whitelabelTypographyTest() throws Exception {
+        public void whitelabelMobileTypographyTest() throws Exception {
             SquizActionMethods squizAction = new SquizActionMethods(driver);
             Dimension dimension = new Dimension(375, 650);
 
@@ -43,7 +43,7 @@ public class SquizMobileGefComponentsDefaultElementsTest extends CapabilitiesBui
         }
 
         @Test
-        public void whitelabelBlockQuoteTest() throws Exception {
+        public void whitelabelMobileBlockQuoteTest() throws Exception {
             SquizActionMethods squizAction = new SquizActionMethods(driver);
             Dimension dimension = new Dimension(375, 650);
 
@@ -56,7 +56,7 @@ public class SquizMobileGefComponentsDefaultElementsTest extends CapabilitiesBui
         }
 
         @Test
-        public void whitelabeliframeTest() throws Exception {
+        public void whitelabelMobileiframeTest() throws Exception {
             SquizActionMethods squizAction = new SquizActionMethods(driver);
             Dimension dimension = new Dimension(375, 650);
 
@@ -69,7 +69,7 @@ public class SquizMobileGefComponentsDefaultElementsTest extends CapabilitiesBui
         }
 
         @Test
-        public void whitelabelListsTest() throws Exception {
+        public void whitelabelMobileListsTest() throws Exception {
             SquizActionMethods squizAction = new SquizActionMethods(driver);
             Dimension dimension = new Dimension(375, 650);
 
@@ -82,7 +82,7 @@ public class SquizMobileGefComponentsDefaultElementsTest extends CapabilitiesBui
         }
 
         @Test
-        public void whitelabelImageCaptionTest() throws Exception {
+        public void whitelabelMobileImageCaptionTest() throws Exception {
             SquizActionMethods squizAction = new SquizActionMethods(driver);
             Dimension dimension = new Dimension(375, 650);
 
@@ -95,7 +95,7 @@ public class SquizMobileGefComponentsDefaultElementsTest extends CapabilitiesBui
         }
 
         @Test
-        public void whitelabelButtonSubmit() throws Exception {
+        public void whitelabelMobileButtonSubmit() throws Exception {
             SquizActionMethods squizAction = new SquizActionMethods(driver);
             Dimension dimension = new Dimension(375, 650);
 
@@ -108,7 +108,7 @@ public class SquizMobileGefComponentsDefaultElementsTest extends CapabilitiesBui
         }
 
         @Test
-        public void whitelabelTableTest() throws Exception {
+        public void whitelabelMobileTableTest() throws Exception {
             SquizActionMethods squizAction = new SquizActionMethods(driver);
             Dimension dimension = new Dimension(375, 650);
 

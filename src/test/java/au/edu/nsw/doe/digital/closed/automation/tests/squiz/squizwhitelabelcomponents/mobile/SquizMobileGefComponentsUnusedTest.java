@@ -12,7 +12,7 @@ import org.openqa.selenium.Dimension;
 public class SquizMobileGefComponentsUnusedTest extends CapabilitiesBuilder {
 
     @Test
-    public void whitelabelExpandedNavTest() throws Exception {
+    public void whitelabelMobileExpandedNavTest() throws Exception {
         SquizActionMethods squizAction = new SquizActionMethods(driver);
         Dimension dimension = new Dimension(375, 650);
         driver.manage().window().setSize(dimension);
@@ -24,7 +24,7 @@ public class SquizMobileGefComponentsUnusedTest extends CapabilitiesBuilder {
     }
 
     @Test
-    public void whitelabelIconAndLabelTest() throws Exception {
+    public void whitelabelMobileIconAndLabelTest() throws Exception {
         SquizActionMethods squizAction = new SquizActionMethods(driver);
         Dimension dimension = new Dimension(375, 650);
         driver.manage().window().setSize(dimension);
@@ -36,7 +36,7 @@ public class SquizMobileGefComponentsUnusedTest extends CapabilitiesBuilder {
     }
 
     @Test
-    public void whitelabelLoginLinkTest() throws Exception {
+    public void whitelabelMobileLoginLinkTest() throws Exception {
         SquizActionMethods squizAction = new SquizActionMethods(driver);
         Dimension dimension = new Dimension(375, 650);
         driver.manage().window().setSize(dimension);
@@ -48,7 +48,7 @@ public class SquizMobileGefComponentsUnusedTest extends CapabilitiesBuilder {
     }
 
     @Test
-    public void whitelabelMaintenanceRibbonTest() throws Exception {
+    public void whitelabelMobileMaintenanceRibbonTest() throws Exception {
         SquizActionMethods squizAction = new SquizActionMethods(driver);
         Dimension dimension = new Dimension(375, 650);
         driver.manage().window().setSize(dimension);
@@ -60,7 +60,7 @@ public class SquizMobileGefComponentsUnusedTest extends CapabilitiesBuilder {
     }
 
     @Test
-    public void whitelabelNewsLetterSignUpTest() throws Exception {
+    public void whitelabelMobileNewsLetterSignUpTest() throws Exception {
         SquizActionMethods squizAction = new SquizActionMethods(driver);
         Dimension dimension = new Dimension(375, 650);
         driver.manage().window().setSize(dimension);
@@ -74,7 +74,7 @@ public class SquizMobileGefComponentsUnusedTest extends CapabilitiesBuilder {
 
 
     @Test
-    public void whitelabelPrimaryHubTest() throws Exception {
+    public void whitelabelMobilePrimaryHubTest() throws Exception {
         SquizActionMethods squizAction = new SquizActionMethods(driver);
         Dimension dimension = new Dimension(375, 650);
         driver.manage().window().setSize(dimension);
@@ -86,7 +86,7 @@ public class SquizMobileGefComponentsUnusedTest extends CapabilitiesBuilder {
     }
 
     @Test
-    public void whitelabelRadioListTest() throws Exception {
+    public void whitelabelMobileRadioListTest() throws Exception {
         SquizActionMethods squizAction = new SquizActionMethods(driver);
         Dimension dimension = new Dimension(375, 650);
         driver.manage().window().setSize(dimension);

@@ -15,7 +15,7 @@ public class SquizMobileGefComponentsFullWidthTest extends CapabilitiesBuilder {
 
 
         @Test
-        public void whitelabelContentBannerTest() throws Exception {
+        public void whitelabelMobileContentBannerTest() throws Exception {
             SquizActionMethods squizAction = new SquizActionMethods(driver);
             Dimension dimension = new Dimension(375, 650);
             driver.manage().window().setSize(dimension);
@@ -27,7 +27,7 @@ public class SquizMobileGefComponentsFullWidthTest extends CapabilitiesBuilder {
         }
 
         @Test
-        public void whitelabelBreadcrumbsTest() throws Exception {
+        public void whitelabelMobileBreadcrumbsTest() throws Exception {
             SquizActionMethods squizAction = new SquizActionMethods(driver);
             Dimension dimension = new Dimension(375, 650);
             driver.manage().window().setSize(dimension);
@@ -39,7 +39,7 @@ public class SquizMobileGefComponentsFullWidthTest extends CapabilitiesBuilder {
         }
 
         @Test
-        public void whitelabelTeasersTest() throws Exception {
+        public void whitelabelMobileTeasersTest() throws Exception {
             SquizActionMethods squizAction = new SquizActionMethods(driver);
             Dimension dimension = new Dimension(375, 650);
             driver.manage().window().setSize(dimension);
@@ -51,7 +51,7 @@ public class SquizMobileGefComponentsFullWidthTest extends CapabilitiesBuilder {
         }
 
         @Test
-        public void whitelabelLinkGroupTest() throws Exception {
+        public void whitelabelMobileLinkGroupTest() throws Exception {
             SquizActionMethods squizAction = new SquizActionMethods(driver);
             Dimension dimension = new Dimension(375, 650);
             driver.manage().window().setSize(dimension);
@@ -63,7 +63,7 @@ public class SquizMobileGefComponentsFullWidthTest extends CapabilitiesBuilder {
         }
 
         @Test
-        public void whitelabelExpandedNav() throws Exception {
+        public void whitelabelMobileExpandedNav() throws Exception {
             SquizActionMethods squizAction = new SquizActionMethods(driver);
             Dimension dimension = new Dimension(375, 650);
             driver.manage().window().setSize(dimension);
@@ -75,7 +75,7 @@ public class SquizMobileGefComponentsFullWidthTest extends CapabilitiesBuilder {
         }
 
         @Test
-        public void whitelabelAZAnchorsTest() throws Exception {
+        public void whitelabelMobileAZAnchorsTest() throws Exception {
             SquizActionMethods squizAction = new SquizActionMethods(driver);
             Dimension dimension = new Dimension(375, 650);
             driver.manage().window().setSize(dimension);
@@ -87,7 +87,7 @@ public class SquizMobileGefComponentsFullWidthTest extends CapabilitiesBuilder {
         }
 
         @Test
-        public void whitelabelAZListTest() throws Exception {
+        public void whitelabelMobileAZListTest() throws Exception {
             SquizActionMethods squizAction = new SquizActionMethods(driver);
             Dimension dimension = new Dimension(375, 650);
             driver.manage().window().setSize(dimension);
@@ -99,7 +99,7 @@ public class SquizMobileGefComponentsFullWidthTest extends CapabilitiesBuilder {
         }
 
         @Test
-        public void whitelabelLandingHeaderTest() throws Exception {
+        public void whitelabelMobileLandingHeaderTest() throws Exception {
             SquizActionMethods squizAction = new SquizActionMethods(driver);
             Dimension dimension = new Dimension(375, 650);
             driver.manage().window().setSize(dimension);
@@ -111,7 +111,7 @@ public class SquizMobileGefComponentsFullWidthTest extends CapabilitiesBuilder {
         }
 
         @Test
-        public void whitelabelTableOfContentsTest() throws Exception {
+        public void whitelabelMobileTableOfContentsTest() throws Exception {
             SquizActionMethods squizAction = new SquizActionMethods(driver);
             Dimension dimension = new Dimension(375, 650);
             driver.manage().window().setSize(dimension);
@@ -123,7 +123,7 @@ public class SquizMobileGefComponentsFullWidthTest extends CapabilitiesBuilder {
         }
 
         @Test
-        public void whitelabelResultsTableTest() throws Exception {
+        public void whitelabelMobileResultsTableTest() throws Exception {
             SquizActionMethods squizAction = new SquizActionMethods(driver);
             Dimension dimension = new Dimension(375, 650);
             driver.manage().window().setSize(dimension);
@@ -135,7 +135,7 @@ public class SquizMobileGefComponentsFullWidthTest extends CapabilitiesBuilder {
         }
 
         @Test
-        public void whitelabelContentContainerTest() throws Exception {
+        public void whitelabelMobileContentContainerTest() throws Exception {
             SquizActionMethods squizAction = new SquizActionMethods(driver);
             Dimension dimension = new Dimension(375, 650);
             driver.manage().window().setSize(dimension);
@@ -147,7 +147,7 @@ public class SquizMobileGefComponentsFullWidthTest extends CapabilitiesBuilder {
         }
 
         @Test
-        public void whitelabelCatalogueTest() throws Exception {
+        public void whitelabelMobileCatalogueTest() throws Exception {
             SquizActionMethods squizAction = new SquizActionMethods(driver);
             Dimension dimension = new Dimension(375, 650);
             driver.manage().window().setSize(dimension);
@@ -159,7 +159,7 @@ public class SquizMobileGefComponentsFullWidthTest extends CapabilitiesBuilder {
         }
 
         @Test
-        public void whitelabelDrawerTest() throws Exception {
+        public void whitelabelMobileDrawerTest() throws Exception {
             SquizActionMethods squizAction = new SquizActionMethods(driver);
             Dimension dimension = new Dimension(375, 650);
             driver.manage().window().setSize(dimension);
@@ -171,7 +171,7 @@ public class SquizMobileGefComponentsFullWidthTest extends CapabilitiesBuilder {
         }
 
         @Test
-        public void whitelabelEduBannerTest() throws Exception {
+        public void whitelabelMobileEduBannerTest() throws Exception {
             SquizActionMethods squizAction = new SquizActionMethods(driver);
             Dimension dimension = new Dimension(375, 650);
             driver.manage().window().setSize(dimension);
@@ -183,7 +183,7 @@ public class SquizMobileGefComponentsFullWidthTest extends CapabilitiesBuilder {
         }
 
         @Test
-        public void whitelabelNoticeRibbonTest() throws Exception {
+        public void whitelabelMobileNoticeRibbonTest() throws Exception {
             SquizActionMethods squizAction = new SquizActionMethods(driver);
             Dimension dimension = new Dimension(375, 650);
             driver.manage().window().setSize(dimension);
