@@ -11,6 +11,11 @@ import org.openqa.selenium.Dimension;
  */
 public class SquizMobileGefComponentsWidthContainedTest extends CapabilitiesBuilder {
 
+    @Override
+    public boolean getForceFullPageScreenshot() {
+        return false;
+    }
+
     @Test
     public void whitelabelMobileAnchorBoxTest() throws Exception {
         SquizActionMethods squizAction = new SquizActionMethods(driver);

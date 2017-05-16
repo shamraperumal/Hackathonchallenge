@@ -11,8 +11,10 @@ import org.openqa.selenium.Dimension;
  */
 public class SquizMobileGefComponentsDefaultElementsTest extends CapabilitiesBuilder {
 
-
-
+    @Override
+    public boolean getForceFullPageScreenshot() {
+        return false;
+    }
 
         @Test
         public void whitelabelMobileLinksTest() throws Exception {
