@@ -10,7 +10,7 @@ import org.junit.Test;
 public class SquizAntibullyingMobileTemplateTest extends CapabilitiesBuilder {
 
     @Test
-    public void antibullyingTemplateEyesTest() throws Exception {
+    public void antibullyingMobileTemplateEyesTest() throws Exception {
 
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
