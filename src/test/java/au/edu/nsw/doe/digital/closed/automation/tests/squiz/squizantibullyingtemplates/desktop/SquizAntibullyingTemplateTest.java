@@ -1,4 +1,4 @@
-package au.edu.nsw.doe.digital.closed.automation.tests.squiz.squizantibullying.mobile;
+package au.edu.nsw.doe.digital.closed.automation.tests.squiz.squizantibullyingtemplates.desktop;
 
 import au.edu.nsw.doe.digital.closed.automation.setup.CapabilitiesBuilder;
 import au.edu.nsw.doe.digital.closed.automation.tests.squiz.SquizActionMethods;
@@ -7,10 +7,10 @@ import org.junit.Test;
 /**
  * Created by christopherpigden on 21/3/17.
  */
-public class SquizAntibullyingMobileTemplateTest extends CapabilitiesBuilder {
+public class SquizAntibullyingTemplateTest extends CapabilitiesBuilder {
 
     @Test
-    public void antibullyingMobileTemplateEyesTest() throws Exception {
+    public void antibullyingTemplateEyesTest() throws Exception {
 
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
