@@ -1,6 +1,8 @@
 package au.edu.nsw.doe.digital.closed.automation.tests.squiz;
 
 import au.edu.nsw.doe.digital.closed.automation.pageobjects.squiz.*;
+import au.edu.nsw.doe.digital.closed.automation.pageobjects.sso.SsoLogin;
+import com.applitools.eyes.Eyes;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -177,6 +179,40 @@ public class SquizActionMethods implements SquizActions {
        catch (final Exception e){
            System.out.println("Failed to maxmise window");
        }
+    }
+
+    public void ssoLoginEntry() throws Exception {
+        try {
+            System.out.print("get page");
+            driver.get(System.getenv("SSOURL"));
+            wait(SsoLogin.username);
+            wait(SsoLogin.password);
+            wait(SsoLogin.submitButton);
+            driver.findElement(SsoLogin.username).sendKeys(System.getenv("USERNAME"));
+            driver.findElement(SsoLogin.password).sendKeys(System.getenv("PASSWORD"));
+            driver.findElement(SsoLogin.submitButton).click();
+        } catch (final Exception e) {
+            System.out.println("Login failed");
+            throw e;
+        }
+    }
+
+    public void ssoLogin() throws Exception {
+        System.out.println("Attempting login...");
+        int count = 0;
+        int maxTries = 3;
+        while (true) {
+            try {
+                ssoLoginEntry();
+                if (!"Staff Portal - Home".equals(driver.getTitle())) {
+                    throw new IllegalStateException("Failed login");
+                }
+                break;
+            } catch (Exception e) {
+                // handle exception
+                if (++count == maxTries) throw e;
+            }
+        }
     }
 
 

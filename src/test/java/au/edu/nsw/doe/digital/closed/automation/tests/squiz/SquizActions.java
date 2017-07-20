@@ -32,4 +32,8 @@ public interface SquizActions {
     void getNewInstance() throws Exception;
 
     void maximiseWindow() throws Exception;
+
+    void ssoLoginEntry() throws Exception;
+
+    void ssoLogin() throws Exception;
 }
