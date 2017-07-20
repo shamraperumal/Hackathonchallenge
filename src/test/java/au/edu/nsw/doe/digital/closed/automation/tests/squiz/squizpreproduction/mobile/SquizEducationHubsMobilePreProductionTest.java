@@ -14,6 +14,8 @@ public class SquizEducationHubsMobilePreProductionTest extends CapabilitiesBuild
 
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
+        squizAction.ssoLogin();
+
         squizAction.getPage("education-base", "");
         eyes.checkWindow(System.getenv("EYES-EDUCATION-HOME"));
 
@@ -25,5 +27,6 @@ public class SquizEducationHubsMobilePreProductionTest extends CapabilitiesBuild
 
         squizAction.getPage("education-base", "education-secondary-hub");
         eyes.checkWindow(System.getenv("EYES-EDUCATION-SECONDARY-HUB"));
+
     }
     }
