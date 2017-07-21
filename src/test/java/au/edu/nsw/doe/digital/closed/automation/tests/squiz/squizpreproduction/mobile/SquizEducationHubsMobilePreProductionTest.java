@@ -14,12 +14,10 @@ public class SquizEducationHubsMobilePreProductionTest extends CapabilitiesBuild
 
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
-        squizAction.ssoLogin();
-
         squizAction.getPage("education-base", "");
         eyes.checkWindow(System.getenv("EYES-EDUCATION-HOME"));
 
-        squizAction.getPage("education-base", "education-private-primary-hub");
+        squizAction.ssoLogin();
         eyes.checkWindow(System.getenv("EYES-EDUCATION-PRIVATE-PRIMARY-HUB"));
 
         squizAction.getPage("education-base", "education-primary-hub");

@@ -21,13 +21,12 @@ public class SquizEducationHubsPreProductionTest extends CapabilitiesBuilder {
     public void educationHubsDesktopPreProductionEyesTest() throws Exception {
 
         SquizActionMethods squizAction = new SquizActionMethods(driver);
-
-        action.ssoLogin();
         
         squizAction.getPage("education-base", "");
         eyes.checkWindow(System.getenv("EYES-EDUCATION-HOME"));
 
-        squizAction.getPage("education-base", "education-private-primary-hub");
+        action.ssoLogin();
+
         eyes.checkWindow(System.getenv("EYES-EDUCATION-PRIVATE-PRIMARY-HUB"));
 
         squizAction.getPage("education-base", "education-primary-hub");

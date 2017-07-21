@@ -204,7 +204,7 @@ public class SquizActionMethods implements SquizActions {
         while (true) {
             try {
                 ssoLoginEntry();
-                if (!"Staff Portal - Home".equals(driver.getTitle())) {
+                if (!"Home | Inside the department".equals(driver.getTitle())) {
                     throw new IllegalStateException("Failed login");
                 }
                 break;
