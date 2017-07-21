@@ -17,7 +17,7 @@ public class SquizEducationHubsMobilePreProductionTest extends CapabilitiesBuild
         squizAction.getPage("education-base", "");
         eyes.checkWindow(System.getenv("EYES-EDUCATION-HOME"));
 
-        squizAction.ssoLogin();
+        squizAction.ssoLoginEntry();
         eyes.checkWindow(System.getenv("EYES-EDUCATION-PRIVATE-PRIMARY-HUB"));
 
         squizAction.getPage("education-base", "education-primary-hub");
