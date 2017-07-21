@@ -26,5 +26,6 @@ public class SquizEducationHubsMobilePreProductionTest extends CapabilitiesBuild
         squizAction.getPage("education-base", "education-secondary-hub");
         eyes.checkWindow(System.getenv("EYES-EDUCATION-SECONDARY-HUB"));
 
+        eyes.close();
     }
     }
