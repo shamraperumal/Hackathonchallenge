@@ -10,17 +10,17 @@ import org.junit.Test;
  */
 public class GlobalElementsTest extends CapabilitiesBuilder {
 
-    private PwsActions action;
+    private AemActions action;
 
     @Override
     public void doSetUp() {
-        action = new PwsActionMethods(driver);
+        action = new AemActionMethods(driver);
     }
 
     @Test
     public void someTest() throws Exception {
         {
-            action.getPage("", "", "", "");
+            action.getPage("sws-component-base","sws-global-footer");
             eyes.checkWindow("");
 
             eyes.close();
