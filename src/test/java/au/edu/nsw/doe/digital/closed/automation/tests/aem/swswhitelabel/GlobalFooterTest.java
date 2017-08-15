@@ -9,7 +9,7 @@ import org.junit.Test;
 /**
  * Created by christopherpigden on 8/8/17.
  */
-public class GlobalElementsTest extends CapabilitiesBuilder {
+public class GlobalFooterTest extends CapabilitiesBuilder {
 
     private AemActions action;
 
@@ -19,7 +19,7 @@ public class GlobalElementsTest extends CapabilitiesBuilder {
     }
 
     @Test
-    public void someTest() throws Exception {
+    public void globalFooterTest() throws Exception {
         {
             action.getPage("sws-component-base","sws-global-footer");
             eyes.checkRegion(GlobalElements.globalFooter);
