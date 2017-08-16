@@ -33,6 +33,7 @@ public abstract class Setup implements SauceOnDemandSessionIdProvider {
     protected String sessionId;
     protected Eyes eyes;
     protected String testName;
+    public String device = System.getenv("DEVICE");
 
 
 
@@ -84,7 +85,7 @@ public abstract class Setup implements SauceOnDemandSessionIdProvider {
             System.out.print("failed to set the full page screenshot");
         }
         if (crossBrowserTest != null ) {
-            eyes.setBaselineName(testName);
+            eyes.setBaselineName(testName+ device);
         }
         if (proxy != null) {
             eyes.setProxy(new ProxySettings(proxy));
