@@ -61,7 +61,7 @@ public abstract class Setup implements SauceOnDemandSessionIdProvider {
         if (crossBrowserTest != null ) {
         this.driver = eyes.open(browser, "DoE", testName, getRectangleSize());
         } else {
-            this.driver = eyes.open(browser, "DoE", testName + testBrowserVersion + device, getRectangleSize());
+            this.driver = eyes.open(browser, "DoE", testName + device + " - " + testBrowserVersion, getRectangleSize());
         }
         this.sessionId = ((RemoteWebDriver) browser).getSessionId().toString();
         ((RemoteWebDriver) browser).setFileDetector(new LocalFileDetector());
@@ -83,9 +83,6 @@ public abstract class Setup implements SauceOnDemandSessionIdProvider {
             }
         }catch (final Exception e){
             System.out.print("failed to set the full page screenshot");
-        }
-        if (crossBrowserTest != null ) {
-            eyes.setBaselineName(testName + device);
         }
         if (proxy != null) {
             eyes.setProxy(new ProxySettings(proxy));
