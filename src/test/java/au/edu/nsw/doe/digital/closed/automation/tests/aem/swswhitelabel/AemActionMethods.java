@@ -64,7 +64,7 @@ public class AemActionMethods implements AemActions {
         }
     }
 
-    public void setScreenDimensions(String DEVICE) throws Exception {
+    public void setScreenDimensions() throws Exception {
         try {
             String thisDevice = System.getenv("DEVICE");
             if(thisDevice == "Tablet"){

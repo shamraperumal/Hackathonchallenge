@@ -22,7 +22,7 @@ public class GlobalFooterTest extends CapabilitiesBuilder {
     public void globalFooterTest() throws Exception {
         {
 
-            action.setScreenDimensions("DEVICE");
+            action.setScreenDimensions();
             action.getPage("sws-component-base","sws-global-footer");
             eyes.checkRegion(GlobalElements.globalFooter);
 

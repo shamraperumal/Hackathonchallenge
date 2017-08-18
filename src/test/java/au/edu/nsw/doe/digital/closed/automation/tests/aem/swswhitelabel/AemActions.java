@@ -17,7 +17,7 @@ public interface AemActions {
 
     void maximiseWindow() throws Exception;
 
-    void setScreenDimensions(String DEVICE) throws Exception;
+    void setScreenDimensions() throws Exception;
 
 
 
