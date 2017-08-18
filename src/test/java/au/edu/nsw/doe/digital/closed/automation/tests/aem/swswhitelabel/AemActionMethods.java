@@ -79,6 +79,7 @@ public class AemActionMethods implements AemActions {
             }
         } catch (final Exception e) {
             System.out.println("Failed to set screen dimensions");
+            throw e;
         }
     }
 }

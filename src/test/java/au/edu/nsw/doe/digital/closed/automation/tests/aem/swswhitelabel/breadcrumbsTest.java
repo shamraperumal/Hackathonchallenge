@@ -20,9 +20,21 @@ public class breadcrumbsTest extends CapabilitiesBuilder {
     @Test
     public void breadcrumbsTest() throws Exception {
 
-
-            Dimension dimension = new Dimension(375, 650);
-            driver.manage().window().setSize(dimension);
+try {
+    String thisDevice = System.getenv("DEVICE");
+    if(thisDevice == "Tablet"){
+        Dimension dimension = new Dimension(768, 946);
+        driver.manage().window().setSize(dimension);
+        System.out.println("Set tablet width");
+    }
+    if(thisDevice=="Mobile"){
+        Dimension dimension = new Dimension(375, 650);
+        driver.manage().window().setSize(dimension);
+        System.out.println("Set mobile width");
+    }
+}catch( final Exception e){
+    throw e;
+}
 
             action.getPage("sws-component-base","sws-breadcrumbs");
             eyes.checkRegion(GlobalElements.breadcrumbs);
