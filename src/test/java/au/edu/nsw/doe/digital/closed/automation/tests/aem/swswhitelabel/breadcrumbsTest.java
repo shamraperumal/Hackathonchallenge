@@ -7,7 +7,7 @@ import org.junit.Test;
 /**
  * Created by christopherpigden on 8/8/17.
  */
-public class breadcrumbsTest extends CapabilitiesBuilder {
+public class BreadcrumbsTest extends CapabilitiesBuilder {
 
     private AemActions action;
 
