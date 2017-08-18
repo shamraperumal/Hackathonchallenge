@@ -66,7 +66,7 @@ public class AemActionMethods implements AemActions {
 
     public void setScreenDimensions(String DEVICE) throws Exception {
         try {
-            String thisDevice = System.getenv(DEVICE);
+            String thisDevice = System.getenv("DEVICE");
             if(thisDevice == "Tablet"){
                 Dimension dimension = new Dimension(768, 946);
                 driver.manage().window().setSize(dimension);
