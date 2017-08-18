@@ -70,10 +70,12 @@ public class AemActionMethods implements AemActions {
             if(thisDevice == "tablet"){
                 Dimension dimension = new Dimension(768, 946);
                 driver.manage().window().setSize(dimension);
+                System.out.println("Set tablet width");
             }
             if(thisDevice=="mobile"){
                 Dimension dimension = new Dimension(375, 650);
                 driver.manage().window().setSize(dimension);
+                System.out.println("Set mobile width");
             }
         } catch (final Exception e) {
             System.out.println("Failed to set screen dimensions");
