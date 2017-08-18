@@ -21,6 +21,8 @@ public class GlobalFooterTest extends CapabilitiesBuilder {
     @Test
     public void globalFooterTest() throws Exception {
         {
+
+            action.setScreenDimensions("device");
             action.getPage("sws-component-base","sws-global-footer");
             eyes.checkRegion(GlobalElements.globalFooter);
 

@@ -19,6 +19,7 @@ public class LocalHeaderTest extends CapabilitiesBuilder {
     @Test
     public void localHeaderTest() throws Exception {
         {
+            action.setScreenDimensions("device");
             action.getPage("sws-component-base","sws-local-header");
             eyes.checkRegion(GlobalElements.localHeader);
 

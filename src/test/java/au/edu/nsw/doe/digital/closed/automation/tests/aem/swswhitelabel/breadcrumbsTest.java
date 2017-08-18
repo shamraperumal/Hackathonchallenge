@@ -19,6 +19,7 @@ public class BreadcrumbsTest extends CapabilitiesBuilder {
     @Test
     public void breadcrumbsTest() throws Exception {
         {
+            action.setScreenDimensions("device");
             action.getPage("sws-component-base","sws-breadcrumbs");
             eyes.checkRegion(GlobalElements.breadcrumbs);
 
