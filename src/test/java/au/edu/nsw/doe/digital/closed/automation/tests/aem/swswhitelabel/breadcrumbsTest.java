@@ -8,7 +8,7 @@ import org.openqa.selenium.Dimension;
 /**
  * Created by christopherpigden on 8/8/17.
  */
-public class BreadcrumbsTest extends CapabilitiesBuilder {
+public class breadcrumbsTest extends CapabilitiesBuilder {
 
     private AemActions action;
 
