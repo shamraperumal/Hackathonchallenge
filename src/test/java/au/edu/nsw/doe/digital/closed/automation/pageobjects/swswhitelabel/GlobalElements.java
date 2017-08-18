@@ -8,6 +8,8 @@ import org.openqa.selenium.By;
 public class GlobalElements {
 public static By globalFooter = By.id("globalfooter");
 public static By localHeader = By.id("localheader");
+public static By breadcrumbs = By.id("breadcrumbs");
+
 }
 
 
