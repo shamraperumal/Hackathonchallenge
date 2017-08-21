@@ -44,7 +44,7 @@ public class AemActionMethods implements AemActions {
     }
 
 
-    public void clickWebElement(By locator) throws Exception {
+    public void click(By locator) throws Exception {
         By thisLocator = locator;
         try {
             driver.findElement(thisLocator).click();

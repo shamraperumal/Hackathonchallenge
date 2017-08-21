@@ -13,7 +13,7 @@ public interface AemActions {
 
     void wait(final By element) throws Exception;
 
-    void clickWebElement(By locator) throws Exception;
+    void click(By locator) throws Exception;
 
     void maximiseWindow() throws Exception;
 

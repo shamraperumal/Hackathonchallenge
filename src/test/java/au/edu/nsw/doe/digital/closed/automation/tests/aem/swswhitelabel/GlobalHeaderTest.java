@@ -23,6 +23,12 @@ public class GlobalHeaderTest extends CapabilitiesBuilder {
             action.getPage("sws-component-base","sws-global-header");
             eyes.checkRegion(GlobalElements.globalHeader);
 
+            action.click(GlobalElements.googleTranslate);
+            eyes.checkRegion(GlobalElements.globalHeader);
+
+            action.click(GlobalElements.loginButton);
+            eyes.checkRegion(GlobalElements.globalHeader);
+
             eyes.close();
         }
     }

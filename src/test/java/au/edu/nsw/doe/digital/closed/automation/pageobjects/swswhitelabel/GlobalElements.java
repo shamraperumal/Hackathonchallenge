@@ -6,11 +6,15 @@ import org.openqa.selenium.By;
  * Created by christopherpigden on 11/8/17.
  */
 public class GlobalElements {
+//Component divs
 public static By globalFooter = By.id("globalfooter");
 public static By globalHeader = By.id("globalheader");
 public static By localHeader = By.id("localheader");
 public static By breadcrumbs = By.id("breadcrumbs");
 
+//Clickable web elements
+public static By googleTranslate = By.id("googleTranslateBtn");
+public static By loginButton = By.id("loginDropdownBtn");
 }
 
 
