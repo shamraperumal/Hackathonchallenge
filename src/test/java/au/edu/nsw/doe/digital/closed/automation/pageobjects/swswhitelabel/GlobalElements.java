@@ -13,8 +13,7 @@ public static By localHeader = By.id("localheader");
 public static By breadcrumbs = By.id("breadcrumbs");
 
 //Clickable web elements
-public static By googleTranslate = By.id("googleTranslateBtn");
-public static By loginButton = By.id("loginDropdownBtn");
+public static By loginButton = By.id("logindropdownbtn");
 }
 
 
