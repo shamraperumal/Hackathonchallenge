@@ -24,7 +24,7 @@ public class GlobalHeaderTest extends CapabilitiesBuilder {
             eyes.checkRegion(GlobalElements.globalHeader);
 
             action.click(GlobalElements.loginButton);
-            eyes.checkRegion(GlobalElements.globalHeader);
+            eyes.checkRegion(GlobalElements.globalHeaderLinksDropdown);
 
             eyes.close();
         }
