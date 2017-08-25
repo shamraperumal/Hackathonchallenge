@@ -46,7 +46,7 @@ public class PwsActionMethods implements PwsActions {
         while (true) {
             try {
                 ssoLoginEntry();
-                if (!"landing - shared".equals(driver.getTitle())) {
+                if (!"Staff Portal - Home".equals(driver.getTitle())) {
                     throw new IllegalStateException("Failed login");
                 }
                 break;
