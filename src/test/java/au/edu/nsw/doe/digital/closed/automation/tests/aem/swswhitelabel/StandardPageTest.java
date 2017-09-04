@@ -21,7 +21,7 @@ public class StandardPageTest extends CapabilitiesBuilder {
         {
             action.setScreenDimensions();
             action.getPage("sws-component-base","sws-standard");
-            eyes.checkWindow(System.getenv("Whitelabel standard page template"));
+            eyes.checkWindow(System.getenv("sws-standard-page-template"));
 
             eyes.close();
         }
