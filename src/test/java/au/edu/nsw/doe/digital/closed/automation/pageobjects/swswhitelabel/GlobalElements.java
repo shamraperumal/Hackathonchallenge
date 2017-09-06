@@ -6,15 +6,23 @@ import org.openqa.selenium.By;
  * Created by christopherpigden on 11/8/17.
  */
 public class GlobalElements {
-//Component divs
-public static By globalFooter = By.id("globalfooter");
-public static By globalHeader = By.id("globalheader");
-public static By localHeader = By.id("localheader");
-public static By breadcrumbs = By.id("breadcrumbs");
-public static By globalHeaderLinksDropdown = By.cssSelector(".sws-global-links-dropdown");
 
-//Clickable web elements
-public static By loginButton = By.id("logindropdownbtn");
+    //Component divs
+    public static By globalFooter = By.id("globalfooter");
+    public static By globalHeader = By.id("globalheader");
+    public static By localHeader = By.id("localheader");
+    public static By breadcrumbs = By.id("breadcrumbs");
+    public static By globalHeaderLinksDropdown = By.cssSelector(".sws-global-links-dropdown");
+    public static By megaMenu = By.id("meganav");
+
+
+    //Clickable web elements
+    public static By loginButton = By.id("logindropdownbtn");
+    public static By subMenuLink1 = By.cssSelector(".uk-parent:nth-child(3) .sws-meganav-megalinks");
+    public static By subMenuLink2 = By.cssSelector(".uk-parent:nth-child(4) .sws-meganav-megalinks");
+    public static By subMenuLink3 = By.cssSelector(".uk-parent:nth-child(6) .sws-meganav-megalinks");
+    public static By subMenuLink4 = By.cssSelector(".uk-parent:nth-child(8) .sws-meganav-megalinks");
+    public static By subMenu = By.id(".uk-margin-top");
 
 }
 
