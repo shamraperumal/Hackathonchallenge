@@ -30,9 +30,6 @@ public class MegaMenuTest extends CapabilitiesBuilder {
             action.click(GlobalElements.subMenuLink3);
             eyes.checkRegion(GlobalElements.subMenu);
 
-            action.click(GlobalElements.subMenuLink4);
-            eyes.checkRegion(GlobalElements.subMenu);
-
             eyes.close();
         }
     }

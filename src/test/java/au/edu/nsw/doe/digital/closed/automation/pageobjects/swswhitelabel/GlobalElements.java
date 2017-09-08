@@ -18,10 +18,9 @@ public class GlobalElements {
 
     //Clickable web elements
     public static By loginButton = By.id("logindropdownbtn");
-    public static By subMenuLink1 = By.cssSelector(".uk-parent:nth-child(3) .sws-meganav-megalinks");
-    public static By subMenuLink2 = By.cssSelector(".uk-parent:nth-child(4) .sws-meganav-megalinks");
-    public static By subMenuLink3 = By.cssSelector(".uk-parent:nth-child(6) .sws-meganav-megalinks");
-    public static By subMenuLink4 = By.cssSelector(".uk-parent:nth-child(8) .sws-meganav-megalinks");
+    public static By subMenuLink1 = By.cssSelector(".uk-parent:nth-child(4) .sws-meganav-megalinks");
+    public static By subMenuLink2 = By.cssSelector(".uk-parent:nth-child(5) .sws-meganav-megalinks");
+    public static By subMenuLink3 = By.cssSelector(".uk-parent:nth-child(7) .sws-meganav-megalinks");
     public static By subMenu = By.id(".uk-margin-top");
 
 }
