@@ -24,6 +24,8 @@ public class MegaMenuTest extends CapabilitiesBuilder {
             action.click(GlobalElements.subMenuLink1);
             eyes.checkRegion(GlobalElements.subMenu);
 
+            action.getPage("sws-component-base","sws-mega-menu");
+
             action.click(GlobalElements.subMenuLink2);
             eyes.checkRegion(GlobalElements.subMenu);
 
