@@ -21,7 +21,7 @@ public class GlobalElements {
     public static By subMenuLink1 = By.cssSelector(".uk-parent:nth-child(4) .sws-meganav-megalinks");
     public static By subMenuLink2 = By.cssSelector(".uk-parent:nth-child(5) .sws-meganav-megalinks");
     public static By subMenuLink3 = By.cssSelector(".uk-parent:nth-child(7) .sws-meganav-megalinks");
-    public static By subMenu = By.cssSelector(".uk-position-relative");
+    public static By subMenu = By.cssSelector(".sws-meganav-container .uk-container .uk-container-center .uk-position-relative");
 
 }
 
