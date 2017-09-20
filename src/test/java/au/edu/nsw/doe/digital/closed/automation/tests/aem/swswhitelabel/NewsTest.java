@@ -20,7 +20,7 @@ public class NewsTest extends CapabilitiesBuilder{
 
         action.getPage("sws-component-base","sws-news-layouts");
 
-        eyes.checkWindow(System.getenv("sws-news-layouts"));
+        eyes.checkWindow(System.getenv("sws-news"));
 
         eyes.close();
     }
