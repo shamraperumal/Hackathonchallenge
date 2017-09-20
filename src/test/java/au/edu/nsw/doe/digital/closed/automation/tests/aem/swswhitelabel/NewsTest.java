@@ -18,20 +18,6 @@ public class NewsTest extends CapabilitiesBuilder{
 
         action.setScreenDimensions();
 
-        action.getPage("sws-component-base","sws-news-components");
-
-        //News headline
-        eyes.checkRegion(NewsElements.newsHeader);
-
-        //News with image
-        eyes.checkRegion(NewsElements.newsImage);
-
-        //News without image
-        eyes.checkRegion(NewsElements.newsNoImage);
-
-        //News headline only
-        eyes.checkRegion(NewsElements.newsCategory);
-
         action.getPage("sws-component-base","sws-news-layouts");
 
         //News full width 3 images
