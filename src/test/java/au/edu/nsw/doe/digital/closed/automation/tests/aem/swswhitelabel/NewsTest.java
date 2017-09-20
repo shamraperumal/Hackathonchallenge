@@ -14,23 +14,13 @@ public class NewsTest extends CapabilitiesBuilder{
     }
 
     @Test
-    public void newsComponentsTest()throws Exception {
+    public void newsLayoutsTest()throws Exception {
 
         action.setScreenDimensions();
 
         action.getPage("sws-component-base","sws-news-layouts");
 
-        //News full width 3 images
-        eyes.checkRegion(NewsElements.newsFullWidthFullImage);
-
-        //News full width
-        eyes.checkRegion(NewsElements.newsFullWidth);
-
-        //News 66%
-        eyes.checkRegion(NewsElements.newsTwoColumn);
-
-        //News 33%
-        eyes.checkRegion(NewsElements.newsOneColumn);
+        eyes.checkWindow(System.getenv("sws-news-layouts"));
 
         eyes.close();
     }
