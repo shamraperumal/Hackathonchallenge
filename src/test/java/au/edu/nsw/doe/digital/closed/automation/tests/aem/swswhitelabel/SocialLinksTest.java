@@ -17,11 +17,13 @@ public class SocialLinksTest extends CapabilitiesBuilder {
     }
 
     @Test
-    public void quickLinksMandatoryTest() throws Exception {
+    public void socialLinksTest() throws Exception {
         {
             action.setScreenDimensions();
             action.getPage("sws-component-base","sws-social-links");
+
             eyes.checkRegion(GlobalElements.socialLinksAll);
+            
             eyes.checkRegion(GlobalElements.socialLinksTwo);
 
             eyes.close();
