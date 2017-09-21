@@ -17,6 +17,8 @@ public class GlobalElements {
     public static By mandatoryQuickLinks = By.id("globalquicklinkstestcontainer");
     public static By optionalQuickLinksFiveItems = By.id("quicklinks5items");
     public static By optionalQuickLinksTwoItems = By.id("quicklinks2items");
+    public static By socialLinksAll = By.id("sociallinks5items");
+    public static By socialLinksTwo = By.id("sociallinks2items");
 
 
 
