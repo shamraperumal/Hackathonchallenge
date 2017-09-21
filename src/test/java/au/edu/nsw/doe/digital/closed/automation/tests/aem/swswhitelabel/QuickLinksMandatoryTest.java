@@ -7,7 +7,7 @@ import org.junit.Test;
 /**
  * Created by christopherpigden on 8/8/17.
  */
-public class QuickLinksOptionalTest extends CapabilitiesBuilder {
+public class QuickLinksMandatoryTest extends CapabilitiesBuilder {
 
     private AemActions action;
 
@@ -17,12 +17,11 @@ public class QuickLinksOptionalTest extends CapabilitiesBuilder {
     }
 
     @Test
-    public void quickLinksOptionalTest() throws Exception {
+    public void quickLinksMandatoryTest() throws Exception {
         {
             action.setScreenDimensions();
-            action.getPage("sws-component-base","sws-quick-links-optional");
-            eyes.checkRegion(GlobalElements.optionalQuickLinksFiveItems);
-            eyes.checkRegion(GlobalElements.optionalQuickLinksTwoItems);
+            action.getPage("sws-component-base","sws-quick-links-mandatory");
+            eyes.checkRegion(GlobalElements.mandatoryQuickLinks);
 
             eyes.close();
         }

@@ -14,7 +14,10 @@ public class GlobalElements {
     public static By breadcrumbs = By.id("breadcrumbs");
     public static By globalHeaderLinksDropdown = By.cssSelector(".sws-global-links-dropdown");
     public static By megaMenu = By.id("meganav");
-    public static By optionalQuickLinks = By.id("globalquicklinkstestcontainer");
+    public static By mandatoryQuickLinks = By.id("globalquicklinkstestcontainer");
+    public static By optionalQuickLinksFiveItems = By.id("quicklinks5items");
+    public static By optionalQuickLinksTwoItems = By.id("quicklinks2items");
+
 
 
     //Clickable web elements
