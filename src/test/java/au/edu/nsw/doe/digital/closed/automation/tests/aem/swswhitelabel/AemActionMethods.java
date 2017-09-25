@@ -3,6 +3,7 @@ package au.edu.nsw.doe.digital.closed.automation.tests.aem.swswhitelabel;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -82,6 +83,21 @@ public class AemActionMethods implements AemActions {
             throw e;
         }
     }
+
+
+    public void hover(By locator) throws Exception{
+        By thisLocator = locator;
+        try {
+            Actions builder = new Actions(driver);
+            builder.moveToElement(driver.findElement(thisLocator)).perform();
+            System.out.println("Hover on element");
+        } catch (final Exception e) {
+            System.out.println("Failed to hover on element");
+            throw e;
+        }
+    }
+
+
 }
 
 
