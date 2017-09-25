@@ -16,6 +16,7 @@ public class SquizGreyThemeMobileProductionTest extends CapabilitiesBuilder {
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
         squizAction.getPage("greytheme-base", "greytheme-landing");
+        eyes.checkWindow(System.getenv("EYES-GREYTHEME-Landing"));
 
         squizAction.getPage("greytheme-base", "greytheme-standard");
         eyes.checkWindow(System.getenv("EYES-GREYTHEME-Standard"));
