@@ -19,7 +19,7 @@ public interface AemActions {
 
     void setScreenDimensions() throws Exception;
 
-
+    void hover(By locator) throws Exception;
 
 
 }
