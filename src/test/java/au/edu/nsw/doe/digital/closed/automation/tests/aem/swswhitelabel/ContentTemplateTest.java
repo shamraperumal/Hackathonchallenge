@@ -22,7 +22,7 @@ public class ContentTemplateTest extends CapabilitiesBuilder{
 
         action.getPage("sws-component-base","sws-content");
 
-        eyes.checkWindow(System.getenv("sws-content"));
+        eyes.checkWindow(System.getenv("sws-content-page"));
 
         action.click(ContentElements.showHide);
 
