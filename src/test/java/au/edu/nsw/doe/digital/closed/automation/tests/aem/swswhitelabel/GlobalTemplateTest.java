@@ -16,7 +16,7 @@ public class GlobalTemplateTest extends CapabilitiesBuilder {
     }
 
     @Test
-    public void standardPageTest() throws Exception {
+    public void globalTemplateTest() throws Exception {
         {
             action.setScreenDimensions();
             action.getPage("sws-component-base","global-template");
