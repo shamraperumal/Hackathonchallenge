@@ -19,8 +19,9 @@ public class GlobalElements {
     public static By optionalQuickLinksTwoItems = By.id("quicklinks2items");
     public static By socialLinksAll = By.id("sociallinks5items");
     public static By socialLinksTwo = By.id("sociallinks2items");
-
-
+    public static By bannerStaticImageOnly = By.id("staticBanner");
+    public static By bannerTextOnly = By.id("staticBannerTxt");
+    public static By bannerImageAndText = By.id("staticBannerFull");
 
     //Clickable web elements
     public static By loginButton = By.id("logindropdownbtn");
