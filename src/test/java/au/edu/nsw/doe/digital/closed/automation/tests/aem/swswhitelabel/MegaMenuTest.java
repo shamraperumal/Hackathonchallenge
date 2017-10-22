@@ -21,6 +21,7 @@ public class MegaMenuTest extends CapabilitiesBuilder {
             action.getPage("sws-component-base","sws-mega-menu");
             eyes.checkRegion(GlobalElements.megaMenu);
 
+            if(System.getenv("DEVICE").equals("Desktop")){
             action.click(GlobalElements.subMenuLink1);
             eyes.checkRegion(GlobalElements.subMenu);
 
@@ -28,6 +29,7 @@ public class MegaMenuTest extends CapabilitiesBuilder {
 
             action.click(GlobalElements.subMenuLink2);
             eyes.checkRegion(GlobalElements.subMenu);
+        }
 
             eyes.close();
         }

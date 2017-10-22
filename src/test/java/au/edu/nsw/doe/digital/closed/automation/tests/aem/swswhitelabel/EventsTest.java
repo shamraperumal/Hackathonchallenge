@@ -18,7 +18,7 @@ public class EventsTest extends CapabilitiesBuilder {
     }
 
     @Test
-    public void eventsTest() throws Exception {
+public void eventsTest() throws Exception {
         {
             action.setScreenDimensions();
 

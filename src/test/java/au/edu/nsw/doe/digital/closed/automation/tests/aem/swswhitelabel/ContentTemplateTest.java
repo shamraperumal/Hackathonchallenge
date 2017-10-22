@@ -24,14 +24,6 @@ public class ContentTemplateTest extends CapabilitiesBuilder{
 
         eyes.checkWindow(System.getenv("sws-content-page"));
 
-        action.click(ContentElements.showHide);
-
-        eyes.checkRegion(ContentElements.showHideComponent);
-
-        action.click(ContentElements.tab);
-
-        eyes.checkRegion(ContentElements.tabComponent);
-
         eyes.close();
 
     }

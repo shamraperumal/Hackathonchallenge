@@ -16,7 +16,7 @@ public class StaticBannerTextOnlyTest extends CapabilitiesBuilder {
     }
 
     @Test
-    public void StaticBannerTextOnlyTest() throws Exception {
+    public void staticBannerTextOnlyTest() throws Exception {
         {
             action.setScreenDimensions();
             action.getPage("sws-component-base","sws-static-banner");
