@@ -19,12 +19,31 @@ public class QuickLinksOptionalTest extends CapabilitiesBuilder {
     @Test
     public void quickLinksOptionalTest() throws Exception {
         {
-            action.setScreenDimensions();
-            action.getPage("sws-component-base","sws-quick-links-optional");
-            eyes.checkRegion(GlobalElements.optionalQuickLinksFiveItems);
-            eyes.checkRegion(GlobalElements.optionalQuickLinksTwoItems);
+            String device = System.getenv("DEVICE");
 
-            eyes.close();
+            action.setScreenDimensions();
+
+            action.getPage("sws-component-base","sws-quick-links-optional");
+
+            //Code for desktop tests
+
+            if(device.equals("Desktop")|| device.equals("Tablet")) {
+
+                eyes.checkRegion(GlobalElements.optionalQuickLinksFiveItems);
+                eyes.checkRegion(GlobalElements.optionalQuickLinksTwoItems);
+
+                eyes.close();
+            }
+
+            //Code for tablet and mobile tests. Checks the local header at mobile width on the content template.
+
+            if(device.equals("Mobile")){
+
+                //This component does not display on mobile or tablet.
+                //In this case we will end this test if tablet or mobile are selected as the device.
+
+            }
+
         }
     }
 }
