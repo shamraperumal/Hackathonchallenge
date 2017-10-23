@@ -19,15 +19,20 @@ public class LatestAlbumsTest extends CapabilitiesBuilder{
     @Test
     public void latestAlbumLayoutsTest()throws Exception {
 
+        String device = System.getenv("DEVICE");
+
         action.setScreenDimensions();
 
         action.getPage("sws-component-base","sws-album-layouts");
 
         eyes.checkWindow(System.getenv("sws-album"));
 
-        action.hover(ImageElements.image);
+        if(device.equals("Desktop")) {
 
-        eyes.checkRegion(ImageElements.image);
+            action.hover(ImageElements.image);
+
+            eyes.checkRegion(ImageElements.image);
+        }
 
         eyes.close();
     }

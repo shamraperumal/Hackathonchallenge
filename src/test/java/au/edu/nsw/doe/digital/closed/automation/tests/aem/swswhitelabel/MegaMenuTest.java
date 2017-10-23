@@ -16,20 +16,37 @@ public class MegaMenuTest extends CapabilitiesBuilder {
     @Test
     public void megaMenuTest() throws Exception {
         {
+            String device = System.getenv("DEVICE");
+
             action.setScreenDimensions();
 
             action.getPage("sws-component-base","sws-mega-menu");
+
+
+        // Code for desktop browsers, opens the drop down menu.
+
+            if(device.equals("Desktop")){
+
             eyes.checkRegion(GlobalElements.megaMenu);
 
-            if(System.getenv("DEVICE").equals("Desktop")){
             action.click(GlobalElements.subMenuLink1);
+
             eyes.checkRegion(GlobalElements.subMenu);
 
             action.getPage("sws-component-base","sws-mega-menu");
 
             action.click(GlobalElements.subMenuLink2);
+
             eyes.checkRegion(GlobalElements.subMenu);
         }
+
+        //Code for tablet and mobile.
+
+            if(device.equals("Tablet") || device.equals("Mobile")){
+
+                eyes.checkRegion(GlobalElements.megaMobileMenu);
+                
+            }
 
             eyes.close();
         }

@@ -14,6 +14,7 @@ public class GlobalElements {
     public static By breadcrumbs = By.id("breadcrumbs");
     public static By globalHeaderLinksDropdown = By.cssSelector(".sws-global-links-dropdown");
     public static By megaMenu = By.id("meganav");
+    public static By megaMobileMenu = By.id("mobile-nav-wrapper");
     public static By mandatoryQuickLinks = By.id("globalquicklinkstestcontainer");
     public static By optionalQuickLinksFiveItems = By.id("quicklinks5items");
     public static By optionalQuickLinksTwoItems = By.id("quicklinks2items");
@@ -29,6 +30,8 @@ public class GlobalElements {
     public static By subMenuLink2 = By.cssSelector(".uk-parent:nth-child(5) .sws-meganav-megalinks");
     public static By subMenuLink3 = By.cssSelector(".uk-parent:nth-child(7) .sws-meganav-megalinks");
     public static By subMenu = By.cssSelector(".uk-dropdown-bottom");
+    public static By mobileMegaMenu = By.cssSelector(".sws-local-mobile-nav__icon--nav");
+
 
 }
 
