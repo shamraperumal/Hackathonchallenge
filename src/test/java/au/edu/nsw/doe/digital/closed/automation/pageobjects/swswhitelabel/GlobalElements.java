@@ -31,7 +31,8 @@ public class GlobalElements {
     public static By subMenuLink3 = By.cssSelector(".uk-parent:nth-child(7) .sws-meganav-megalinks");
     public static By subMenu = By.cssSelector(".uk-dropdown-bottom");
     public static By mobileMegaMenu = By.cssSelector(".sws-local-mobile-nav__icon--nav");
-    public static By mobileNavExpanded = By.cssSelector("#mobile-nav-container :nth-child(1)");
+    public static By mobileNavExpanded = By.id("mobile-nav-container");
+
 
 
 }
