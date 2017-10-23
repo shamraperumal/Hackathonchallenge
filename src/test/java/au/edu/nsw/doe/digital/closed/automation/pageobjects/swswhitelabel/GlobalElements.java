@@ -11,7 +11,7 @@ public class GlobalElements {
     public static By globalFooter = By.id("globalfooter");
     public static By globalHeader = By.id("globalheader");
     public static By localHeader = By.id("localheader");
-    public static By mobileLocalHeader = By.cssSelector("sws-content-header");
+    public static By mobileLocalHeader = By.cssSelector(".sws-content-header .uk-container-center , h1");
     public static By breadcrumbs = By.id("breadcrumbs");
     public static By globalHeaderLinksDropdown = By.cssSelector(".sws-global-links-dropdown");
     public static By megaMenu = By.id("meganav");
