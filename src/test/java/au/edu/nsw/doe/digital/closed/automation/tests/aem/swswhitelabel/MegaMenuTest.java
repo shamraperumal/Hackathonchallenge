@@ -45,7 +45,7 @@ public class MegaMenuTest extends CapabilitiesBuilder {
             if(device.equals("Tablet") || device.equals("Mobile")){
 
                 eyes.checkRegion(GlobalElements.megaMobileMenu);
-                
+
             }
 
             eyes.close();

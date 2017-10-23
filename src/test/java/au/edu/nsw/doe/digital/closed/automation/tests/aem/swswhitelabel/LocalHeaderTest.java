@@ -19,10 +19,28 @@ public class LocalHeaderTest extends CapabilitiesBuilder {
     @Test
     public void localHeaderTest() throws Exception {
         {
-            action.setScreenDimensions();
-            action.getPage("sws-component-base","sws-local-header");
-            eyes.checkRegion(GlobalElements.localHeader);
+            String device = System.getenv("DEVICE");
 
+            action.setScreenDimensions();
+
+            //Code for desktop tests
+
+            if(device.equals("Desktop")) {
+
+                action.getPage("sws-component-base", "sws-local-header");
+
+                eyes.checkRegion(GlobalElements.localHeader);
+            }
+
+            //Code for tablet and mobile tests. Checks the local header at mobile width on the content template.
+
+            if(device.equals("Tablet") || device.equals("Mobile")){
+
+                action.getPage("sws-component-base","sws-content");
+
+                eyes.checkRegion(GlobalElements.mobileLocalHeader);
+
+            }
             eyes.close();
         }
     }
