@@ -44,7 +44,7 @@ public class QuickLinksMandatoryTest extends CapabilitiesBuilder {
 
             }
 
-            
+
         }
     }
 }
