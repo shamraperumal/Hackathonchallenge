@@ -46,6 +46,10 @@ public class MegaMenuTest extends CapabilitiesBuilder {
 
                 eyes.checkRegion(GlobalElements.megaMobileMenu);
 
+                action.click(GlobalElements.mobileMegaMenu);
+
+                eyes.checkRegion(GlobalElements.mobileNavExpanded);
+
             }
 
             eyes.close();

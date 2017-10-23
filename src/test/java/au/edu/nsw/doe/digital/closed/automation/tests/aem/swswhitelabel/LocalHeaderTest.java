@@ -36,11 +36,12 @@ public class LocalHeaderTest extends CapabilitiesBuilder {
 
             if(device.equals("Tablet") || device.equals("Mobile")){
 
-                action.getPage("sws-component-base","sws-content");
+                //This component wraps in the meganav component and is tested there. In this case we end this test if tablet or mobile are selected as the device.
 
-                eyes.checkRegion(GlobalElements.mobileLocalHeader);
+                eyes.close();
 
             }
+
             eyes.close();
         }
     }
