@@ -23,26 +23,27 @@ public class LocalHeaderTest extends CapabilitiesBuilder {
 
             action.setScreenDimensions();
 
+            action.getPage("sws-component-base", "sws-local-header");
+
             //Code for desktop tests
 
             if(device.equals("Desktop")) {
 
-                action.getPage("sws-component-base", "sws-local-header");
-
                 eyes.checkRegion(GlobalElements.localHeader);
+
+                eyes.close();
             }
 
             //Code for tablet and mobile tests. Checks the local header at mobile width on the content template.
 
             if(device.equals("Tablet") || device.equals("Mobile")){
 
-                //This component wraps in the meganav component and is tested there. In this case we end this test if tablet or mobile are selected as the device.
-
-                eyes.close();
+                //This component wraps in to the mobile meganav component and is tested there.
+                //In this case we will end this test if tablet or mobile are selected as the device.
 
             }
 
-            eyes.close();
+
         }
     }
 }
