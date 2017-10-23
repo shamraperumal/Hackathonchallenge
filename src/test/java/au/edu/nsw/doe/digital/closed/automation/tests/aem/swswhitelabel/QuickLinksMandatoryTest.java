@@ -19,9 +19,30 @@ public class QuickLinksMandatoryTest extends CapabilitiesBuilder {
     @Test
     public void quickLinksMandatoryTest() throws Exception {
         {
+            String device = System.getenv("DEVICE");
+
             action.setScreenDimensions();
+
             action.getPage("sws-component-base","sws-quick-links-mandatory");
-            eyes.checkRegion(GlobalElements.mandatoryQuickLinks);
+
+
+            //Code for desktop tests
+
+            if(device.equals("Desktop")) {
+
+                eyes.checkRegion(GlobalElements.mandatoryQuickLinks);
+
+                eyes.close();
+            }
+
+            //Code for tablet and mobile tests. Checks the local header at mobile width on the content template.
+
+            if(device.equals("Tablet") || device.equals("Mobile")){
+
+                //This component does not display on mobile or tablet.
+                //In this case we will end this test if tablet or mobile are selected as the device.
+
+            }
 
             eyes.close();
         }
