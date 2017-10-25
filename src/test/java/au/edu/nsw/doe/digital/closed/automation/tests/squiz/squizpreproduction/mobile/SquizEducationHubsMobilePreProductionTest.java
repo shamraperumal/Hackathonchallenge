@@ -1,5 +1,6 @@
 package au.edu.nsw.doe.digital.closed.automation.tests.squiz.squizpreproduction.mobile;
 
+import au.edu.nsw.doe.digital.closed.automation.pageobjects.squiz.GefInsideTheDepartment;
 import au.edu.nsw.doe.digital.closed.automation.setup.CapabilitiesBuilder;
 import au.edu.nsw.doe.digital.closed.automation.tests.squiz.SquizActionMethods;
 import org.junit.Test;
@@ -18,6 +19,7 @@ public class SquizEducationHubsMobilePreProductionTest extends CapabilitiesBuild
         eyes.checkWindow(System.getenv("EYES-EDUCATION-HOME"));
 
         squizAction.ssoLoginEntry();
+        squizAction.wait(GefInsideTheDepartment.searchButton);
         eyes.checkWindow(System.getenv("EYES-EDUCATION-PRIVATE-PRIMARY-HUB"));
 
         squizAction.getPage("education-base", "education-primary-hub");
