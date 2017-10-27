@@ -3,6 +3,7 @@ package au.edu.nsw.doe.digital.closed.automation.tests.aem.swswhitelabel;
 import au.edu.nsw.doe.digital.closed.automation.setup.CapabilitiesBuilder;
 import au.edu.nsw.doe.digital.closed.automation.tests.aem.AemActionMethods;
 import au.edu.nsw.doe.digital.closed.automation.tests.aem.AemActions;
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class NewsLandingTemplateTest extends CapabilitiesBuilder {
@@ -14,6 +15,7 @@ public class NewsLandingTemplateTest extends CapabilitiesBuilder {
         action = new AemActionMethods(driver);
     }
 
+    @Ignore
 
     @Test
     public void newsLandingTemplateTest()throws Exception {
