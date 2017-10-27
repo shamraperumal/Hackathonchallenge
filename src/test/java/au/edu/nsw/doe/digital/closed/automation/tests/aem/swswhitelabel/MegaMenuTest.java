@@ -11,6 +11,12 @@ public class MegaMenuTest extends CapabilitiesBuilder {
     private AemActions action;
 
     @Override
+    public boolean getForceFullPageScreenshot() {
+        return false;
+    }
+
+
+    @Override
     public void doSetUp() {
         action = new AemActionMethods(driver);
     }

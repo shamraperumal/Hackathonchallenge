@@ -12,6 +12,11 @@ import org.junit.Test;
 public class EventsTest extends CapabilitiesBuilder {
 
     private AemActions action;
+    
+    @Override
+    public boolean getForceFullPageScreenshot() {
+        return false;
+    }
 
     @Override
     public void doSetUp() {
