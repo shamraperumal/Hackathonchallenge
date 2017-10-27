@@ -28,6 +28,7 @@ public class NewsLandingTemplateTest extends CapabilitiesBuilder {
 
         eyes.checkWindow(System.getenv("sws-news-landing-page-2"));
 
+
         eyes.close();
 
     }
