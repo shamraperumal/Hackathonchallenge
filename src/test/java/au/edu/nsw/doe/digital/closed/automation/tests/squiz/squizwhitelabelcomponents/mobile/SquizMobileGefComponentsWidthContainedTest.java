@@ -279,5 +279,17 @@ public class SquizMobileGefComponentsWidthContainedTest extends CapabilitiesBuil
 
         eyes.close();
     }
+
+    @Test
+    public void whitelabelMobileFeaturedTeaserVariantTest() throws Exception {
+        SquizActionMethods squizAction = new SquizActionMethods(driver);
+        Dimension dimension = new Dimension(375, 650);
+        driver.manage().window().setSize(dimension);
+
+        squizAction.getPage("gef-components-base", "gef-components-width-contained");
+        eyes.checkRegion(WidthContained.featuredTeaserVariant);
+
+        eyes.close();
+    }
 }
 

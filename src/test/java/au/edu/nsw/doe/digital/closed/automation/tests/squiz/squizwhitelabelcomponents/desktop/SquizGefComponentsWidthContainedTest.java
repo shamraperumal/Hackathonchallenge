@@ -235,4 +235,13 @@ public class SquizGefComponentsWidthContainedTest extends CapabilitiesBuilder{
 
         eyes.close();
     }
-}
+
+    @Test
+    public void whitelabelFeaturedTeaserVariantTest() throws Exception {
+        SquizActionMethods squizAction = new SquizActionMethods(driver);
+
+        squizAction.getPage("gef-components-base", "gef-components-width-contained");
+        eyes.checkRegion(WidthContained.featuredTeaserVariant);
+
+        eyes.close();
+    }}
