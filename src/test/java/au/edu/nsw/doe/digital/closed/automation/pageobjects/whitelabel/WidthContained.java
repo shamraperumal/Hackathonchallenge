@@ -27,7 +27,7 @@ public class WidthContained {
     public static By anchorBox = By.id("anchor-box_auto");
     public static By searchBox = By.id("searchbox_auto");
     public static By secureIndicator = By.id("secure-indicator_auto");
-    public static By featuredTeaserVariant = By.id("featuredteaser_auto");
+    public static By featuredTeaserVariant = By.id("featuredteaservariant_auto");
 
     //Right hand column
     public static By sideNavigation = By.id("sidenavigation_auto");
