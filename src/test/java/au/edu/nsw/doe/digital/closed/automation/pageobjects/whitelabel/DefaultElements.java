@@ -14,4 +14,5 @@ public class DefaultElements {
     public static By imageCaption = By.id("imagecaption_auto");
     public static By buttonSubmit = By.id("buttonsubmit_auto");
     public static By table = By.id("table_auto");
+    public static By captionmatrix = By.id("imagecaption_matrix");
 }

@@ -99,6 +99,16 @@ public class SquizGefComponentsDefaultElementsTest extends CapabilitiesBuilder {
         eyes.close();
     }
 
+    @Test
+    public void whitelabelCaptionMatrixTest() throws Exception {
+        SquizActionMethods squizAction = new SquizActionMethods(driver);
+
+        squizAction.getPage("gef-components-base", "gef-components-elements");
+        eyes.checkRegion(DefaultElements.captionmatrix);
+
+        eyes.close();
+    }
+
 }
 
 
