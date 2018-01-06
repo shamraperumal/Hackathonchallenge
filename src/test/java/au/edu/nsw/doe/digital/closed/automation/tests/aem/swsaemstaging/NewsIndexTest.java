@@ -20,8 +20,8 @@ public class NewsIndexTest extends CapabilitiesBuilder {
         {
             action.setScreenDimensions();
 
-            action.getPage("sws-aem-base-1","homepage-1");
-            eyes.checkWindow(System.getenv("sws-aem-homepage-1"));
+            action.getPage("sws-aem-base-1","news-index-1");
+            eyes.checkWindow(System.getenv("sws-aem-news-index-1"));
 
 
             eyes.close();

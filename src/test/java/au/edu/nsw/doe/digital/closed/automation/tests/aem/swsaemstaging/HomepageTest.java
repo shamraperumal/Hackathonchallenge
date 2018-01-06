@@ -22,10 +22,7 @@ public class HomepageTest extends CapabilitiesBuilder {
 
             action.getPage("sws-aem-base-1","homepage-1");
             eyes.checkWindow(System.getenv("sws-aem-homepage-1"));
-
-            action.getPage("sws-aem-base-1","homepage-2");
-            eyes.checkWindow(System.getenv("sws-aem-homepage-2"));
-
+            
             eyes.close();
         }
     }

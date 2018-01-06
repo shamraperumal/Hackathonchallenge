@@ -16,15 +16,12 @@ public class NewsArticleTest extends CapabilitiesBuilder {
     }
 
     @Test
-    public void NewsIndexTest() throws Exception {
+    public void NewsArticleTest() throws Exception {
         {
             action.setScreenDimensions();
 
-            action.getPage("sws-aem-base-1","homepage-1");
-            eyes.checkWindow(System.getenv("sws-aem-homepage-1"));
-
-            action.getPage("sws-aem-base-1","homepage-2");
-            eyes.checkWindow(System.getenv("sws-aem-homepage-2"));
+            action.getPage("sws-aem-base-1","news-article-1");
+            eyes.checkWindow(System.getenv("sws-aem-news-article-1"));
 
             eyes.close();
         }
