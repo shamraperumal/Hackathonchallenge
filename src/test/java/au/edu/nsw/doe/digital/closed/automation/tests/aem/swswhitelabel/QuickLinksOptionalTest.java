@@ -29,7 +29,7 @@ public class QuickLinksOptionalTest extends CapabilitiesBuilder {
 
             //Code for desktop tests
 
-            if(device.equals("Desktop")|| device.equals("Tablet")) {
+            if(device.equals("Desktop")) {
 
                 eyes.checkRegion(GlobalElements.optionalQuickLinksFiveItems);
                 eyes.checkRegion(GlobalElements.optionalQuickLinksTwoItems);
@@ -39,7 +39,7 @@ public class QuickLinksOptionalTest extends CapabilitiesBuilder {
 
             //Code for tablet and mobile tests. Checks the local header at mobile width on the content template.
 
-            if(device.equals("Mobile")){
+            if(device.equals("Mobile")|| device.equals("Tablet")){
 
                 //This component does not display on mobile or tablet.
                 //In this case we will end this test if tablet or mobile are selected as the device.
