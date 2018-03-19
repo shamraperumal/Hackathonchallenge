@@ -1,5 +1,6 @@
 package au.edu.nsw.doe.digital.closed.automation.tests.aem.swsaem;
 
+import au.edu.nsw.doe.digital.closed.automation.pageobjects.swsaem.GlobalElements;
 import au.edu.nsw.doe.digital.closed.automation.setup.CapabilitiesBuilder;
 import au.edu.nsw.doe.digital.closed.automation.tests.aem.AemActionMethods;
 import au.edu.nsw.doe.digital.closed.automation.tests.aem.AemActions;
@@ -21,6 +22,8 @@ public class EventLandingTest extends CapabilitiesBuilder {
             action.setScreenDimensions();
 
             action.getPage("sws-aem-base","sws-event-landing");
+            action.wait(GlobalElements.globalLogo);
+
             eyes.checkWindow(System.getenv("sws-aem-event-landing"));
 
 

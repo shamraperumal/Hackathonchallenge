@@ -26,6 +26,8 @@ public class MegamenuTest extends CapabilitiesBuilder {
 
             action.getPage("sws-aem-base","sws-homepage");
 
+            action.wait(GlobalElements.globalLogo);
+
 
             // Code for desktop browsers, opens the drop down menu.
 
