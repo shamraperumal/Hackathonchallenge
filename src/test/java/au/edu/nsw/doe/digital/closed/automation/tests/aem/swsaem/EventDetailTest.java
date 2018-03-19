@@ -20,19 +20,19 @@ public class EventDetailTest extends CapabilitiesBuilder {
         {
             action.setScreenDimensions();
 
-            action.getPage("sws-aem-base","event-detail-v1");
+            action.getPage("sws-aem-base","sws-event-detail-v1");
             eyes.checkWindow(System.getenv("sws-aem-event-detail-v1"));
 
-            action.getPage("sws-aem-base","event-detail-v2");
+            action.getPage("sws-aem-base","sws-event-detail-v2");
             eyes.checkWindow(System.getenv("sws-aem-event-detail-v2"));
 
-            action.getPage("sws-aem-base","event-detail-v3");
+            action.getPage("sws-aem-base","sws-event-detail-v3");
             eyes.checkWindow(System.getenv("sws-aem-event-detail-v3"));
 
-            action.getPage("sws-aem-base","event-detail-v4");
+            action.getPage("sws-aem-base","sws-event-detail-v4");
             eyes.checkWindow(System.getenv("sws-aem-event-detail-v4"));
 
-            action.getPage("sws-aem-base","event-detail-v5");
+            action.getPage("sws-aem-base","sws-event-detail-v5");
             eyes.checkWindow(System.getenv("sws-aem-event-detail-v5"));
 
 

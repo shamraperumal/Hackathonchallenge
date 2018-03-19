@@ -20,7 +20,7 @@ public class EventLandingTest extends CapabilitiesBuilder {
         {
             action.setScreenDimensions();
 
-            action.getPage("sws-aem-base","event-landing");
+            action.getPage("sws-aem-base","sws-event-landing");
             eyes.checkWindow(System.getenv("sws-aem-event-landing"));
 
 

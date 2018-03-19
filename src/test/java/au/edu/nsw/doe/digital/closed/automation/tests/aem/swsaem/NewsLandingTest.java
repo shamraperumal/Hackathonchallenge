@@ -20,7 +20,7 @@ public class NewsLandingTest extends CapabilitiesBuilder {
         {
             action.setScreenDimensions();
 
-            action.getPage("sws-aem-base","news-landing");
+            action.getPage("sws-aem-base","sws-news-landing");
             eyes.checkWindow(System.getenv("sws-aem-news-landing"));
 
 

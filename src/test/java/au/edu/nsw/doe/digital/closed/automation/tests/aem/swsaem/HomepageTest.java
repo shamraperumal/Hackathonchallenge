@@ -20,7 +20,7 @@ public class HomepageTest extends CapabilitiesBuilder {
         {
             action.setScreenDimensions();
 
-            action.getPage("sws-aem-base","homepage");
+            action.getPage("sws-aem-base","sws-homepage");
             eyes.checkWindow(System.getenv("sws-aem-homepage"));
             
             eyes.close();

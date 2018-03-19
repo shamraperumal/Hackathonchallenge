@@ -21,11 +21,11 @@ public class AlbumTest extends CapabilitiesBuilder {
             action.setScreenDimensions();
 
             //With view more
-            action.getPage("sws-aem-base","album-with-view-more");
+            action.getPage("sws-aem-base","sws-album-with-view-more");
             eyes.checkWindow(System.getenv("sws-aem-album-with-view-more"));
 
             //Without view more
-            action.getPage("sws-aem-base","album-without-view-more");
+            action.getPage("sws-aem-base","sws-album-without-view-more");
             eyes.checkWindow(System.getenv("sws-aem-album-without-view-more"));
 
             eyes.close();

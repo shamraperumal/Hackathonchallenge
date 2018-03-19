@@ -21,14 +21,14 @@ public class ErrorTest extends CapabilitiesBuilder {
             action.setScreenDimensions();
 
 
-            action.getPage("sws-aem-base","error-404");
+            action.getPage("sws-aem-base","sws-error-404");
             eyes.checkWindow(System.getenv("sws-aem-404"));
 
 
-            action.getPage("sws-aem-base","error-403");
+            action.getPage("sws-aem-base","sws-error-403");
             eyes.checkWindow(System.getenv("sws-aem-403"));
 
-            action.getPage("sws-aem-base","error-500");
+            action.getPage("sws-aem-base","sws-error-500");
             eyes.checkWindow(System.getenv("sws-aem-500"));
 
 
