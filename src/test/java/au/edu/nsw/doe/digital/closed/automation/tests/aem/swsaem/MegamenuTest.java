@@ -17,7 +17,7 @@ public class MegamenuTest extends CapabilitiesBuilder {
     }
 
     @Test
-    public void MegamenuTest() throws Exception {
+    public void megaMenuTest() throws Exception {
         {
             String device = System.getenv("DEVICE");
 

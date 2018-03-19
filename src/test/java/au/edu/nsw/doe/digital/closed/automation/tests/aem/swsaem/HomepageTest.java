@@ -16,7 +16,7 @@ public class HomepageTest extends CapabilitiesBuilder {
     }
 
     @Test
-    public void HomepageTest() throws Exception {
+    public void homePageTest() throws Exception {
         {
             action.setScreenDimensions();
 

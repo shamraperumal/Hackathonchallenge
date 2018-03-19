@@ -16,7 +16,7 @@ public class NewsArticleTest extends CapabilitiesBuilder {
     }
 
     @Test
-    public void NewsArticleTest() throws Exception {
+    public void newsArticleTest() throws Exception {
         {
             action.setScreenDimensions();
 
