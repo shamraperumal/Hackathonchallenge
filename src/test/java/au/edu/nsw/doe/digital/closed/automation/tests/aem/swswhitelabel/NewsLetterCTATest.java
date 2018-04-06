@@ -27,6 +27,7 @@ public class NewsLetterCTATest extends CapabilitiesBuilder {
             eyes.checkRegion(GlobalElements.newsletterCTA);
 
             eyes.close();
+            
         }
     }
 }
