@@ -20,13 +20,16 @@ public class GlobalFooterTest extends CapabilitiesBuilder {
 
     @Test
     public void globalFooterTest() throws Exception {
-        {
+
+        String thisTheme = System.getenv("ENVIRONMENT");
+        if (thisTheme.equals("White-label")) {
 
             action.setScreenDimensions();
-            action.getPage("sws-component-base","sws-global-footer");
+            action.getPage("sws-component-base", "sws-global-footer");
             eyes.checkRegion(GlobalElements.globalFooter);
-
             eyes.close();
+
+        } else {//Do nothing and end the test}
         }
     }
 }

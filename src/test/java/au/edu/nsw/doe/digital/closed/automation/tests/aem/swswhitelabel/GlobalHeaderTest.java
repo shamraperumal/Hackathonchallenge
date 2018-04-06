@@ -20,15 +20,19 @@ public class GlobalHeaderTest extends CapabilitiesBuilder {
 
     @Test
     public void globalHeaderTest() throws Exception {
-        {
+
+        String thisTheme = System.getenv("ENVIRONMENT");
+        if (thisTheme.equals("White-label")) {
+
             action.setScreenDimensions();
-            action.getPage("sws-component-base","sws-global-header");
+            action.getPage("sws-component-base", "sws-global-header");
             eyes.checkRegion(GlobalElements.globalHeader);
 
             action.click(GlobalElements.loginButton);
             eyes.checkRegion(GlobalElements.globalHeaderLinksDropdown);
 
             eyes.close();
+        } else {//Do nothing and end the test}
         }
     }
 }
