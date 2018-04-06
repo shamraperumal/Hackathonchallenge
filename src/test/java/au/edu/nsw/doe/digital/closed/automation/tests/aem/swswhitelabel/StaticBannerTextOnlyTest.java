@@ -22,6 +22,7 @@ public class StaticBannerTextOnlyTest extends CapabilitiesBuilder {
         {
             action.setScreenDimensions();
             action.getPage("sws-component-base","sws-static-banner");
+            Thread.sleep(5000);
             eyes.checkRegion(GlobalElements.bannerTextOnly);
 
 
