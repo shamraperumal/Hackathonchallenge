@@ -23,9 +23,8 @@ public class SocialLinksTest extends CapabilitiesBuilder {
         {
             action.setScreenDimensions();
             action.getPage("sws-component-base","sws-social-links");
-
+            Thread.sleep(5000);
             eyes.checkRegion(GlobalElements.socialLinksAll);
-            
             eyes.checkRegion(GlobalElements.socialLinksTwo);
 
             eyes.close();
