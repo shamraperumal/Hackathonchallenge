@@ -23,6 +23,7 @@ public class NewsLetterCTATest extends CapabilitiesBuilder {
         {
             action.setScreenDimensions();
             action.getPage("sws-component-base", "sws-newsletter-cta");
+            Thread.sleep(3000);
             eyes.checkRegion(GlobalElements.newsletterCTA);
 
             eyes.close();
