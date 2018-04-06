@@ -1,5 +1,6 @@
 package au.edu.nsw.doe.digital.closed.automation.tests.aem.swswhitelabel;
 
+import au.edu.nsw.doe.digital.closed.automation.pageobjects.swswhitelabel.GlobalElements;
 import au.edu.nsw.doe.digital.closed.automation.setup.CapabilitiesBuilder;
 import au.edu.nsw.doe.digital.closed.automation.tests.aem.AemActionMethods;
 import au.edu.nsw.doe.digital.closed.automation.tests.aem.AemActions;
@@ -8,7 +9,7 @@ import org.junit.Test;
 /**
  * Created by christopherpigden on 8/8/17.
  */
-public class ContactTest extends CapabilitiesBuilder {
+public class NoticeRibbonTest extends CapabilitiesBuilder {
 
     private AemActions action;
 
@@ -18,18 +19,13 @@ public class ContactTest extends CapabilitiesBuilder {
     }
 
     @Test
-    public void contactTest() throws Exception {
+    public void noticeRibbonTest() throws Exception {
         {
             action.setScreenDimensions();
-
-            action.getPage("sws-component-base","sws-contact-single");
-            eyes.checkWindow(System.getenv("sws-contact-single-template"));
-
-            action.getPage("sws-component-base","sws-contact-multi");
-            eyes.checkWindow(System.getenv("sws-contact-multi-template"));
+            action.getPage("sws-component-base", "sws-notice-ribbon");
+            eyes.checkRegion(GlobalElements.noticeRibbon);
 
             eyes.close();
-
         }
     }
 }

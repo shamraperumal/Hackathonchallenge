@@ -33,6 +33,7 @@ public class AlbumDetailTest extends CapabilitiesBuilder {
             eyes.checkWindow(System.getenv("sws-image-modal-2"));
 
             eyes.close();
+
         }
     }
 }
