@@ -22,6 +22,8 @@ public class AlbumDetailTest extends CapabilitiesBuilder {
             action.setScreenDimensions();
 
             action.getPage("sws-component-base","album-detail");
+            Thread.sleep(3000);
+
             eyes.checkWindow(System.getenv("sws-album-detail"));
 
             action.click(AlbumDetailElements.image1);

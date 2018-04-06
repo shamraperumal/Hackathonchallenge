@@ -23,6 +23,8 @@ public class GlobalElements {
     public static By bannerStaticImageOnly = By.id("staticBannerImg");
     public static By bannerTextOnly = By.id("staticBannerTxt");
     public static By bannerImageAndText = By.id("staticBannerFull");
+    public static By newsletterCTA = By.id("newsletterCta");
+
 
     //Clickable web elements
     public static By loginButton = By.id("logindropdownbtn");
