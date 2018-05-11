@@ -35,6 +35,12 @@ public class SquizEducationHubsPreProductionTest extends CapabilitiesBuilder {
         squizAction.getPage("education-base", "education-secondary-hub");
         eyes.checkWindow(System.getenv("EYES-EDUCATION-SECONDARY-HUB"));
 
+        squizAction.getPage("education-base", "education-news-hub");
+        eyes.checkWindow(System.getenv("EYES-EDUCATION-NEWS-HUB"));
+
+        squizAction.getPage("education-base", "education-secretary-hub");
+        eyes.checkWindow(System.getenv("EYES-EDUCATION-SECRETARY-HUB"));
+
         eyes.close();
     }
     }
