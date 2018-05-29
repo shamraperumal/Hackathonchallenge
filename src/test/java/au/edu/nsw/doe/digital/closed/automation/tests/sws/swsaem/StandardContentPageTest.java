@@ -21,7 +21,7 @@ public class StandardContentPageTest extends CapabilitiesBuilder {
         {
             action.setScreenDimensions();
 
-            action.getPage("sws-sws-base","sws-content");
+            action.getPage("sws-aem-base","sws-content");
             action.wait(GlobalElements.globalLogo);
             eyes.checkWindow(System.getenv("sws-sws-content"));
 

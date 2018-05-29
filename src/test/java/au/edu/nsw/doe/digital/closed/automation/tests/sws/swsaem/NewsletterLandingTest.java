@@ -21,9 +21,9 @@ public class NewsletterLandingTest extends CapabilitiesBuilder {
         {
             action.setScreenDimensions();
 
-            action.getPage("sws-sws-base","sws-newsletter-index");
+            action.getPage("sws-aem-base","sws-newsletter-index");
             action.wait(GlobalElements.globalLogo);
-            eyes.checkWindow(System.getenv("sws-sws-newsletter-index"));
+            eyes.checkWindow(System.getenv("sws-aem-newsletter-index"));
 
 
             eyes.close();

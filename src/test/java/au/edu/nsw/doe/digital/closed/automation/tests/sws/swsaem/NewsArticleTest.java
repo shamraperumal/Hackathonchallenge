@@ -21,11 +21,11 @@ public class NewsArticleTest extends CapabilitiesBuilder {
         {
             action.setScreenDimensions();
 
-            action.getPage("sws-sws-base","sws-news-article-with-image");
+            action.getPage("sws-aem-base","sws-news-article-with-image");
             action.wait(GlobalElements.globalLogo);
             eyes.checkWindow(System.getenv("sws-sws-news-article-with-image"));
 
-            action.getPage("sws-sws-base","sws-news-article-without-image");
+            action.getPage("sws-aem-base","sws-news-article-without-image");
             eyes.checkWindow(System.getenv("sws-sws-news-article-without-image"));
 
             eyes.close();

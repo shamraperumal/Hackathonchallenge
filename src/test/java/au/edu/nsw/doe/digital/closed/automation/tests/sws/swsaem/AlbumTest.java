@@ -22,12 +22,12 @@ public class AlbumTest extends CapabilitiesBuilder {
             action.setScreenDimensions();
 
             //With view more
-            action.getPage("sws-sws-base","sws-album-with-view-more");
+            action.getPage("sws-aem-base","sws-album-with-view-more");
             action.wait(GlobalElements.globalLogo);
             eyes.checkWindow(System.getenv("sws-sws-album-with-view-more"));
 
             //Without view more
-            action.getPage("sws-sws-base","sws-album-without-view-more");
+            action.getPage("sws-aem-base","sws-album-without-view-more");
             eyes.checkWindow(System.getenv("sws-sws-album-without-view-more"));
 
             eyes.close();

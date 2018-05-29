@@ -21,7 +21,7 @@ public class HomepageTest extends CapabilitiesBuilder {
         {
             action.setScreenDimensions();
 
-            action.getPage("sws-sws-base","sws-homepage");
+            action.getPage("sws-aem-base","sws-homepage");
             action.wait(GlobalElements.globalLogo);
             eyes.checkWindow(System.getenv("sws-sws-homepage"));
             
