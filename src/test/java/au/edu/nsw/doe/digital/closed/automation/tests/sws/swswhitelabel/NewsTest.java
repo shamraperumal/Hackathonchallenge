@@ -1,8 +1,8 @@
-package au.edu.nsw.doe.digital.closed.automation.tests.aem.swswhitelabel;
+package au.edu.nsw.doe.digital.closed.automation.tests.sws.swswhitelabel;
 
 import au.edu.nsw.doe.digital.closed.automation.setup.CapabilitiesBuilder;
-import au.edu.nsw.doe.digital.closed.automation.tests.aem.AemActionMethods;
-import au.edu.nsw.doe.digital.closed.automation.tests.aem.AemActions;
+import au.edu.nsw.doe.digital.closed.automation.tests.sws.AemActionMethods;
+import au.edu.nsw.doe.digital.closed.automation.tests.sws.AemActions;
 import org.junit.Test;
 
 public class NewsTest extends CapabilitiesBuilder{

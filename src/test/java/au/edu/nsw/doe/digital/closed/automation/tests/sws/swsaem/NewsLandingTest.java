@@ -1,9 +1,9 @@
-package au.edu.nsw.doe.digital.closed.automation.tests.aem.swsaem;
+package au.edu.nsw.doe.digital.closed.automation.tests.sws.swsaem;
 
 import au.edu.nsw.doe.digital.closed.automation.pageobjects.swsaem.GlobalElements;
 import au.edu.nsw.doe.digital.closed.automation.setup.CapabilitiesBuilder;
-import au.edu.nsw.doe.digital.closed.automation.tests.aem.AemActionMethods;
-import au.edu.nsw.doe.digital.closed.automation.tests.aem.AemActions;
+import au.edu.nsw.doe.digital.closed.automation.tests.sws.AemActionMethods;
+import au.edu.nsw.doe.digital.closed.automation.tests.sws.AemActions;
 import org.junit.Test;
 
 
@@ -21,9 +21,9 @@ public class NewsLandingTest extends CapabilitiesBuilder {
         {
             action.setScreenDimensions();
 
-            action.getPage("sws-aem-base","sws-news-landing");
+            action.getPage("sws-sws-base","sws-news-landing");
             action.wait(GlobalElements.globalLogo);
-            eyes.checkWindow(System.getenv("sws-aem-news-landing"));
+            eyes.checkWindow(System.getenv("sws-sws-news-landing"));
 
 
             eyes.close();

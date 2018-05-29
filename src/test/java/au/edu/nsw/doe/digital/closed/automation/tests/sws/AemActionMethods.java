@@ -1,4 +1,4 @@
-package au.edu.nsw.doe.digital.closed.automation.tests.aem;
+package au.edu.nsw.doe.digital.closed.automation.tests.sws;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;

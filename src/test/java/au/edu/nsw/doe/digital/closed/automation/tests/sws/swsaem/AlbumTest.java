@@ -1,9 +1,9 @@
-package au.edu.nsw.doe.digital.closed.automation.tests.aem.swsaem;
+package au.edu.nsw.doe.digital.closed.automation.tests.sws.swsaem;
 
 import au.edu.nsw.doe.digital.closed.automation.pageobjects.swsaem.GlobalElements;
 import au.edu.nsw.doe.digital.closed.automation.setup.CapabilitiesBuilder;
-import au.edu.nsw.doe.digital.closed.automation.tests.aem.AemActionMethods;
-import au.edu.nsw.doe.digital.closed.automation.tests.aem.AemActions;
+import au.edu.nsw.doe.digital.closed.automation.tests.sws.AemActionMethods;
+import au.edu.nsw.doe.digital.closed.automation.tests.sws.AemActions;
 import org.junit.Test;
 
 
@@ -22,13 +22,13 @@ public class AlbumTest extends CapabilitiesBuilder {
             action.setScreenDimensions();
 
             //With view more
-            action.getPage("sws-aem-base","sws-album-with-view-more");
+            action.getPage("sws-sws-base","sws-album-with-view-more");
             action.wait(GlobalElements.globalLogo);
-            eyes.checkWindow(System.getenv("sws-aem-album-with-view-more"));
+            eyes.checkWindow(System.getenv("sws-sws-album-with-view-more"));
 
             //Without view more
-            action.getPage("sws-aem-base","sws-album-without-view-more");
-            eyes.checkWindow(System.getenv("sws-aem-album-without-view-more"));
+            action.getPage("sws-sws-base","sws-album-without-view-more");
+            eyes.checkWindow(System.getenv("sws-sws-album-without-view-more"));
 
             eyes.close();
         }
