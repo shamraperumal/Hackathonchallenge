@@ -2,9 +2,6 @@ package au.edu.nsw.doe.digital.closed.automation.tests.squiz.squizpreproduction.
 
 import au.edu.nsw.doe.digital.closed.automation.setup.CapabilitiesBuilder;
 import au.edu.nsw.doe.digital.closed.automation.tests.squiz.SquizActionMethods;
-import au.edu.nsw.doe.digital.closed.automation.tests.swsedit.PwsActionMethods;
-import au.edu.nsw.doe.digital.closed.automation.tests.swsedit.PwsActions;
-import org.junit.Before;
 import org.junit.Test;
 
 /**
@@ -12,10 +9,6 @@ import org.junit.Test;
  */
 public class SquizEducationHubsPreProductionTest extends CapabilitiesBuilder {
 
-    private PwsActions action;
-
-    @Before
-    public void doSetUp() { action = new PwsActionMethods(driver);}
 
     @Test
     public void educationHubsDesktopPreProductionEyesTest() throws Exception {
@@ -25,7 +18,7 @@ public class SquizEducationHubsPreProductionTest extends CapabilitiesBuilder {
         squizAction.getPage("education-base", "");
         eyes.checkWindow(System.getenv("EYES-EDUCATION-HOME"));
 
-        action.ssoLoginEntry();
+        squizAction.ssoLoginEntry();
 
         eyes.checkWindow(System.getenv("EYES-EDUCATION-PRIVATE-PRIMARY-HUB"));
 
