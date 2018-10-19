@@ -1,6 +1,7 @@
 package au.edu.nsw.doe.digital.closed.automation.tests.squiz.squizpreproduction.desktop;
 
 
+import au.edu.nsw.doe.digital.closed.automation.pageobjects.squiz.GefSearch;
 import au.edu.nsw.doe.digital.closed.automation.setup.CapabilitiesBuilder;
 import au.edu.nsw.doe.digital.closed.automation.tests.squiz.SquizActionMethods;
 import org.junit.Test;
@@ -35,7 +36,12 @@ public class SquizPoliciesPreProductionTest extends CapabilitiesBuilder {
         eyes.checkWindow(System.getenv("EYES-GEF-POLICIES-PRIVATE-POLICY"));
 
         squizAction.getPage("gef-policies-base", "gef-policies-search");
+
+        // Added below to wait until all the search results are displayed and Next,Previous buttons appear
+        squizAction.wait(GefSearch.pagination);
         eyes.checkWindow(System.getenv("EYES-GEF-POLICIES-SEARCH"));
+
+        // Need to do changes here
 
         eyes.close();
     }
