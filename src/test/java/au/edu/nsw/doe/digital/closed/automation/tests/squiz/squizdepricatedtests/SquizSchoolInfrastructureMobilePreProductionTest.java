@@ -1,4 +1,4 @@
-package au.edu.nsw.doe.digital.closed.automation.tests.squiz.squizpreproduction.mobile;
+package au.edu.nsw.doe.digital.closed.automation.tests.squiz.squizdepricatedtests;
 
 
 import au.edu.nsw.doe.digital.closed.automation.setup.CapabilitiesBuilder;
