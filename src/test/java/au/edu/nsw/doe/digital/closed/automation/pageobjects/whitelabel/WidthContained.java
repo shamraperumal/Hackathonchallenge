@@ -33,6 +33,6 @@ public class WidthContained {
     public static By sideNavigation = By.id("sidenavigation_auto");
     public static By categoryList = By.id("categorylist_auto");
     public static By contentPanel = By.id("contentpanel_auto");
-
+    //This is a test comment
 
 }
