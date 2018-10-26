@@ -39,7 +39,13 @@ public class SquizActionMethods implements SquizActions {
             driver.get(thisDomain + (thisPageUrl == null ? "" : thisPageUrl));
             System.out.println("Loaded domain url");
 
-        } catch (final Exception e) {
+            if ( thisPageUrl.contains("tab") || thisPageUrl.contains("standard"))
+            {
+                Thread.sleep(2000);
+                System.out.print("This is " + thisPageUrl + "page. So it's in sleep thread for 2000 miliseconds" );
+            }
+
+             } catch (final Exception e) {
             System.out.println("Failed to load page");
             throw e;
 
