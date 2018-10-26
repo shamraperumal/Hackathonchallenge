@@ -8,7 +8,7 @@ import org.junit.Test;
 /**
  * Created by Shravan on 26/10/2018.
  */
-public class SquizTabTestPreProductionTestOne extends CapabilitiesBuilder {
+public class SquizTabTestPreProductionTest extends CapabilitiesBuilder {
 
     @Test
     public void TabtestDesktopPreProductionEyesTest() throws Exception {
@@ -19,6 +19,6 @@ public class SquizTabTestPreProductionTestOne extends CapabilitiesBuilder {
 
           squizAction.getPage("gef-education-base", "gef-education-standard");
 
-        eyes.close();
+        
     }
 }
