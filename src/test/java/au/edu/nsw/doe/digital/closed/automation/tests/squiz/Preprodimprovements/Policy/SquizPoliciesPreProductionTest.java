@@ -1,4 +1,4 @@
-package au.edu.nsw.doe.digital.closed.automation.tests.squiz.Preprodimprovements;
+package au.edu.nsw.doe.digital.closed.automation.tests.squiz.Preprodimprovements.Policy;
 
 
 import au.edu.nsw.doe.digital.closed.automation.pageobjects.squiz.GefSearch;
@@ -39,7 +39,7 @@ public class SquizPoliciesPreProductionTest extends CapabilitiesBuilder {
 
         // Added below to wait until all the search results are displayed and Next,Previous buttons appear
         squizAction.wait(GefSearch.pagination);
-      
+
 
         // Need to do changes here
 
