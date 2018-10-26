@@ -36,4 +36,6 @@ public interface SquizActions {
     void ssoLoginEntry() throws Exception;
 
     void ssoLogin() throws Exception;
+
+    void navigation() throws Exception;
 }

@@ -8,17 +8,15 @@ import org.junit.Test;
 /**
  * Created by Shravan on 26/10/2018.
  */
-public class SquizTabTestPreProductionTest extends CapabilitiesBuilder {
+public class GuiedJourneyPreProductionTest extends CapabilitiesBuilder {
 
     @Test
-    public void TabtestDesktopPreProductionEyesTest() throws Exception {
+    public void GuidedJourneytestPreProductionEyesTest() throws Exception {
 
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
-          squizAction.getPage("gef-education-base", "gef-education-tab");
-
-          squizAction.getPage("gef-education-base", "gef-education-standard");
-
+        // To add logic for Guided Journey
 
     }
+
 }

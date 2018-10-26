@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 
 /**
  * Created by ShravanNagareddi on 22/10/18.
- * Adding elements
+ * Adding elements for Guided Journey
  */
 public class GefGuidedJourney {
     public static By previousButton = By.cssSelector("uk-button gef-button gef-button--alt1 gef-button-x-large gef-pagination__prev");
