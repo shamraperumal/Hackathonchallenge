@@ -16,11 +16,14 @@ public class SquizPoliciesPreProductionTest extends CapabilitiesBuilder {
 
         squizAction.getPage("gef-policies-base", "");
 
+        Thread.sleep(2000);
 
-        squizAction.getPage("gef-policies-base", "gef-policies-lms");
+       // squizAction.getPage("gef-policies-base", "gef-policies-lms");
 
 
-        squizAction.getPage("gef-policies-base", "gef-policies-AZ");
+       // squizAction.getPage("gef-policies-base", "gef-policies-AZ");
+
+        squizAction.getPage("gef-policies-base", "gef-policies-search");
 
 
         squizAction.getPage("gef-policies-base", "gef-policies-topic");
@@ -35,10 +38,10 @@ public class SquizPoliciesPreProductionTest extends CapabilitiesBuilder {
         squizAction.getPage("gef-policies-base", "gef-policies-private-policy");
 
 
-        squizAction.getPage("gef-policies-base", "gef-policies-search");
+
 
         // Added below to wait until all the search results are displayed and Next,Previous buttons appear
-        squizAction.wait(GefSearch.pagination);
+        //squizAction.wait(GefSearch.pagination);
 
 
         // Need to do changes here
