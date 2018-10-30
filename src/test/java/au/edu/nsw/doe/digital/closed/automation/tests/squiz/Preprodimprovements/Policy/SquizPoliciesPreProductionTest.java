@@ -16,7 +16,7 @@ public class SquizPoliciesPreProductionTest extends CapabilitiesBuilder {
         squizAction.getPage("gef-policies-base", "gef-policies-search");
         System.out.println("Search page is launched succesfully");
         Thread.sleep(2000);
-        
+
         squizAction.getPage("gef-policies-base", "");
 
         System.out.println("Search page is launched succesfully");

@@ -39,12 +39,18 @@ public class SquizActionMethods implements SquizActions {
             driver.get(thisDomain + (thisPageUrl == null ? "" : thisPageUrl));
             System.out.println("Loaded domain url");
 
-            if ( thisPageUrl.contains("tab") || thisPageUrl.contains("standard") || thisPageUrl.contains("gef-policies"))
-            {
-                Thread.sleep(2000);
-                System.out.print("This is " + thisPageUrl + "page. So it's in sleep thread for 2000 miliseconds" );
-            }
+            try {
 
+                    if (thisPageUrl.contains("tab") || thisPageUrl.contains("standard") || thisPageUrl.contains("gef-policies"))
+                    {
+                        Thread.sleep(2000);
+                        System.out.print("This is " + thisPageUrl + "page. So it's in sleep thread for 2000 miliseconds");
+                    }
+                }
+                catch( final NullPointerException e)
+                {
+                    System.out.println("I am in try catch but i don't know why !!");
+                }
              } catch (final Exception e) {
             System.out.println("Failed to load page");
             throw e;
