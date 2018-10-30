@@ -13,17 +13,22 @@ public class SquizPoliciesPreProductionTest extends CapabilitiesBuilder {
     public void gefPoliciesDesktopPreProductionEyesTest() throws Exception {
 
         SquizActionMethods squizAction = new SquizActionMethods(driver);
-
+        squizAction.getPage("gef-policies-base", "gef-policies-search");
+        System.out.println("Search page is launched succesfully");
+        Thread.sleep(2000);
+        
         squizAction.getPage("gef-policies-base", "");
 
-        Thread.sleep(2000);
+        System.out.println("Search page is launched succesfully");
+
+
 
        // squizAction.getPage("gef-policies-base", "gef-policies-lms");
 
 
        // squizAction.getPage("gef-policies-base", "gef-policies-AZ");
 
-        squizAction.getPage("gef-policies-base", "gef-policies-search");
+
 
 
         squizAction.getPage("gef-policies-base", "gef-policies-topic");
