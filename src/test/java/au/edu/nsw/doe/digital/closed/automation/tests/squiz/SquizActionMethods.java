@@ -39,8 +39,7 @@ public class SquizActionMethods implements SquizActions {
             driver.get(thisDomain + (thisPageUrl == null ? "" : thisPageUrl));
             System.out.println("Loaded domain url");
 
-            try {
-
+           try {
                     if (thisPageUrl.contains("tab") || thisPageUrl.contains("standard") || thisPageUrl.contains("gef-policies"))
                     {
                         Thread.sleep(2000);
@@ -54,6 +53,11 @@ public class SquizActionMethods implements SquizActions {
              } catch (final Exception e) {
             System.out.println("Failed to load page");
             throw e;
+
+
+//                wait.until(ExpectedConditions.visibilityOfElementLocated();
+            // This wil have code to verify if the secondary index element has launched.
+
 
         }
     }
