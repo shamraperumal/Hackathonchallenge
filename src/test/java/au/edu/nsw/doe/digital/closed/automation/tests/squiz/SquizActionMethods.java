@@ -244,7 +244,27 @@ public class SquizActionMethods implements SquizActions {
 
     }
 
+    public boolean iswebelementpresent() throws Exception {
+        try
+        {
+            WebElement elementInContext=driver.findElement(By.id("single-navigation"));
+            if ( elementInContext.isEnabled()== true) {
+            return true;}
+            else
+            {
+                return false;
+            }
+        }
+            catch(final Exception e)
+            {
+                System.out.println("The element is not present");
+            }
+
+            return false;
+        }
 }
+
+
 
 
 

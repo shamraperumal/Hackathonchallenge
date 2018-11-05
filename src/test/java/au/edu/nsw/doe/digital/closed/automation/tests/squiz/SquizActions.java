@@ -1,6 +1,7 @@
 package au.edu.nsw.doe.digital.closed.automation.tests.squiz;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 /**
  * Created by ededios on 7/09/15.
@@ -38,4 +39,6 @@ public interface SquizActions {
     void ssoLogin() throws Exception;
 
     void navigation() throws Exception;
+
+    boolean iswebelementpresent() throws Exception;
 }

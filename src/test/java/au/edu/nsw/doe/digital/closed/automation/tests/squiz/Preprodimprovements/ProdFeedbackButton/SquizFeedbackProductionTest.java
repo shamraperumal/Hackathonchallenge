@@ -12,20 +12,24 @@ public class SquizFeedbackProductionTest extends CapabilitiesBuilder {
 
         SquizActionMethods squizAction = new SquizActionMethods(driver);
         squizAction.getPage("gef-feedback-base", "gef-feedback-department-contacts");
-        System.out.println("Search page is launched succesfully");
+        System.out.println("Page is launched succesfully");
         Thread.sleep(2000);
+
+        if ( squizAction.iswebelementpresent()==true)
+            System.out.println("Feedback button is displayed. Test Passed");
+        else
+            System.out.println("Feedback button is not displayed. Test failed");
 
         squizAction.getPage("gef-feedback-base", "gef-feedback-parents-carers");
 
         System.out.println("Search page is launched succesfully");
+        Thread.sleep(2000);
 
-       // squizAction.getPage("gef-policies-base", "gef-policies-lms");
-       // squizAction.getPage("gef-policies-base", "gef-policies-AZ");
+        if ( squizAction.iswebelementpresent()==true)
+            System.out.println("Feedback button is displayed. Test Passed");
+        else
+            System.out.println("Feedback button is not displayed. Test failed");
 
-       // Added below to wait until all the search results are displayed and Next,Previous buttons appear
-       //squizAction.wait(GefSearch.pagination);
-        // Need to do changes here
 
-        
-    }
+        }
 }
