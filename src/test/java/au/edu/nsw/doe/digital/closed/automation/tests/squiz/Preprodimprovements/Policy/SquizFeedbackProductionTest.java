@@ -1,4 +1,4 @@
-package au.edu.nsw.doe.digital.closed.automation.tests.squiz.Preprodimprovements.ProdFeedbackButton;
+package au.edu.nsw.doe.digital.closed.automation.tests.squiz.Preprodimprovements.Policy;
 
 import au.edu.nsw.doe.digital.closed.automation.pageobjects.squiz.GefSearch;
 import au.edu.nsw.doe.digital.closed.automation.setup.CapabilitiesBuilder;
