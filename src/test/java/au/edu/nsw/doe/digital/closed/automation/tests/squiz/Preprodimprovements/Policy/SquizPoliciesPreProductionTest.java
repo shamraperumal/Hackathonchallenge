@@ -22,7 +22,7 @@ public class SquizPoliciesPreProductionTest extends CapabilitiesBuilder {
        // squizAction.getPage("gef-policies-base", "gef-policies-lms");
        // squizAction.getPage("gef-policies-base", "gef-policies-AZ");
 
-        squizAction.getPage("gef-policies-base", "gef-policies-topic");
+      /*  squizAction.getPage("gef-policies-base", "gef-policies-topic");
 
         squizAction.getPage("gef-policies-base", "gef-policies-Policy");
 
@@ -32,7 +32,7 @@ public class SquizPoliciesPreProductionTest extends CapabilitiesBuilder {
 
        // Added below to wait until all the search results are displayed and Next,Previous buttons appear
        squizAction.wait(GefSearch.pagination);
-        // Need to do changes here
+        // Need to do changes here*/
 
         eyes.close();
     }
