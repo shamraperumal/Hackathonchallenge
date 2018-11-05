@@ -1,4 +1,4 @@
-package au.edu.nsw.doe.digital.closed.automation.tests.squiz.Preprodimprovements.Policy;
+package au.edu.nsw.doe.digital.closed.automation.tests.squiz.Preprodimprovements;
 
 import au.edu.nsw.doe.digital.closed.automation.pageobjects.squiz.GefSearch;
 import au.edu.nsw.doe.digital.closed.automation.setup.CapabilitiesBuilder;
