@@ -4,15 +4,16 @@ import au.edu.nsw.doe.digital.closed.automation.setup.CapabilitiesBuilder;
 import au.edu.nsw.doe.digital.closed.automation.tests.squiz.SquizActionMethods;
 import org.junit.Test;
 
-public class SquizFeedbackProductionTest extends CapabilitiesBuilder {
+public class SquizConnectwithusProductionTest extends CapabilitiesBuilder {
 
     @Test
-    public void FeedbackButtonTest() throws Exception {
+    public void ConnectwitUsTest() throws Exception {
 
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
         //1. Test case 01
         squizAction.getPage("gef-feedback-base", "gef-feedback-department-contacts");
+
         System.out.println("Page is launched");
         Thread.sleep(8000);
 
@@ -22,17 +23,7 @@ public class SquizFeedbackProductionTest extends CapabilitiesBuilder {
             System.out.println("Feedback button is not displayed. Test failed\n");
 
 
-        // 2. Test case 02
-        squizAction.getPage("gef-feedback-base", "gef-feedback-parents-carers");
-
-        System.out.println("\nParents and Carers page is launched");
-        Thread.sleep(8000);
-
-        if ( squizAction.iswebelementpresent()==true)
-            System.out.println("Feedback button is displayed. Test Passed");
-        else
-            System.out.println("Feedback button is not displayed. Test failed");
-
+// //div[contains(@data-gef-social-media,'{"service":"vimeo", "username":"", "numberOfPosts":"4"} ]}')]
 
         }
 }
