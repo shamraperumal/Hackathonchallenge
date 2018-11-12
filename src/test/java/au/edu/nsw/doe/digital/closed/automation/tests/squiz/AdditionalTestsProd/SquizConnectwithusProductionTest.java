@@ -1,5 +1,6 @@
 package au.edu.nsw.doe.digital.closed.automation.tests.squiz.AdditionalTestsProd;
 
+import au.edu.nsw.doe.digital.closed.automation.pageobjects.squiz.GefHomepage;
 import au.edu.nsw.doe.digital.closed.automation.setup.CapabilitiesBuilder;
 import au.edu.nsw.doe.digital.closed.automation.tests.squiz.SquizActionMethods;
 import org.junit.Test;
@@ -17,13 +18,12 @@ public class SquizConnectwithusProductionTest extends CapabilitiesBuilder {
         System.out.println("Page is launched");
         Thread.sleep(8000);
 
-        if ( squizAction.iswebelementpresent()==true)
-            System.out.println("Feedback button is displayed. Test Passed");
+        if ( squizAction.SocialMedia())
+
+                System.out.println("Social media posts are displayed. Test Passed");
         else
             System.out.println("Feedback button is not displayed. Test failed\n");
 
-
-// //div[contains(@data-gef-social-media,'{"service":"vimeo", "username":"", "numberOfPosts":"4"} ]}')]
 
         }
 }

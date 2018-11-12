@@ -244,25 +244,34 @@ public class SquizActionMethods implements SquizActions {
 
     }
 
-    public boolean iswebelementpresent() throws Exception {
-        try
-        {
-            WebElement elementInContext=driver.findElement(By.id("single-navigation"));
-            if ( elementInContext.isEnabled()== true) {
-            return true;}
-            else
-            {
-                return false;
-            }
-        }
-            catch(final Exception e)
-            {
-                System.out.println("The element is not present");
-            }
+    public boolean FeedbackWidget() throws Exception {
+        try {
 
-            return false;
+            wait(FeedbackWidget.yourFeedbackWidget);
+            if (driver.findElement(FeedbackWidget.yourFeedbackWidget).isEnabled() == true)
+                return true;
+            else
+                return false;
+        } catch (final Exception e) {
+            throw e;
         }
+    }
+
+
+    public boolean SocialMedia() throws Exception {
+        try {
+
+            wait(GefConnectWithUs.connectWithuspost);
+            if (driver.findElement(GefConnectWithUs.connectWithuspost).isEnabled() == true)
+                return true;
+            else
+                return false;
+        } catch (final Exception e) {
+            throw e;
+        }
+    }
 }
+
 
 
 

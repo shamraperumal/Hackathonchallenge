@@ -40,5 +40,7 @@ public interface SquizActions {
 
     void navigation() throws Exception;
 
-    boolean iswebelementpresent() throws Exception;
+    boolean FeedbackWidget() throws Exception;
+
+    boolean SocialMedia() throws Exception;
 }
