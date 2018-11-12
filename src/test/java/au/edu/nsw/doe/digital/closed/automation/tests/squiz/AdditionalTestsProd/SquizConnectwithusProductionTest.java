@@ -13,7 +13,7 @@ public class SquizConnectwithusProductionTest extends CapabilitiesBuilder {
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
         //1. Test case 01
-        squizAction.getPage("gef-education-base", "");
+        squizAction.getPage("gef-education-homepage", "");
 
         System.out.println("Page is launched");
         Thread.sleep(8000);

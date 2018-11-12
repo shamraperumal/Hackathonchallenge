@@ -247,7 +247,7 @@ public class SquizActionMethods implements SquizActions {
     public boolean FeedbackWidget() throws Exception {
         try {
 
-            wait(FeedbackWidget.yourFeedbackWidget);
+            //wait(FeedbackWidget.yourFeedbackWidget)
             if (driver.findElement(FeedbackWidget.yourFeedbackWidget).isEnabled() == true)
                 return true;
             else
