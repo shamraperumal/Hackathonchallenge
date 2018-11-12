@@ -11,7 +11,7 @@ public class SquizFeedbackWidgetProductionTest extends CapabilitiesBuilder {
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
         //1. Test case 01
-        squizAction.getPage("gef-feedback-base", "");
+        squizAction.getPage("gef-feedback-base", "gef-feedback-department-contacts");
 
         System.out.println("Page is launched");
         Thread.sleep(8000);
