@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import java.util.concurrent.TimeUnit;
 
 
 public class SquizActionMethods implements SquizActions {
@@ -248,6 +249,7 @@ public class SquizActionMethods implements SquizActions {
         try {
 
             //wait(FeedbackWidget.yourFeedbackWidget)
+            driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS) ;
             if (driver.findElement(FeedbackWidget.yourFeedbackWidget).isEnabled() == true)
                 return true;
             else
@@ -262,8 +264,12 @@ public class SquizActionMethods implements SquizActions {
         try {
 
            // wait(GefConnectWithUs.connectWithuspost);
-            if (driver.findElements(GefConnectWithUs.connectWithuspost).size() > 0 )
+            driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS) ;
+
+            if (driver.findElements(GefConnectWithUs.connectWithuspost).size() > 0 ) {
+                System.out.println("Number of posts displayed are " + driver.findElements(GefConnectWithUs.connectWithuspost).size());
                 return true;
+            }
             else
                 return false;
         } catch (final Exception e) {
