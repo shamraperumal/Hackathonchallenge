@@ -261,8 +261,8 @@ public class SquizActionMethods implements SquizActions {
     public boolean SocialMedia() throws Exception {
         try {
 
-            wait(GefConnectWithUs.connectWithuspost);
-            if (driver.findElement(GefConnectWithUs.connectWithuspost).isEnabled() == true)
+           // wait(GefConnectWithUs.connectWithuspost);
+            if (driver.findElements(GefConnectWithUs.connectWithuspost).size() > 0 )
                 return true;
             else
                 return false;
