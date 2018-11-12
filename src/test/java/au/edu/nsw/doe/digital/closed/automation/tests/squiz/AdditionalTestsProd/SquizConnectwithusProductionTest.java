@@ -22,7 +22,7 @@ public class SquizConnectwithusProductionTest extends CapabilitiesBuilder {
 
                 System.out.println("Social media posts are displayed. Test Passed");
         else
-            System.out.println("Feedback button is not displayed. Test failed\n");
+            System.out.println("Social media posts are displayed. Test failed\n");
 
 
         }
