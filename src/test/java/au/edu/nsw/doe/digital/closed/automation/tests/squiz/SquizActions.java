@@ -43,4 +43,7 @@ public interface SquizActions {
     boolean FeedbackWidget() throws Exception;
 
     boolean SocialMedia() throws Exception;
+
+    boolean Deskopguidedjourneynavigate() throws Exception;
+
 }

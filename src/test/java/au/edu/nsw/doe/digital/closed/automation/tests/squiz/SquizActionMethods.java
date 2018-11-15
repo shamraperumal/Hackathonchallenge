@@ -3,11 +3,15 @@ package au.edu.nsw.doe.digital.closed.automation.tests.squiz;
 import au.edu.nsw.doe.digital.closed.automation.pageobjects.squiz.*;
 import au.edu.nsw.doe.digital.closed.automation.pageobjects.sso.SsoLogin;
 import com.applitools.eyes.Eyes;
+import javassist.bytecode.stackmap.BasicBlock;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 
@@ -40,18 +44,15 @@ public class SquizActionMethods implements SquizActions {
             driver.get(thisDomain + (thisPageUrl == null ? "" : thisPageUrl));
             System.out.println("Loaded domain url");
 
-           try {
-                    if (thisPageUrl.contains("tab") || thisPageUrl.contains("standard") || thisPageUrl.contains("gef-policies"))
-                    {
-                        Thread.sleep(2000);
-                        System.out.print("This is " + thisPageUrl + "page. So it's in sleep thread for 2000 miliseconds");
-                    }
+            try {
+                if (thisPageUrl.contains("tab") || thisPageUrl.contains("standard") || thisPageUrl.contains("gef-policies")) {
+                    Thread.sleep(2000);
+                    System.out.print("This is " + thisPageUrl + "page. So it's in sleep thread for 2000 miliseconds");
                 }
-                catch( final NullPointerException e)
-                {
-                    System.out.println("I am in try catch but i don't know why !!");
-                }
-             } catch (final Exception e) {
+            } catch (final NullPointerException e) {
+                System.out.println("I am in try catch but i don't know why !!");
+            }
+        } catch (final Exception e) {
             System.out.println("Failed to load page");
             throw e;
 
@@ -117,13 +118,13 @@ public class SquizActionMethods implements SquizActions {
         }
     }
 
-    public void catalogueGroupSelect(final String group) throws Exception{
+    public void catalogueGroupSelect(final String group) throws Exception {
         String thisGroup = group;
         try {
-            if(thisGroup == "automation"){
-            driver.findElement(GefCatalogue.automationGroup).click();
+            if (thisGroup == "automation") {
+                driver.findElement(GefCatalogue.automationGroup).click();
             }
-        }catch(final Exception e){
+        } catch (final Exception e) {
             System.out.println();
             throw e;
         }
@@ -141,7 +142,7 @@ public class SquizActionMethods implements SquizActions {
     }
 
     public void catalogueSort(String order) throws Exception {
-       String thisOrder = order;
+        String thisOrder = order;
 
         try {
             if (thisOrder == "High") {
@@ -161,41 +162,41 @@ public class SquizActionMethods implements SquizActions {
                 System.out.println("Sorted from z to a");
             }
 
-        }catch (final Exception e){
+        } catch (final Exception e) {
             System.out.println("Failed to sort the list");
             throw e;
 
         }
     }
 
-    public void getNewInstance() throws Exception{
+    public void getNewInstance() throws Exception {
         try {
             driver.get("https://cms.det.nsw.edu.au/__lib/web/sup_switcher.php");
             wait(By.xpath("//input[@value='New Instance']"));
             driver.findElement(By.xpath("//input[@value='New Instance']")).click();
-        }catch(final Exception e){
+        } catch (final Exception e) {
             throw e;
         }
     }
 
-    public void clickWebElement(By locator) throws Exception{
+    public void clickWebElement(By locator) throws Exception {
         By thisLocator = locator;
         try {
             driver.findElement(thisLocator).click();
             System.out.println("Clicked on element");
-        }catch (final Exception e){
+        } catch (final Exception e) {
             System.out.println("Failed to click element");
             throw e;
         }
     }
 
-    public void maximiseWindow() throws Exception{
-       try{ driver.manage().window().maximize();
-           System.out.println("Window maximised");
-    }
-       catch (final Exception e){
-           System.out.println("Failed to maxmise window");
-       }
+    public void maximiseWindow() throws Exception {
+        try {
+            driver.manage().window().maximize();
+            System.out.println("Window maximised");
+        } catch (final Exception e) {
+            System.out.println("Failed to maxmise window");
+        }
     }
 
     public void ssoLoginEntry() throws Exception {
@@ -236,11 +237,9 @@ public class SquizActionMethods implements SquizActions {
 
         try {
 
-            }
-            catch(final Exception e)
-            {
-                System.out.println(e.getLocalizedMessage());
-            }
+        } catch (final Exception e) {
+            System.out.println(e.getLocalizedMessage());
+        }
 
 
     }
@@ -249,13 +248,11 @@ public class SquizActionMethods implements SquizActions {
         try {
 
             //wait(FeedbackWidget.yourFeedbackWidget)
-            driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS) ;
-            if (driver.findElement(FeedbackWidget.yourFeedbackWidget).isEnabled() == true)
-            {
+            driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+            if (driver.findElement(FeedbackWidget.yourFeedbackWidget).isEnabled() == true) {
                 driver.findElement(FeedbackWidget.yourFeedbackWidget).click();
                 return true;
-            }
-            else
+            } else
                 return false;
         } catch (final Exception e) {
             throw e;
@@ -266,19 +263,37 @@ public class SquizActionMethods implements SquizActions {
     public boolean SocialMedia() throws Exception {
         try {
 
-            driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS) ;
+            driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 
-            if (driver.findElements(GefConnectWithUs.connectWithuspost).size() > 0 )
-            {
+            if (driver.findElements(GefConnectWithUs.connectWithuspost).size() > 0) {
                 System.out.println("Number of posts displayed are " + driver.findElements(GefConnectWithUs.connectWithuspost).size());
                 driver.findElement(GefConnectWithUs.facebookpost).click();
                 return true;
-            }
-            else
+            } else
                 return false;
         } catch (final Exception e) {
             throw e;
         }
+    }
+
+
+    public boolean Deskopguidedjourneynavigate() throws InterruptedException {
+
+        try{
+        List<WebElement> guidedJourneyleftnav = (List<WebElement>) driver.findElements(GefGuidedJourney.guidedJourneySideMenu);
+        System.out.println("There are " + guidedJourneyleftnav.size() + " steps in the guided journey");
+
+        for (int i = 0; i < guidedJourneyleftnav.size(); i++)
+           {
+            guidedJourneyleftnav.get(i).click();
+            System.out.println("Clicked on Step number " + i);
+            TimeUnit.SECONDS.sleep(3);
+           }
+            return true;
+           } catch (final Exception e) {
+             throw e;
+        }
+
     }
 }
 
