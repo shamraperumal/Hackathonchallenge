@@ -249,7 +249,7 @@ public class SquizActionMethods implements SquizActions {
 
             //wait(FeedbackWidget.yourFeedbackWidget)
             driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-            if (driver.findElement(FeedbackWidget.yourFeedbackWidget).isEnabled() == true) {
+            if (driver.findElement(FeedbackWidget.yourFeedbackWidget).isEnabled() ) {
                 driver.findElement(FeedbackWidget.yourFeedbackWidget).click();
                 return true;
             } else
@@ -280,6 +280,7 @@ public class SquizActionMethods implements SquizActions {
     public boolean Desktopguidedjourneynavigate() throws InterruptedException {
 
         try{
+
             TimeUnit.SECONDS.sleep(10);
 
         List<WebElement> guidedJourneyleftnav = (List<WebElement>) driver.findElements(GefGuidedJourney.guidedJourneySideMenu);

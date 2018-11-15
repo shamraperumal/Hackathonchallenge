@@ -23,7 +23,7 @@ public class SquizDesktopGuidedJourneyProductionTest extends CapabilitiesBuilder
         System.out.println("Page is launched");
         Thread.sleep(12000);
 
-        if(squizAction.Deskopguidedjourneynavigate())
+        if(squizAction.Desktopguidedjourneynavigate())
         {
             System.out.println("Guided Journey page is loaded successfully");
         }

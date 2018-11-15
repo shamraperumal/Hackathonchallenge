@@ -44,6 +44,6 @@ public interface SquizActions {
 
     boolean SocialMedia() throws Exception;
 
-    boolean Deskopguidedjourneynavigate() throws Exception;
+    boolean Desktopguidedjourneynavigate() throws Exception;
 
 }
