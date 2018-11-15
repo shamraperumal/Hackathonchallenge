@@ -267,7 +267,7 @@ public class SquizActionMethods implements SquizActions {
 
             if (driver.findElements(GefConnectWithUs.connectWithuspost).size() > 0) {
                 System.out.println("Number of posts displayed are " + driver.findElements(GefConnectWithUs.connectWithuspost).size());
-                driver.findElement(GefConnectWithUs.facebookpost).click();
+                driver.findElement(GefConnectWithUs.firstsocialmediapost).click();
                 return true;
             } else
                 return false;
@@ -282,7 +282,7 @@ public class SquizActionMethods implements SquizActions {
         try{
         List<WebElement> guidedJourneyleftnav = (List<WebElement>) driver.findElements(GefGuidedJourney.guidedJourneySideMenu);
         System.out.println("There are " + guidedJourneyleftnav.size() + " steps in the guided journey");
-
+            TimeUnit.SECONDS.sleep(10);
         for (int i = 0; i < guidedJourneyleftnav.size(); i++)
            {
             guidedJourneyleftnav.get(i).click();

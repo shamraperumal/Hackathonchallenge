@@ -21,7 +21,7 @@ public class SquizDesktopGuidedJourneyProductionTest extends CapabilitiesBuilder
         squizAction.getPage("gef-education-homepage", "gef-guided-journey");
 
         System.out.println("Page is launched");
-        Thread.sleep(8000);
+        Thread.sleep(12000);
 
         if(squizAction.Deskopguidedjourneynavigate())
         {
