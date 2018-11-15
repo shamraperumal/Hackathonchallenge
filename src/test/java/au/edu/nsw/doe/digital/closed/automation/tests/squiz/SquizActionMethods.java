@@ -283,7 +283,7 @@ public class SquizActionMethods implements SquizActions {
 
             TimeUnit.SECONDS.sleep(10);
 
-        List<WebElement> guidedJourneyleftnav = (List<WebElement>) driver.findElements(GefGuidedJourney.guidedJourneySideMenu);
+        List<WebElement> guidedJourneyleftnav = driver.findElements(GefGuidedJourney.guidedJourneySideMenu);
         System.out.println("There are " + guidedJourneyleftnav.size() + " steps in the guided journey");
 
         for (int i = 0; i < guidedJourneyleftnav.size(); i++)
