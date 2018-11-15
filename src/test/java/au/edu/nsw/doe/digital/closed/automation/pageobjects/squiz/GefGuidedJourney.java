@@ -12,7 +12,7 @@ import org.openqa.selenium.Keys;
  * Adding elements for Guided Journey
  */
 public class GefGuidedJourney {
-    public static By guidedJourneySideMenu=By.xpath("li[@class='gefSideMenu__item']");
+    public static By guidedJourneySideMenu=By.xpath("//li[@class='gefSideMenu__item']");
     public static By previousButton = By.xpath("//button[@class='uk-button gef-button gef-button--alt1 gef-button-x-large gef-pagination__prev']");
     public static By nextButton = By.xpath("//button[@class='uk-button gef-button gef-button-x-large gef-pagination__next']");
     public static By goToSectionButton = By.xpath("//button[@class='uk-button gef-button']");
