@@ -277,12 +277,14 @@ public class SquizActionMethods implements SquizActions {
     }
 
 
-    public boolean Deskopguidedjourneynavigate() throws InterruptedException {
+    public boolean Desktopguidedjourneynavigate() throws InterruptedException {
 
         try{
+            TimeUnit.SECONDS.sleep(10);
+
         List<WebElement> guidedJourneyleftnav = (List<WebElement>) driver.findElements(GefGuidedJourney.guidedJourneySideMenu);
         System.out.println("There are " + guidedJourneyleftnav.size() + " steps in the guided journey");
-            TimeUnit.SECONDS.sleep(10);
+
         for (int i = 0; i < guidedJourneyleftnav.size(); i++)
            {
             guidedJourneyleftnav.get(i).click();

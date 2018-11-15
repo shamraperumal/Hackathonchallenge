@@ -29,7 +29,7 @@ public class SquizDesktopGuidedJourneyProductionTest extends CapabilitiesBuilder
         }
         else
         {
-            System.out.println("Errors loading or Navigating the steps on the page");
+            System.out.println("Error loading or Navigating the steps on the page");
         }
 
         }
