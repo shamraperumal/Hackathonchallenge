@@ -215,6 +215,39 @@ public class SquizActionMethods implements SquizActions {
         }
     }
 
+    //Added by shamra on 08-11-2018
+
+    public void squizLoginEntry() throws Exception {
+        try {
+            System.out.print("get page");
+            driver.get(System.getenv("SQUIZURL"));
+            driver.findElement(SquizLogin.username).sendKeys(System.getenv("USERNAME"));
+            driver.findElement(SquizLogin.password).sendKeys(System.getenv("PASSWORD"));
+            driver.findElement(SquizLogin.submitButton).click();
+        } catch (final Exception e) {
+            System.out.println("Login failed");
+            // throw e;
+        }
+    }
+
+    public void compareExcel() throws Exception {
+        try {
+            Runtime.getRuntime().exec("wscript deletefile.vbs");
+            squizLoginEntry();
+            System.out.println("starting comparison");
+            Runtime.getRuntime().exec("wscript squizcomparison.vbs");
+            //Added a wait to ensure the vbscrip execution is complete
+            Thread.sleep(40000);
+
+
+
+        } catch (final Exception e) {
+            System.out.println("Comparison failed");
+            // throw e;
+        }
+
+
+    }
 
 }
 
