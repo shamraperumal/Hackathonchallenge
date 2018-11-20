@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -272,6 +273,7 @@ public class SquizActionMethods implements SquizActions {
             } else
                 return false;
         } catch (final Exception e) {
+            System.out.println("Unexpected error. Check the home page");
             throw e;
         }
     }
@@ -295,9 +297,48 @@ public class SquizActionMethods implements SquizActions {
            }
             return true;
            } catch (final Exception e) {
+            System.out.println("Unexpected error. Check the Guided Journey URL Manually");
              throw e;
         }
 
     }
+ // Used for long content keyboard navigation
+    public boolean keyboardnavigation(final String Keystroke) throws Exception
+    {
+
+       try {
+           // need to update this on 20/11/2018
+           String Keystep="Keys"+Keystroke;
+           Actions a = new Actions(driver);
+           a.sendKeys(Keystep);
+                      return true;
+       }
+       catch (final Exception e)
+       {
+           System.out.println("Unexpected error. Navigation using Keyboard failed");
+           throw e;
+       }
+    }
+
+    public boolean longcontentnavigate() throws Exception
+    {
+        try{
+            TimeUnit.SECONDS.sleep(5);
+            System.out.println("Clicking on the first H2");
+            driver.findElement(GefLongContent.firsth2).click();
+            TimeUnit.SECONDS.sleep(3);
+            System.out.println("Clicking on the first H3");
+            driver.findElement(GefLongContent.firsth3).click();
+            TimeUnit.SECONDS.sleep(3);
+            return true;
+        }
+        catch (final Exception e)
+        {
+            System.out.println("Unexpected error. Check the long content page manually");
+            throw e;
+        }
+
+    }
+
 }
 

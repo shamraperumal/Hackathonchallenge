@@ -46,4 +46,8 @@ public interface SquizActions {
 
     boolean Desktopguidedjourneynavigate() throws Exception;
 
+    boolean keyboardnavigation(final String Keystroke) throws Exception;
+
+    boolean longcontentnavigate() throws Exception;
+
 }
