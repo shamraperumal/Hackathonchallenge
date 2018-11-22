@@ -12,8 +12,7 @@ import java.util.concurrent.TimeUnit;
 
 public class SquizDesktopGuidedJourneyProductionTest extends CapabilitiesBuilder {
 
-    @Test
-    public void GuidedJourneyTest() throws Exception {
+        public void GuidedJourneyTest() throws Exception {
 
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
