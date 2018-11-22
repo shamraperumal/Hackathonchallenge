@@ -12,7 +12,7 @@ public class SquizDesktopLongContentProductionTest extends CapabilitiesBuilder {
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
         //1. Test case 01
-        squizAction.getPage("gef-education-homepage", "gef-guided-journey");
+        squizAction.getPage("gef-education-homepage", "gef-long-content");
 
         System.out.println("Page is launched");
         Thread.sleep(12000);
@@ -26,9 +26,19 @@ public class SquizDesktopLongContentProductionTest extends CapabilitiesBuilder {
             System.out.println("Error while Navigating the steps on the page");
         }
 
-        if(squizAction.keyboardnavigation("TAB"))
+        String[] keystrokes = {"TAB","TAB","TAB","ENTER"};
+
+        for(int i=0;i<keystrokes.length;i++)
         {
-            System.out.println("First tab is successful");
+            if(squizAction.keyboardnavigation(keystrokes[i]))
+            {
+                System.out.println(keystrokes[i] + " is successful");
+            }
+            else
+            {
+                System.out.println("Error encountered while keyboard navigation. Check sauce-labs for logs");
+                break;
+            }
         }
 
         }
