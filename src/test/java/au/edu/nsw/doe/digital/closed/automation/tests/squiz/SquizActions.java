@@ -38,8 +38,6 @@ public interface SquizActions {
 
     void ssoLogin() throws Exception;
 
-    void navigation() throws Exception;
-
     boolean FeedbackWidget() throws Exception;
 
     boolean SocialMedia() throws Exception;

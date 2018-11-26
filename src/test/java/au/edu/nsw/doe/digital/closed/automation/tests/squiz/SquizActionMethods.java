@@ -234,16 +234,11 @@ public class SquizActionMethods implements SquizActions {
         }
     }
 
-    public void navigation() throws Exception {
-
-        try {
-
-        } catch (final Exception e) {
-            System.out.println(e.getLocalizedMessage());
-        }
 
 
-    }
+    // Added by Shravan Nagareddi on 12/11/2018
+    // Used for verifying Feedback Widget presence on a particular page
+
 
     public boolean FeedbackWidget() throws Exception {
         try {
@@ -260,6 +255,8 @@ public class SquizActionMethods implements SquizActions {
         }
     }
 
+    // Added by Shravan Nagareddi on 16/11/2018
+    // Used for Social Media feed testing on homePage
 
     public boolean SocialMedia() throws Exception {
         try {
@@ -278,7 +275,8 @@ public class SquizActionMethods implements SquizActions {
         }
     }
 
-
+    // Added by Shravan Nagareddi on 19/11/2018
+    // Used for Guided journey testing
     public boolean Desktopguidedjourneynavigate() throws InterruptedException {
 
         try{
@@ -302,7 +300,8 @@ public class SquizActionMethods implements SquizActions {
         }
 
     }
- // Used for long content keyboard navigation
+   // Added by Shravan Nagareddi on 21/11/2018
+    // Used for long content keyboard navigation
     public boolean keyboardnavigation(final String Keystroke) throws Exception
     {
 
