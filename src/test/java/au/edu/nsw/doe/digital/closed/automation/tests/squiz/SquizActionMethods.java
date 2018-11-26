@@ -51,7 +51,7 @@ public class SquizActionMethods implements SquizActions {
                     System.out.print("This is " + thisPageUrl + "page. So it's in sleep thread for 2000 miliseconds");
                 }
             } catch (final NullPointerException e) {
-                System.out.println("I am in try catch but i don't know why !!");
+                System.out.println("I am in try catch . This is when the page is being launched!!");
             }
         } catch (final Exception e) {
             System.out.println("Failed to load page");
