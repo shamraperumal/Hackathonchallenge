@@ -265,6 +265,7 @@ public class SquizActionMethods implements SquizActions {
 
             if (driver.findElements(GefConnectWithUs.connectWithuspost).size() > 0) {
                 System.out.println("Number of posts displayed are " + driver.findElements(GefConnectWithUs.connectWithuspost).size());
+                System.out.println("Clicking on " + driver.findElement(GefConnectWithUs.firstsocialmediapost).getText() + " post" );
                 driver.findElement(GefConnectWithUs.firstsocialmediapost).click();
                 return true;
             } else
@@ -310,7 +311,7 @@ public class SquizActionMethods implements SquizActions {
            String Keystep="Keys"+Keystroke;
            Actions a = new Actions(driver);
            a.sendKeys(Keystep);
-                      return true;
+           return true;
        }
        catch (final Exception e)
        {
@@ -318,6 +319,9 @@ public class SquizActionMethods implements SquizActions {
            throw e;
        }
     }
+
+    // Added by Shravan Nagareddi on 22/11/2018
+    // Used for long content keyboard navigation
 
     public boolean longcontentnavigate() throws Exception
     {
