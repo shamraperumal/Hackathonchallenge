@@ -260,7 +260,6 @@ public class SquizActionMethods implements SquizActions {
 
     public boolean SocialMedia() throws Exception {
         try {
-
             driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 
             if (driver.findElements(GefConnectWithUs.connectWithuspost).size() > 0) {
@@ -285,8 +284,8 @@ public class SquizActionMethods implements SquizActions {
             TimeUnit.SECONDS.sleep(10);
 
             System.out.println(GefGuidedJourney.guidedJourneySideMenu);
-        List<WebElement> guidedJourneyleftnav = driver.findElements(GefGuidedJourney.guidedJourneySideMenu);
-       System.out.println("There are " + guidedJourneyleftnav.size() + " steps in the guided journey");
+            List<WebElement> guidedJourneyleftnav = driver.findElements(GefGuidedJourney.guidedJourneySideMenu);
+            System.out.println("There are " + guidedJourneyleftnav.size() + " steps in the guided journey");
 
         for (int i = 0; i < guidedJourneyleftnav.size(); i++)
            {
@@ -305,7 +304,6 @@ public class SquizActionMethods implements SquizActions {
     // Used for long content keyboard navigation
     public boolean keyboardnavigation(final String Keystroke) throws Exception
     {
-
        try {
            // need to update this on 20/11/2018
            String Keystep="Keys"+Keystroke;
