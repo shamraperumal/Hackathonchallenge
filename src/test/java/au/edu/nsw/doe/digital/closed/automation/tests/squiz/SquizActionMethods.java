@@ -78,6 +78,7 @@ public class SquizActionMethods implements SquizActions {
                 System.out.println("Loaded domain url ");
                 Thread.sleep(2000);
                 driver.findElement(GefSearch.insidetheDeptSearch).sendKeys(keyword);
+                Thread.sleep(2000);
                 driver.findElement(GefSearch.InsidetheDeptsearchSubmitButton).click();
             }
              else {
