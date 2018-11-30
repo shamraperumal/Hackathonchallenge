@@ -67,9 +67,9 @@ public class SquizActionMethods implements SquizActions {
 
     public void getPageElasticSearch(final String domain, final String pageUrl) throws Exception {
         try {
-            String thisDomain = domain;
+            String thisDomain = System.getenv(domain);
             String thisPageUrl = pageUrl;
-            String FinalSearchURL=thisDomain+thisPageUrl;
+            String FinalSearchURL=thisDomain+pageUrl;
             System.out.println("URL is " + FinalSearchURL);
             driver.get(FinalSearchURL);
             System.out.println("Loaded domain url ");
