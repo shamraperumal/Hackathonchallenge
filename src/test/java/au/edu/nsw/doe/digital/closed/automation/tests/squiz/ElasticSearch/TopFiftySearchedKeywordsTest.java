@@ -29,7 +29,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import org.junit.Test;
 
-public class ElasticSeachBaseLineTest extends CapabilitiesBuilder {
+public class TopFiftySearchedKeywordsTest extends CapabilitiesBuilder {
 @Test
     public void ElasticPageSearch() throws Exception {
 
@@ -44,6 +44,9 @@ public class ElasticSeachBaseLineTest extends CapabilitiesBuilder {
              System.out.println("URL is " + url );
              squizAction.getPageElasticSearch("gef-education-homepage",url);
              eyes.checkWindow(System.getenv(TopSearchedKeywords[i]));
+
+             squizAction.ssoLoginEntry();
+
 
          }
 
