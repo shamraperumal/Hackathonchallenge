@@ -42,7 +42,7 @@ public class ElasticSeachBaseLineTest extends CapabilitiesBuilder {
              System.out.println("Keyword is " + TopSearchedKeywords[i] );
              String url="/search?site=public_ce_dec_nsw_gov_au&q="+TopSearchedKeywords[i];
              System.out.println("URL is " + url );
-             squizAction.getPage("gef-education-homepage",url);
+             squizAction.getPageElasticSearch("gef-education-homepage",url);
              eyes.checkWindow(System.getenv(TopSearchedKeywords[i]));
 
          }

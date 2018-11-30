@@ -65,6 +65,32 @@ public class SquizActionMethods implements SquizActions {
         }
     }
 
+    public void getPageElasticSearch(final String domain, final String pageUrl) throws Exception {
+        try {
+            String thisDomain = domain;
+            String thisPageUrl = pageUrl;
+            driver.get(thisDomain + (thisPageUrl == null ? "" : thisPageUrl));
+            System.out.println("Loaded domain url ");
+
+            try {
+                if (thisPageUrl.contains("tab") || thisPageUrl.contains("standard") || thisPageUrl.contains("gef-policies")) {
+                    Thread.sleep(2000);
+                    System.out.print("This is " + thisPageUrl + "page. So it's in sleep thread for 2000 miliseconds");
+                }
+            } catch (final NullPointerException e) {
+                System.out.println("I am in try catch . This is when the page is being launched!!");
+            }
+        } catch (final Exception e) {
+            System.out.println("Failed to load page");
+            throw e;
+
+
+//                wait.until(ExpectedConditions.visibilityOfElementLocated();
+            // This wil have code to verify if the secondary index element has launched.
+
+
+        }
+    }
 
     public void search(final String searchInput) throws Exception {
         try {

@@ -50,4 +50,8 @@ public interface SquizActions {
 
     String[] ListfromJenkins(final String topSearchedKeywords) throws Exception;
 
+    void getPageElasticSearch(final String domain, final String pageUrl) throws Exception;
+
+
+
 }
