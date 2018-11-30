@@ -43,7 +43,7 @@ public class SquizActionMethods implements SquizActions {
             String thisDomain = System.getenv(domain);
             String thisPageUrl = System.getenv(pageUrl);
             driver.get(thisDomain + (thisPageUrl == null ? "" : thisPageUrl));
-            System.out.println("Loaded domain url");
+            System.out.println("Loaded domain url ");
 
             try {
                 if (thisPageUrl.contains("tab") || thisPageUrl.contains("standard") || thisPageUrl.contains("gef-policies")) {
