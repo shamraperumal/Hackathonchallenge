@@ -69,7 +69,9 @@ public class SquizActionMethods implements SquizActions {
         try {
             String thisDomain = domain;
             String thisPageUrl = pageUrl;
-            driver.get(thisDomain + (thisPageUrl == null ? "" : thisPageUrl));
+            String FinalSearchURL=thisDomain+thisPageUrl;
+            System.out.println("URL is " + FinalSearchURL);
+            driver.get(FinalSearchURL);
             System.out.println("Loaded domain url ");
 
             try {
