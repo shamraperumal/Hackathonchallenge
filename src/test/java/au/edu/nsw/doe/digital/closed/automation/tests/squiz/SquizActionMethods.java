@@ -70,12 +70,13 @@ public class SquizActionMethods implements SquizActions {
 
             String thisDomain = System.getenv(domain);
             String thisPageUrl = pageUrl;
-            if(thisPageUrl=="/inside-the-department/search")
+            if(thisPageUrl=="inside-the-department/search")
             {
                 String FinalSearchURL = thisDomain + pageUrl ;
                 System.out.println("URL is " + FinalSearchURL);
                 driver.get(FinalSearchURL);
                 System.out.println("Loaded domain url ");
+                Thread.sleep(2000);
                 driver.findElement(GefSearch.insidetheDeptSearch).sendKeys(keyword);
                 driver.findElement(GefSearch.InsidetheDeptsearchSubmitButton).click();
             }
