@@ -341,5 +341,13 @@ public class SquizActionMethods implements SquizActions {
 
     }
 
+
+    public String[] ListfromJenkins(final String topSearchedKeywords) throws Exception {
+
+        String keywords=topSearchedKeywords;
+        String[] keyWordsList=keywords.split(",")    ;
+        return keyWordsList;
+    }
+
 }
 

@@ -48,4 +48,6 @@ public interface SquizActions {
 
     boolean longcontentnavigate() throws Exception;
 
+    String[] ListfromJenkins(final String topSearchedKeywords) throws Exception;
+
 }
