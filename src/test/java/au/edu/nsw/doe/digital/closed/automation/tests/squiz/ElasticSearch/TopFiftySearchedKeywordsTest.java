@@ -40,9 +40,9 @@ public class TopFiftySearchedKeywordsTest extends CapabilitiesBuilder {
          for (int i=0;i<TopSearchedKeywords.length;i++)
          {
              System.out.println("Keyword is " + TopSearchedKeywords[i] );
-             String url="/search?site=public_ce_dec_nsw_gov_au&q="+TopSearchedKeywords[i];
+             String url="/search?site=public_ce_dec_nsw_gov_au&q=";
              System.out.println("URL is " + url );
-             squizAction.getPageElasticSearch("gef-education-homepage",url);
+             squizAction.getPageElasticSearch("gef-education-homepage",url,TopSearchedKeywords[i]);
              eyes.checkWindow(System.getenv(TopSearchedKeywords[i]));
 
              squizAction.ssoLoginEntry();

@@ -65,23 +65,27 @@ public class SquizActionMethods implements SquizActions {
         }
     }
 
-    public void getPageElasticSearch(final String domain, final String pageUrl) throws Exception {
+    public void getPageElasticSearch(final String domain, final String pageUrl,final String keyword) throws Exception {
         try {
+
             String thisDomain = System.getenv(domain);
             String thisPageUrl = pageUrl;
-            String FinalSearchURL=thisDomain+pageUrl;
-            System.out.println("URL is " + FinalSearchURL);
-            driver.get(FinalSearchURL);
-            System.out.println("Loaded domain url ");
-
-            try {
-                if (thisPageUrl.contains("tab") || thisPageUrl.contains("standard") || thisPageUrl.contains("gef-policies")) {
-                    Thread.sleep(2000);
-                    System.out.print("This is " + thisPageUrl + "page. So it's in sleep thread for 2000 miliseconds");
-                }
-            } catch (final NullPointerException e) {
-                System.out.println("I am in try catch . This is when the page is being launched!!");
+            if(thisPageUrl=="/inside-the-department/search")
+            {
+                String FinalSearchURL = thisDomain + pageUrl ;
+                System.out.println("URL is " + FinalSearchURL);
+                driver.get(FinalSearchURL);
+                System.out.println("Loaded domain url ");
+                driver.findElement(GefSearch.insidetheDeptSearch).sendKeys(keyword);
+                driver.findElement(GefSearch.InsidetheDeptsearchSubmitButton).click();
             }
+             else {
+                String FinalSearchURL = thisDomain + pageUrl + keyword;
+                System.out.println("URL is " + FinalSearchURL);
+                driver.get(FinalSearchURL);
+                System.out.println("Loaded domain url ");
+            }
+
         } catch (final Exception e) {
             System.out.println("Failed to load page");
             throw e;
