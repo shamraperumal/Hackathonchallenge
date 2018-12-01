@@ -79,8 +79,10 @@ public class SquizActionMethods implements SquizActions {
                 Thread.sleep(2000);
                 driver.findElement(GefSearch.insidetheDeptSearch).sendKeys(keyword);
                 Thread.sleep(2000);
+                driver.findElement(GefSearch.InsidetheDeptsearchSubmitButton).sendKeys(Keys.ENTER);
                 Actions a = new Actions(driver);
-                a.sendKeys(Keys.ENTER);
+
+                //a.sendKeys(Keys.ENTER);
             }
              else {
                 String FinalSearchURL = thisDomain + pageUrl + keyword;
