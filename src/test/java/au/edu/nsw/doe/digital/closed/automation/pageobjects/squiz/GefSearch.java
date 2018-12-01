@@ -14,5 +14,6 @@ public class GefSearch {
     public static By mobileSearchButton = By.xpath("//button[@id='global-search-button']");
     public static By insidetheDeptSearch=By.id("search");
     public static By InsidetheDeptsearchSubmitButton = By.id("btnSearch14");
+    public static By InsidetheDeptSearchbuttontwo=By.xpath("//button[@id='btnSearch14')");
 
 }
