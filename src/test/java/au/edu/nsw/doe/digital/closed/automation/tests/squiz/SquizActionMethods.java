@@ -79,7 +79,7 @@ public class SquizActionMethods implements SquizActions {
                 Thread.sleep(2000);
                 driver.findElement(GefSearch.insidetheDeptSearch).sendKeys(keyword);
                 Thread.sleep(2000);
-                driver.findElement(GefSearch.searchSubmitButton).click();
+                driver.findElement(GefSearch.InsidetheDeptSearchbuttontwo).click();
                 //a.sendKeys(Keys.ENTER);
             }
              else {
