@@ -20,7 +20,11 @@ public class StaffOnlyTopFiftySearchedKeywordsTest extends CapabilitiesBuilder {
              squizAction.getPage("gef-education-homepage","");
              squizAction.ssoLoginEntry();
              squizAction.getPageElasticSearch("gef-education-homepage",url,TopSearchedKeywords[i]);
+             Thread.sleep(6000);
              //eyes.checkWindow(System.getenv(TopSearchedKeywords[i]));
+
+             Thread.sleep(6000);
+
          }
 
      /*
