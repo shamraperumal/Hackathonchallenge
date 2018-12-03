@@ -70,6 +70,7 @@ public class SquizActionMethods implements SquizActions {
 
             String thisDomain = System.getenv(domain);
             String thisPageUrl = pageUrl;
+
             if(thisPageUrl=="inside-the-department/search?q=")
             {
                 String FinalSearchURL = thisDomain + pageUrl+keyword ;

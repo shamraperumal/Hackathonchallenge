@@ -56,13 +56,13 @@ public abstract class LocalSetup {
 
         baseUrl = System.getenv("BASEURL");
         driver.manage().timeouts().implicitlyWait(90, TimeUnit.SECONDS);
-//        Eyes eyes = new Eyes();
-//        eyes.setApiKey("rIAas8LXlLDwbaIsnz9gfvuJlRqblSfTyNxsLDATS6Y110");
-//        if (proxy != null) {
-//            eyes.setProxy(new ProxySettings(proxy));
-//        }
-//        driver = eyes.open(driver, "DoE", testName + rectangle());
-//        MatchLevel.valueOf(matchLevel);
+      Eyes eyes = new Eyes();
+        eyes.setApiKey("rIAas8LXlLDwbaIsnz9gfvuJlRqblSfTyNxsLDATS6Y110");
+        if (proxy != null) {
+            eyes.setProxy(new ProxySettings(proxy));
+        }
+        driver = eyes.open(driver, "DoE", testName + rectangle());
+        MatchLevel.valueOf(matchLevel);
         System.out.println("Starting test...");
         doSetup();
     }
@@ -70,7 +70,7 @@ public abstract class LocalSetup {
     @After
     public void tearDown() throws Exception {
         System.out.println("Performing clean up");
-       // driver.quit();
+        driver.quit();
     }
 
     protected void doSetup() {
