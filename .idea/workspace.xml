@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="119d98c6-e95d-4f61-80fb-b0cb6782b572" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/ElasticSearchPreprod/TopFiftySearchedKeywordsTestPreprod.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/InsideTheDept/StaffOnlyTopFiftySearchedKeywordsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/InsideTheDept/StaffOnlyTopFiftySearchedKeywordsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/ElasticSearch/TopFiftySearchedKeywordsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/ElasticSearch/TopFiftySearchedKeywordsTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,15 +45,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
               <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SquizTabTestPreProductionTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/Preprodimprovements/SquizTabTestPreProductionTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -102,14 +94,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TopFiftySearchedKeywordsTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TopFiftySearchedKeywordsTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/ElasticSearch/TopFiftySearchedKeywordsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="43" column="37" lean-forward="true" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
+            <state relative-caret-position="494">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TopFiftySearchedKeywordsTestPreprod.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/ElasticSearchPreprod/TopFiftySearchedKeywordsTestPreprod.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="19" column="47" lean-forward="true" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -202,11 +203,12 @@
         <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/ElasticSearch/StaffOnlyTopFiftySearchedKeywordsTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/AdditionalTestsProd/InsideTheDept/StaffOnlyTopFiftySearchedKeywordsTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/SquizActions.java" />
-        <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/ElasticSearch/TopFiftySearchedKeywordsTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/pageobjects/squiz/GefSearch.java" />
         <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/setup/LocalSetup.java" />
         <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/SquizActionMethods.java" />
         <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/InsideTheDept/StaffOnlyTopFiftySearchedKeywordsTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/ElasticSearch/TopFiftySearchedKeywordsTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/ElasticSearchPreprod/TopFiftySearchedKeywordsTestPreprod.java" />
       </list>
     </option>
   </component>
@@ -455,6 +457,23 @@
               <item name="automation" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
               <item name="squiz" type="462c0819:PsiDirectoryNode" />
+              <item name="ElasticSearchPreprod" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Doe-Test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="doe-automation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="au" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="nsw" type="462c0819:PsiDirectoryNode" />
+              <item name="doe" type="462c0819:PsiDirectoryNode" />
+              <item name="digital" type="462c0819:PsiDirectoryNode" />
+              <item name="closed" type="462c0819:PsiDirectoryNode" />
+              <item name="automation" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="squiz" type="462c0819:PsiDirectoryNode" />
               <item name="InsideTheDept" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -610,11 +629,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="au.edu.nsw.doe.digital.closed.automation.tests.squiz.ElasticSearchPreprod" />
       <recent name="au.edu.nsw.doe.digital.closed.automation.tests.squiz.ElasticSearch" />
       <recent name="au.edu.nsw.doe.digital.closed.automation.tests.squiz.AdditionalTestsProd" />
       <recent name="au.edu.nsw.doe.digital.closed.automation.tests.squiz.Preprodimprovements.ProdFeedbackButton" />
       <recent name="au.edu.nsw.doe.digital.closed.automation.tests.squiz.Preprodimprovements.Indexvalidations" />
-      <recent name="au.edu.nsw.doe.digital.closed.automation.tests.squiz.Preprodimprovements" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -759,13 +778,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1539910784915</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Added test case for Connect with us verification">
-      <created>1541989635064</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1541989635064</updated>
     </task>
     <task id="LOCAL-00023" summary="Fixed Connect with us test case">
       <created>1541990622837</created>
@@ -1103,7 +1115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1543808419445</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="Removed unwanted code from public search">
+      <created>1543815065880</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1543815065881</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1209,7 +1228,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added implicit time out" />
     <MESSAGE value="Added Click command on facebook post so that saucelabs takes screenshot of this action" />
     <MESSAGE value="Added test cases for Guided journey" />
     <MESSAGE value="Added new elements for Connect with us and added wait for Guided Journey desktop functions" />
@@ -1234,7 +1252,8 @@
     <MESSAGE value="Removed inside the dept search" />
     <MESSAGE value="Refractored inside the dept search" />
     <MESSAGE value="Inside the dept test restructure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inside the dept test restructure" />
+    <MESSAGE value="Removed unwanted code from public search" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed unwanted code from public search" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1249,13 +1268,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/squizpreproduction/desktop/SquizGefEducationPreProductionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="699">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/pageobjects/squiz/GefIndex.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1611,11 +1623,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/ElasticSearch/TopFiftySearchedKeywordsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="43" column="37" lean-forward="true" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
+        <state relative-caret-position="494">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/ElasticSearchPreprod/TopFiftySearchedKeywordsTestPreprod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="47" lean-forward="true" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="69" />
         </state>
       </provider>
     </entry>

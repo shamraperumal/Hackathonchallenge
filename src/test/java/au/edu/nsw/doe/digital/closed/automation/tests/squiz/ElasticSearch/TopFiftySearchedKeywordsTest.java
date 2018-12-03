@@ -47,7 +47,7 @@ public class TopFiftySearchedKeywordsTest extends CapabilitiesBuilder {
             eyes.checkWindow(System.getenv(TopSearchedKeywords[i]));
          }
 
-     
+
 
 
 }
