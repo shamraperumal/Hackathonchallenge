@@ -11,6 +11,8 @@ import org.junit.rules.TestRule;
 import org.junit.rules.TestWatcher;
 import org.junit.runner.Description;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.concurrent.TimeUnit;
@@ -44,9 +46,16 @@ public abstract class LocalSetup {
 
     @Before
     public void setUp() throws Exception {
-        driver = new FirefoxDriver();
-//        baseUrl = System.getenv("BASEURL");
-//        driver.manage().timeouts().implicitlyWait(90, TimeUnit.SECONDS);
+        System.setProperty("webdriver.chrome.driver","C:/Users/SNAGAREDDI/Downloads/chromedriver_win32/chromedriver.exe");
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("test-type");
+        options.addArguments("--start-maximized");
+        options.addArguments("--disable-extensions");
+        options.addArguments("disable-infobars");
+        driver = new ChromeDriver(options);
+
+        baseUrl = System.getenv("BASEURL");
+        driver.manage().timeouts().implicitlyWait(90, TimeUnit.SECONDS);
 //        Eyes eyes = new Eyes();
 //        eyes.setApiKey("rIAas8LXlLDwbaIsnz9gfvuJlRqblSfTyNxsLDATS6Y110");
 //        if (proxy != null) {
@@ -61,7 +70,7 @@ public abstract class LocalSetup {
     @After
     public void tearDown() throws Exception {
         System.out.println("Performing clean up");
-        driver.quit();
+       // driver.quit();
     }
 
     protected void doSetup() {
