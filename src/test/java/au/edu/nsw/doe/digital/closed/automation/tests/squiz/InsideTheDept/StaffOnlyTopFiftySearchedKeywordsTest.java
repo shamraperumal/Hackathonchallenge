@@ -17,8 +17,7 @@ public class StaffOnlyTopFiftySearchedKeywordsTest extends CapabilitiesBuilder {
 
          squizAction.getPage("gef-education-homepage","");
          squizAction.ssoLoginEntry();
-         eyes.setForceFullPageScreenshot(true);
-
+        
     for (int i=0;i<TopSearchedKeywords.length;i++)
          {
              System.out.println("Keyword is " + TopSearchedKeywords[i] );
