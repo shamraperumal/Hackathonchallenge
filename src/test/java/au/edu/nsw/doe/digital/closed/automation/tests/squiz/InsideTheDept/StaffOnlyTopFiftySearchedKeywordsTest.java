@@ -27,20 +27,6 @@ public class StaffOnlyTopFiftySearchedKeywordsTest extends CapabilitiesBuilder {
              Thread.sleep(6000);
          }
 
-     /*
-     squizAction.ssoLoginEntry();
-
-         for (int i=0;i<TopSearchedKeywords.length;i++)
-           {
-            System.out.println("Keyword is" + TopSearchedKeywords[i] );
-            String url="search?site=public_ce_dec_nsw_gov_au&q="+TopSearchedKeywords[i];
-            squizAction.getPage("gef-education-homepage",url);
-        //   eyes.checkWindow(System.getenv(TopSearchedKeywords[i]));
-
-           }
-           */
-
-
-}
+     }
 
 }
