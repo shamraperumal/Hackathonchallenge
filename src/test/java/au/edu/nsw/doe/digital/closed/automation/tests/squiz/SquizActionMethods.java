@@ -77,13 +77,15 @@ public class SquizActionMethods implements SquizActions {
                 System.out.println("URL is " + FinalSearchURL);
                 driver.get(FinalSearchURL);
                 System.out.println("Loaded domain url ");
-                wait(GefSearch.pagination);
+                //wait(GefSearch.pagination);
+                Thread.sleep(2000);
             }
              else {
                 String FinalSearchURL = thisDomain + pageUrl + keyword;
                 System.out.println("URL is " + FinalSearchURL);
                 driver.get(FinalSearchURL);
                 System.out.println("Loaded domain url ");
+                Thread.sleep(2000);
             }
 
         } catch (final Exception e) {

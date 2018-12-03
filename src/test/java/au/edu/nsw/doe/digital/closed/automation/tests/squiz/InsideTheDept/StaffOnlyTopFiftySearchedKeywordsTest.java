@@ -11,13 +11,13 @@ public class StaffOnlyTopFiftySearchedKeywordsTest extends CapabilitiesBuilder {
 
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
-      String[] TopSearchedKeywords=squizAction.ListfromJenkins(System.getenv("keylist"));
+        String[] TopSearchedKeywords=squizAction.ListfromJenkins(System.getenv("keylist"));
      //use below if you are running in local machine and not from jenkins
-     //String[] TopSearchedKeywords= {"Parramatta","child protection"};
+     //String[] TopSearchedKeywords= {"Parramatta","child protection","code of conduct","student portal","fitness passport","scout","sentral","mathletics","cool math","games","scootle"};
 
-        squizAction.getPage("gef-education-homepage","");
-        squizAction.ssoLoginEntry();
-
+         squizAction.getPage("gef-education-homepage","");
+         squizAction.ssoLoginEntry();
+         eyes.setForceFullPageScreenshot(true);
 
     for (int i=0;i<TopSearchedKeywords.length;i++)
          {
