@@ -56,7 +56,7 @@ public abstract class LocalSetup {
 
         baseUrl = System.getenv("BASEURL");
         driver.manage().timeouts().implicitlyWait(90, TimeUnit.SECONDS);
-      Eyes eyes = new Eyes();
+        Eyes eyes = new Eyes();
         eyes.setApiKey("rIAas8LXlLDwbaIsnz9gfvuJlRqblSfTyNxsLDATS6Y110");
         if (proxy != null) {
             eyes.setProxy(new ProxySettings(proxy));

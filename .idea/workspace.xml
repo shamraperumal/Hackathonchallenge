@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="119d98c6-e95d-4f61-80fb-b0cb6782b572" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/ElasticSearchPreprod/TopFiftySearchedKeywordsTestPreprod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/sws/swselasticsearch/SearchResultsTestPublicview.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/ElasticSearch/TopFiftySearchedKeywordsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/ElasticSearch/TopFiftySearchedKeywordsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/setup/LocalSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/setup/LocalSetup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/ElasticSearchPreprod/TopFiftySearchedKeywordsTestPreprod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/ElasticSearchPreprod/PreprodTopFiftySearchedKeywordsTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,49 +20,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SquizActionMethods.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/SquizActionMethods.java">
+      <file leaf-file-name="StandardContentPageTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/sws/swsaem/StandardContentPageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="547">
-              <caret line="87" column="35" selection-start-line="87" selection-start-column="35" selection-end-line="87" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SquizWellbeingPreProductionTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/squizpreproduction/desktop/SquizWellbeingPreProductionTest.java">
+      <file leaf-file-name="MegamenuTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/sws/swsaem/MegamenuTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="-237">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SsoLogin.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/pageobjects/sso/SsoLogin.java">
+      <file leaf-file-name="GalleryLandingTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/sws/swsaem/GalleryLandingTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StaffOnlyTopFiftySearchedKeywordsTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/InsideTheDept/StaffOnlyTopFiftySearchedKeywordsTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StandardPageTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/sws/swswhitelabel/StandardPageTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="85">
               <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
             </state>
           </provider>
@@ -76,41 +56,56 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Setup.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/setup/Setup.java">
+      <file leaf-file-name="AlbumTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/sws/swsaem/AlbumTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="69" column="5" lean-forward="true" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+            <state relative-caret-position="442">
+              <caret line="32" column="25" lean-forward="true" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LocalSetup.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/setup/LocalSetup.java">
+      <file leaf-file-name="MegaMenuTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/sws/swswhitelabel/MegaMenuTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="579">
-              <caret line="72" column="7" selection-start-line="72" selection-start-column="7" selection-end-line="72" selection-end-column="7" />
+            <state relative-caret-position="68">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TopFiftySearchedKeywordsTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/ElasticSearch/TopFiftySearchedKeywordsTest.java">
+      <file leaf-file-name="GlobalFooterTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/sws/swswhitelabel/GlobalFooterTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="119">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TopFiftySearchedKeywordsTestPreprod.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/ElasticSearchPreprod/TopFiftySearchedKeywordsTestPreprod.java">
+      <file leaf-file-name="StaticBannerImageAndTextTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/sws/swswhitelabel/StaticBannerImageAndTextTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SearchResultsTemplateTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/sws/swswhitelabel/SearchResultsTemplateTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SearchResultsTestPublicview.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/sws/swselasticsearch/SearchResultsTestPublicview.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
-              <caret line="19" column="47" lean-forward="true" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="69" />
+              <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -204,11 +199,12 @@
         <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/AdditionalTestsProd/InsideTheDept/StaffOnlyTopFiftySearchedKeywordsTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/SquizActions.java" />
         <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/pageobjects/squiz/GefSearch.java" />
-        <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/setup/LocalSetup.java" />
         <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/SquizActionMethods.java" />
         <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/InsideTheDept/StaffOnlyTopFiftySearchedKeywordsTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/ElasticSearch/TopFiftySearchedKeywordsTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/ElasticSearchPreprod/TopFiftySearchedKeywordsTestPreprod.java" />
+        <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/setup/LocalSetup.java" />
+        <option value="$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/sws/swselasticsearch/SearchResultsTestPublicview.java" />
       </list>
     </option>
   </component>
@@ -440,75 +436,7 @@
               <item name="automation" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
               <item name="squiz" type="462c0819:PsiDirectoryNode" />
-              <item name="ElasticSearch" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Doe-Test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="doe-automation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="nsw" type="462c0819:PsiDirectoryNode" />
-              <item name="doe" type="462c0819:PsiDirectoryNode" />
-              <item name="digital" type="462c0819:PsiDirectoryNode" />
-              <item name="closed" type="462c0819:PsiDirectoryNode" />
-              <item name="automation" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="squiz" type="462c0819:PsiDirectoryNode" />
               <item name="ElasticSearchPreprod" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Doe-Test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="doe-automation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="nsw" type="462c0819:PsiDirectoryNode" />
-              <item name="doe" type="462c0819:PsiDirectoryNode" />
-              <item name="digital" type="462c0819:PsiDirectoryNode" />
-              <item name="closed" type="462c0819:PsiDirectoryNode" />
-              <item name="automation" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="squiz" type="462c0819:PsiDirectoryNode" />
-              <item name="InsideTheDept" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Doe-Test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="doe-automation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="nsw" type="462c0819:PsiDirectoryNode" />
-              <item name="doe" type="462c0819:PsiDirectoryNode" />
-              <item name="digital" type="462c0819:PsiDirectoryNode" />
-              <item name="closed" type="462c0819:PsiDirectoryNode" />
-              <item name="automation" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="squiz" type="462c0819:PsiDirectoryNode" />
-              <item name="Preprodimprovements" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Doe-Test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="doe-automation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="nsw" type="462c0819:PsiDirectoryNode" />
-              <item name="doe" type="462c0819:PsiDirectoryNode" />
-              <item name="digital" type="462c0819:PsiDirectoryNode" />
-              <item name="closed" type="462c0819:PsiDirectoryNode" />
-              <item name="automation" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="squiz" type="462c0819:PsiDirectoryNode" />
-              <item name="squizantibullyingtemplates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Doe-Test" type="b2602c69:ProjectViewProjectNode" />
@@ -592,7 +520,7 @@
               <item name="automation" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
               <item name="sws" type="462c0819:PsiDirectoryNode" />
-              <item name="swsaem" type="462c0819:PsiDirectoryNode" />
+              <item name="swselasticsearch" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Doe-Test" type="b2602c69:ProjectViewProjectNode" />
@@ -629,11 +557,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="au.edu.nsw.doe.digital.closed.automation.tests.sws.swselasticsearch" />
       <recent name="au.edu.nsw.doe.digital.closed.automation.tests.squiz.ElasticSearchPreprod" />
       <recent name="au.edu.nsw.doe.digital.closed.automation.tests.squiz.ElasticSearch" />
       <recent name="au.edu.nsw.doe.digital.closed.automation.tests.squiz.AdditionalTestsProd" />
       <recent name="au.edu.nsw.doe.digital.closed.automation.tests.squiz.Preprodimprovements.ProdFeedbackButton" />
-      <recent name="au.edu.nsw.doe.digital.closed.automation.tests.squiz.Preprodimprovements.Indexvalidations" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -778,13 +706,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1539910784915</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Fixed Connect with us test case">
-      <created>1541990622837</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1541990622837</updated>
     </task>
     <task id="LOCAL-00024" summary="Fixed Connect with us test case">
       <created>1541991474140</created>
@@ -1122,7 +1043,14 @@
       <option name="project" value="LOCAL" />
       <updated>1543815065881</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="Added Preprod test case">
+      <created>1543815477665</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1543815477665</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1168,7 +1096,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2208" height="1208" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49906978" weight="0.32890996" />
@@ -1176,16 +1103,16 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50186044" side_tool="true" visible="true" weight="0.2900474" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50186044" side_tool="true" visible="true" weight="0.46540284" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.48465115" weight="0.26540285" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49813953" visible="true" weight="0.2900474" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49813953" visible="true" weight="0.46540284" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3296355" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8798398" visible="true" weight="0.2767442" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8794326" visible="true" weight="0.2767442" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info id="Structure" order="1" sideWeight="0.120160215" side_tool="true" visible="true" weight="0.2767442" />
+      <window_info id="Structure" order="1" sideWeight="0.120567374" side_tool="true" visible="true" weight="0.2767442" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
@@ -1228,7 +1155,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added Click command on facebook post so that saucelabs takes screenshot of this action" />
     <MESSAGE value="Added test cases for Guided journey" />
     <MESSAGE value="Added new elements for Connect with us and added wait for Guided Journey desktop functions" />
     <MESSAGE value="killing delays" />
@@ -1253,7 +1179,8 @@
     <MESSAGE value="Refractored inside the dept search" />
     <MESSAGE value="Inside the dept test restructure" />
     <MESSAGE value="Removed unwanted code from public search" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed unwanted code from public search" />
+    <MESSAGE value="Added Preprod test case" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Preprod test case" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1268,83 +1195,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/pageobjects/squiz/GefIndex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/pageobjects/squiz/GefShowHide.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/pageobjects/squiz/GefTab.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/pageobjects/squiz/GefCatalogue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="93" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/pageobjects/squiz/GefGlobalFooter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2907">
-          <caret line="171" column="32" selection-start-line="171" selection-start-column="32" selection-end-line="171" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/pageobjects/squiz/GefInsideTheDepartment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/pageobjects/squiz/GefGlobalHeader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="69" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/pageobjects/squiz/GefLongContent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="12" column="62" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/sws/AemActionMethods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="661">
-          <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/sws/AemActions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/pageobjects/swswhitelabel/ContentElements.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -1562,13 +1412,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/setup/LocalSetup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="579">
-          <caret line="72" column="7" selection-start-line="72" selection-start-column="7" selection-end-line="72" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/pageobjects/sso/SsoLogin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1600,20 +1443,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/sws/swsaem/EventLandingTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/setup/Setup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="69" column="5" lean-forward="true" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/InsideTheDept/StaffOnlyTopFiftySearchedKeywordsTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -1631,10 +1460,108 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/ElasticSearchPreprod/TopFiftySearchedKeywordsTestPreprod.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/squiz/ElasticSearchPreprod/PreprodTopFiftySearchedKeywordsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/setup/CapabilitiesBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/setup/Setup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="664">
+          <caret line="124" column="1" lean-forward="true" selection-start-line="124" selection-start-column="1" selection-end-line="124" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/setup/LocalSetup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="58" column="2" selection-start-line="58" selection-start-column="2" selection-end-line="58" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/sws/swsaem/HomepageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/sws/swsaem/StandardContentPageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/sws/swsaem/MegamenuTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-237">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/sws/swsaem/GalleryLandingTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/sws/swsaem/EventLandingTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/sws/swsaem/AlbumTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="32" column="25" lean-forward="true" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/sws/swswhitelabel/MegaMenuTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/sws/swswhitelabel/GlobalFooterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/sws/swswhitelabel/StaticBannerImageAndTextTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/sws/swswhitelabel/SearchResultsTemplateTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/au/edu/nsw/doe/digital/closed/automation/tests/sws/swselasticsearch/SearchResultsTestPublicview.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="19" column="47" lean-forward="true" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="69" />
+          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
         </state>
       </provider>
     </entry>

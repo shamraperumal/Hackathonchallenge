@@ -4,7 +4,7 @@ import au.edu.nsw.doe.digital.closed.automation.setup.CapabilitiesBuilder;
 import au.edu.nsw.doe.digital.closed.automation.tests.squiz.SquizActionMethods;
 import org.junit.Test;
 
-public class TopFiftySearchedKeywordsTestPreprod extends CapabilitiesBuilder {
+public class PreprodTopFiftySearchedKeywordsTest extends CapabilitiesBuilder {
 @Test
     public void ElasticPageSearch() throws Exception {
 
