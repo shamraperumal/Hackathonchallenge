@@ -70,7 +70,7 @@ public abstract class LocalSetup {
     @After
     public void tearDown() throws Exception {
         System.out.println("Performing clean up");
-        driver.quit();
+       // driver.quit();
     }
 
     protected void doSetup() {

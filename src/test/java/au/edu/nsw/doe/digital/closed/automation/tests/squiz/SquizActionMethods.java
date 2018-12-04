@@ -1,6 +1,7 @@
 package au.edu.nsw.doe.digital.closed.automation.tests.squiz;
 
 import au.edu.nsw.doe.digital.closed.automation.pageobjects.squiz.*;
+import au.edu.nsw.doe.digital.closed.automation.pageobjects.sso.SquizAdminLogin;
 import au.edu.nsw.doe.digital.closed.automation.pageobjects.sso.SsoLogin;
 import com.applitools.eyes.Eyes;
 import javassist.bytecode.stackmap.BasicBlock;
@@ -77,7 +78,7 @@ public class SquizActionMethods implements SquizActions {
                 System.out.println("URL is " + FinalSearchURL);
                 driver.get(FinalSearchURL);
                 System.out.println("Loaded domain url ");
-                //wait(GefSearch.pagination);
+                wait(GefSearch.Searchresultmessage);
                 Thread.sleep(2000);
             }
              else {
@@ -86,6 +87,7 @@ public class SquizActionMethods implements SquizActions {
                 driver.get(FinalSearchURL);
                 System.out.println("Loaded domain url ");
                 Thread.sleep(2000);
+                wait(GefSearch.Searchresultmessage);
             }
 
         } catch (final Exception e) {
@@ -382,6 +384,23 @@ public class SquizActionMethods implements SquizActions {
         String[] keyWordsList=keywords.split(",")    ;
         return keyWordsList;
     }
+
+    public void SquizAdminloginfunction() throws Exception {
+        try {
+            System.out.print("get page");
+            driver.get(System.getenv("SSOURL"));
+            wait(SquizAdminLogin.username);
+            wait(SquizAdminLogin.password);
+            wait(SquizAdminLogin.submitButton);
+            driver.findElement(SquizAdminLogin.username).sendKeys(System.getenv("USERNAME"));
+            driver.findElement(SquizAdminLogin.password).sendKeys(System.getenv("PASSWORD"));
+            driver.findElement(SquizAdminLogin.submitButton).click();
+        } catch (final Exception e) {
+            System.out.println("Login failed");
+            throw e;
+        }
+    }
+
 
 }
 

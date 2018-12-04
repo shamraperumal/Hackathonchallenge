@@ -52,6 +52,8 @@ public interface SquizActions {
 
     void getPageElasticSearch(final String domain, final String pageUrl,final String keyword) throws Exception;
 
+    public void SquizAdminloginfunction() throws Exception;
+
 
 
 }

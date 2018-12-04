@@ -15,5 +15,6 @@ public class GefSearch {
     public static By insidetheDeptSearch=By.id("search");
     //public static By InsidetheDeptsearchSubmitButton = By.id("btnSearch14");
     public static By InsidetheDeptSearchbuttontwo=By.id("btnSearch");
+    public static By Searchresultmessage=By.xpath("//p[@class='gef-search-results__info ng-binding']");
 
 }
