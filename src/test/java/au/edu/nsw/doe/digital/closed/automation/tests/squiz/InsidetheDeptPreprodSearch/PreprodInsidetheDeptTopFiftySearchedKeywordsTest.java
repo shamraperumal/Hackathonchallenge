@@ -1,19 +1,15 @@
-package au.edu.nsw.doe.digital.closed.automation.tests.squiz.ElasticSearchPreprod;
+package au.edu.nsw.doe.digital.closed.automation.tests.squiz.InsidetheDeptPreprodSearch;
 
-import au.edu.nsw.doe.digital.closed.automation.setup.CapabilitiesBuilder;
 import au.edu.nsw.doe.digital.closed.automation.setup.LocalSetup;
 import au.edu.nsw.doe.digital.closed.automation.tests.squiz.SquizActionMethods;
 import org.junit.Test;
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.interactions.Actions;
 
 import java.util.ArrayList;
 
-public class PreprodTopFiftySearchedKeywordsTest extends LocalSetup {
+public class PreprodInsidetheDeptTopFiftySearchedKeywordsTest extends LocalSetup {
 @Test
-    public void ElasticPageSearchPreprod() throws Exception {
+    public void ElasticPageSearchPreprodInsidetheDept() throws Exception {
 
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
@@ -25,18 +21,18 @@ public class PreprodTopFiftySearchedKeywordsTest extends LocalSetup {
 
     // Need login function for pre-prod squiz
         squizAction.SquizAdminloginfunction();
-       // driver.findElement(By.cssSelector("body")).sendKeys(Keys.CONTROL +"t");
 
-  //  ((JavascriptExecutor)driver).executeScript("window.open()");
-    //ArrayList<String> tabs = new  ArrayList<String>(driver.getWindowHandles());
 
-     //  driver.switchTo().window(tabs.get(1));
+    ((JavascriptExecutor)driver).executeScript("window.open()");
+    ArrayList<String> tabs = new  ArrayList<String>(driver.getWindowHandles());
+
+      driver.switchTo().window(tabs.get(1));
 
 
     for (int i=0;i<TopSearchedKeywords.length;i++)
          {
              System.out.println("Keyword is " + TopSearchedKeywords[i] );
-             String url="search?site=public_ce_dec_nsw_gov_au&q=";
+             String url="inside-the-department/search?q=";
              //https://pre.education.nsw.gov.au/search?site=public_pre_education_nsw_gov_au&q=pdp
              System.out.println("Search URL to be appended" + url );
              squizAction.getPageElasticSearch("gef-education-homepage",url,TopSearchedKeywords[i]);

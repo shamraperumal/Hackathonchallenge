@@ -48,7 +48,7 @@ public class SquizActionMethods implements SquizActions {
 
             try {
                 if (thisPageUrl.contains("tab") || thisPageUrl.contains("standard") || thisPageUrl.contains("gef-policies")) {
-                    Thread.sleep(2000);
+                    Thread.sleep(200);
                     System.out.print("This is " + thisPageUrl + "page. So it's in sleep thread for 2000 miliseconds");
                 }
             } catch (final NullPointerException e) {
@@ -79,14 +79,14 @@ public class SquizActionMethods implements SquizActions {
                 driver.get(FinalSearchURL);
                 System.out.println("Loaded domain url ");
                 wait(GefSearch.Searchresultmessage);
-                Thread.sleep(2000);
+                Thread.sleep(200);
             }
              else {
                 String FinalSearchURL = thisDomain + pageUrl + keyword;
                 System.out.println("URL is " + FinalSearchURL);
                 driver.get(FinalSearchURL);
                 System.out.println("Loaded domain url ");
-                Thread.sleep(2000);
+                Thread.sleep(200);
                 wait(GefSearch.Searchresultmessage);
             }
 

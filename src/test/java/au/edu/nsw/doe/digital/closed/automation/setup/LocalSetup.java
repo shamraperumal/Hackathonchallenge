@@ -1,9 +1,6 @@
 package au.edu.nsw.doe.digital.closed.automation.setup;
 
-import com.applitools.eyes.Eyes;
-import com.applitools.eyes.MatchLevel;
-import com.applitools.eyes.ProxySettings;
-import com.applitools.eyes.RectangleSize;
+import com.applitools.eyes.*;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
@@ -44,6 +41,26 @@ public abstract class LocalSetup {
         return new RectangleSize(Integer.parseInt(rectangleWidth), Integer.parseInt(rectangleHeight));
     }
 
+    private Eyes createApliToolsEyes() {
+        Eyes eyes = new Eyes();
+        eyes.setApiKey(System.getenv("APPLITOOLS.APIKEY"));
+        eyes.setMatchLevel(MatchLevel.valueOf(matchLevel));
+        try {
+            //  if (getForceFullPageScreenshot()== true) {
+            eyes.setForceFullPageScreenshot(true);
+            // eyes.setScrollToRegion(true);
+            System.out.println("Force Full Page Screenshot" + eyes.getForceFullPageScreenshot());
+            eyes.setStitchMode(StitchMode.CSS);
+            //
+            }catch (final Exception e){
+            System.out.print("failed to set the full page screenshot");
+        }
+        if (proxy != null) {
+            eyes.setProxy(new ProxySettings(proxy));
+        }
+        return eyes;
+    }
+
     @Before
     public void setUp() throws Exception {
         System.setProperty("webdriver.chrome.driver","C:/Users/SNAGAREDDI/Downloads/chromedriver_win32/chromedriver.exe");
@@ -56,14 +73,16 @@ public abstract class LocalSetup {
 
         baseUrl = System.getenv("BASEURL");
         driver.manage().timeouts().implicitlyWait(90, TimeUnit.SECONDS);
-        Eyes eyes = new Eyes();
-        eyes.setApiKey("rIAas8LXlLDwbaIsnz9gfvuJlRqblSfTyNxsLDATS6Y110");
+       /* eyes = createApliToolsEyes();
+        //eyes.setApiKey("rIAas8LXlLDwbaIsnz9gfvuJlRqblSfTyNxsLDATS6Y110");
         if (proxy != null) {
             eyes.setProxy(new ProxySettings(proxy));
         }
         driver = eyes.open(driver, "DoE", testName + rectangle());
+         //driver = eyes.open(driver, "DoE", System.getenv(testName),rectangle());
         MatchLevel.valueOf(matchLevel);
         System.out.println("Starting test...");
+        */
         doSetup();
     }
 
