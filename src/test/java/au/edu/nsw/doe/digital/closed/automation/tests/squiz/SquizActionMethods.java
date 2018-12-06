@@ -220,8 +220,8 @@ public class SquizActionMethods implements SquizActions {
     public void squizLoginEntry(final String username,final String password) throws Exception {
         try {
 
-            driver.findElement(SuizLogin.username).sendKeys(username);
-            driver.findElement(SuizLogin.password).sendKeys(password);
+            driver.findElement(SquizLogin.username).sendKeys(username);
+            driver.findElement(SquizLogin.password).sendKeys(password);
             driver.findElement(SquizLogin.submitButton).click();
         } catch (final Exception e) {
             System.out.println("Login failed");
