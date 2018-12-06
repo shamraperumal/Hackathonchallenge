@@ -13,7 +13,8 @@ public class SquizAssetComparison  extends CapabilitiesBuilder{
     {
 
         SquizActionMethods squizAction = new SquizActionMethods(driver);
-        squizAction.compareExcel();
+        squizAction.getPage("squiz-base","");
+        squizAction.compareExcel("username","password");
     }
 }
 }
