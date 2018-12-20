@@ -1,7 +1,6 @@
-package au.edu.nsw.doe.digital.closed.automation.tests.squiz.ElasticSearch;
+package au.edu.nsw.doe.digital.closed.automation.tests.squiz.ElasticSearchProd;
 
 import au.edu.nsw.doe.digital.closed.automation.setup.CapabilitiesBuilder;
-import au.edu.nsw.doe.digital.closed.automation.setup.LocalSetup;
 import au.edu.nsw.doe.digital.closed.automation.tests.squiz.SquizActionMethods;
 import org.junit.Test;
 

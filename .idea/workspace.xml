@@ -673,14 +673,14 @@
       <module name="Doe-Test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="au.edu.nsw.doe.digital.closed.automation.tests.squiz.ElasticSearch.*" />
+          <option name="PATTERN" value="au.edu.nsw.doe.digital.closed.automation.tests.squiz.ElasticSearchProd.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="au.edu.nsw.doe.digital.closed.automation.tests.squiz.ElasticSearch" />
-      <option name="MAIN_CLASS_NAME" value="au.edu.nsw.doe.digital.closed.automation.tests.squiz.ElasticSearch.StaffOnlyTopFiftySearchedKeywordsTest" />
+      <option name="PACKAGE_NAME" value="au.edu.nsw.doe.digital.closed.automation.tests.squiz.ElasticSearchProd" />
+      <option name="MAIN_CLASS_NAME" value="au.edu.nsw.doe.digital.closed.automation.tests.squiz.ElasticSearchProd.StaffOnlyTopFiftySearchedKeywordsTest" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
