@@ -23,7 +23,7 @@ public class StaffOnlyTopFiftySearchedKeywordsTest extends CapabilitiesBuilder {
              String url="inside-the-department/search?q=";
              System.out.println("URL is " + url );
              squizAction.getPageElasticSearch("gef-education-homepage",url,TopSearchedKeywords[i]);
-           //  eyes.checkWindow(System.getenv(TopSearchedKeywords[i]));
+             eyes.checkWindow(System.getenv(TopSearchedKeywords[i]));
              Thread.sleep(200);
          }
 

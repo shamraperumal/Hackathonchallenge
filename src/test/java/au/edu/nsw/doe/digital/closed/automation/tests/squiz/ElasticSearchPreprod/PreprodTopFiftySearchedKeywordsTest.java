@@ -41,7 +41,7 @@ public class PreprodTopFiftySearchedKeywordsTest extends CapabilitiesBuilder {
              System.out.println("Search URL to be appended" + url );
              squizAction.getPageElasticSearch("gef-education-homepage",url,TopSearchedKeywords[i]);
              Thread.sleep(200);
-           // eyes.checkWindow(System.getenv(TopSearchedKeywords[i]));
+            eyes.checkWindow(System.getenv(TopSearchedKeywords[i]));
          }
 
     // eyes.close();
