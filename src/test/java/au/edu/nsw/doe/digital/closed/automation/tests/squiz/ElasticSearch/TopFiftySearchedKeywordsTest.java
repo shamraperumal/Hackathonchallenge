@@ -43,7 +43,7 @@ public class TopFiftySearchedKeywordsTest extends CapabilitiesBuilder {
              String url="/search?site=public_ce_dec_nsw_gov_au&q=";
              System.out.println("URL is " + url );
              squizAction.getPageElasticSearch("gef-education-homepage",url,TopSearchedKeywords[i]);
-             Thread.sleep(6000);
+             Thread.sleep(500);
             eyes.checkWindow(System.getenv(TopSearchedKeywords[i]));
          }
 

@@ -1,4 +1,4 @@
-package au.edu.nsw.doe.digital.closed.automation.tests.squiz.InsideTheDept;
+package au.edu.nsw.doe.digital.closed.automation.tests.squiz.ElasticSearch;
 
 import au.edu.nsw.doe.digital.closed.automation.setup.CapabilitiesBuilder;
 import au.edu.nsw.doe.digital.closed.automation.setup.LocalSetup;

@@ -1,5 +1,6 @@
-package au.edu.nsw.doe.digital.closed.automation.tests.squiz.InsidetheDeptPreprodSearch;
+package au.edu.nsw.doe.digital.closed.automation.tests.squiz.ElasticSearchPreprod;
 
+import au.edu.nsw.doe.digital.closed.automation.setup.CapabilitiesBuilder;
 import au.edu.nsw.doe.digital.closed.automation.setup.LocalSetup;
 import au.edu.nsw.doe.digital.closed.automation.tests.squiz.SquizActionMethods;
 import org.junit.Test;
@@ -7,17 +8,17 @@ import org.openqa.selenium.JavascriptExecutor;
 
 import java.util.ArrayList;
 
-public class PreprodInsidetheDeptTopFiftySearchedKeywordsTest extends LocalSetup {
+public class PreprodInsidetheDeptTopFiftySearchedKeywordsTest extends CapabilitiesBuilder {
 @Test
     public void ElasticPageSearchPreprodInsidetheDept() throws Exception {
 
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
-    //  String[] TopSearchedKeywords=squizAction.ListfromJenkins(System.getenv("keylist"));
+    String[] TopSearchedKeywords=squizAction.ListfromJenkins(System.getenv("keylist"));
 
     //use below if you are running in local machine and not from jenkins
   //
-    String[] TopSearchedKeywords= {"Parramatta","child protection"};
+  //  String[] TopSearchedKeywords= {"Parramatta","child protection"};
 
     // Need login function for pre-prod squiz
         squizAction.SquizAdminloginfunction();
@@ -41,6 +42,7 @@ public class PreprodInsidetheDeptTopFiftySearchedKeywordsTest extends LocalSetup
          }
 
     // eyes.close();
-}
+  }
+
 
 }

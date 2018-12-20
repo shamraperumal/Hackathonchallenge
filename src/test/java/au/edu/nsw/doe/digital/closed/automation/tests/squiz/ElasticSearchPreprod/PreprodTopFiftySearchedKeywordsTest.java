@@ -11,17 +11,17 @@ import org.openqa.selenium.interactions.Actions;
 
 import java.util.ArrayList;
 
-public class PreprodTopFiftySearchedKeywordsTest extends LocalSetup {
+public class PreprodTopFiftySearchedKeywordsTest extends CapabilitiesBuilder {
 @Test
     public void ElasticPageSearchPreprod() throws Exception {
 
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 
-    //  String[] TopSearchedKeywords=squizAction.ListfromJenkins(System.getenv("keylist"));
+      String[] TopSearchedKeywords=squizAction.ListfromJenkins(System.getenv("keylist"));
 
     //use below if you are running in local machine and not from jenkins
   //
-    String[] TopSearchedKeywords= {"Parramatta","child protection"};
+  //  String[] TopSearchedKeywords= {"Parramatta","child protection"};
 
     // Need login function for pre-prod squiz
         squizAction.SquizAdminloginfunction();

@@ -11,5 +11,6 @@ public class GefLongContent   {
     public static By firsth2=By.xpath("//nav[@class='gef-anchor-index']/ul/li[1]/a");
     public static By firsth3=By.xpath("//nav[@class='gef-anchor-index']/ul/li[1]/ul/li[1]");
     public static By backToIndex=By.linkText("Back to Index");
+    //public static By leftNav=By.className("gef-anchor-index");
 
 }
