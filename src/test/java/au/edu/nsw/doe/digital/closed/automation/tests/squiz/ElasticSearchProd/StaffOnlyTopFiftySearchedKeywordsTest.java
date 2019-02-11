@@ -12,7 +12,7 @@ public class StaffOnlyTopFiftySearchedKeywordsTest extends CapabilitiesBuilder {
 
         String[] TopSearchedKeywords=squizAction.ListfromJenkins(System.getenv("keylist"));
      //use below if you are running in local machine and not from jenkins
-     //String[] TopSearchedKeywords= {"Parramatta","child protection","code of conduct","student portal","fitness passport","scout","sentral","mathletics","cool math","games","scootle"};
+     //String[] TopSearchedKeywords= {"Parramatta","child protection"};
 
          squizAction.getPage("gef-education-homepage","");
          squizAction.ssoLoginEntry();
