@@ -1,9 +1,6 @@
 package au.edu.nsw.doe.digital.closed.automation.setup;
 
-import com.applitools.eyes.Eyes;
-import com.applitools.eyes.MatchLevel;
-import com.applitools.eyes.ProxySettings;
-import com.applitools.eyes.RectangleSize;
+import com.applitools.eyes.*;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
@@ -11,6 +8,8 @@ import org.junit.rules.TestRule;
 import org.junit.rules.TestWatcher;
 import org.junit.runner.Description;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.concurrent.TimeUnit;
@@ -42,26 +41,55 @@ public abstract class LocalSetup {
         return new RectangleSize(Integer.parseInt(rectangleWidth), Integer.parseInt(rectangleHeight));
     }
 
+    private Eyes createApliToolsEyes() {
+        Eyes eyes = new Eyes();
+        eyes.setApiKey(System.getenv("APPLITOOLS.APIKEY"));
+        eyes.setMatchLevel(MatchLevel.valueOf(matchLevel));
+        try {
+            //  if (getForceFullPageScreenshot()== true) {
+            eyes.setForceFullPageScreenshot(true);
+            // eyes.setScrollToRegion(true);
+            System.out.println("Force Full Page Screenshot" + eyes.getForceFullPageScreenshot());
+            eyes.setStitchMode(StitchMode.CSS);
+            //
+            }catch (final Exception e){
+            System.out.print("failed to set the full page screenshot");
+        }
+        if (proxy != null) {
+            eyes.setProxy(new ProxySettings(proxy));
+        }
+        return eyes;
+    }
+
     @Before
     public void setUp() throws Exception {
-        driver = new FirefoxDriver();
-//        baseUrl = System.getenv("BASEURL");
-//        driver.manage().timeouts().implicitlyWait(90, TimeUnit.SECONDS);
-//        Eyes eyes = new Eyes();
-//        eyes.setApiKey("rIAas8LXlLDwbaIsnz9gfvuJlRqblSfTyNxsLDATS6Y110");
-//        if (proxy != null) {
-//            eyes.setProxy(new ProxySettings(proxy));
-//        }
-//        driver = eyes.open(driver, "DoE", testName + rectangle());
-//        MatchLevel.valueOf(matchLevel);
+        System.setProperty("webdriver.chrome.driver","C:/Users/SNAGAREDDI/Downloads/chromedriver_win32/chromedriver.exe");
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("test-type");
+        options.addArguments("--start-maximized");
+        options.addArguments("--disable-extensions");
+        options.addArguments("disable-infobars");
+        driver = new ChromeDriver(options);
+
+        baseUrl = System.getenv("BASEURL");
+        driver.manage().timeouts().implicitlyWait(90, TimeUnit.SECONDS);
+       /* eyes = createApliToolsEyes();
+        //eyes.setApiKey("rIAas8LXlLDwbaIsnz9gfvuJlRqblSfTyNxsLDATS6Y110");
+        if (proxy != null) {
+            eyes.setProxy(new ProxySettings(proxy));
+        }
+        driver = eyes.open(driver, "DoE", testName + rectangle());
+         //driver = eyes.open(driver, "DoE", System.getenv(testName),rectangle());
+        MatchLevel.valueOf(matchLevel);
         System.out.println("Starting test...");
+        */
         doSetup();
     }
 
     @After
     public void tearDown() throws Exception {
         System.out.println("Performing clean up");
-        driver.quit();
+       // driver.quit();
     }
 
     protected void doSetup() {

@@ -11,7 +11,7 @@ import org.junit.Test;
 public class SquizAntibullyingPreProductionTest extends CapabilitiesBuilder {
 
     @Test
-    public void antibullyingDesktopPreProductionEyesTest() throws Exception {
+    public void TabTest() throws Exception {
 
         SquizActionMethods squizAction = new SquizActionMethods(driver);
 

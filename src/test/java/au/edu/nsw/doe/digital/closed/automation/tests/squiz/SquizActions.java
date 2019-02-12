@@ -1,6 +1,7 @@
 package au.edu.nsw.doe.digital.closed.automation.tests.squiz;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 /**
  * Created by ededios on 7/09/15.
@@ -36,4 +37,23 @@ public interface SquizActions {
     void ssoLoginEntry() throws Exception;
 
     void ssoLogin() throws Exception;
+
+    boolean FeedbackWidget() throws Exception;
+
+    boolean SocialMedia() throws Exception;
+
+    boolean Desktopguidedjourneynavigate() throws Exception;
+
+    boolean keyboardnavigation(final String Keystroke) throws Exception;
+
+    boolean longcontentnavigate() throws Exception;
+
+    String[] ListfromJenkins(final String topSearchedKeywords) throws Exception;
+
+    void getPageElasticSearch(final String domain, final String pageUrl,final String keyword) throws Exception;
+
+     void SquizAdminloginfunction() throws Exception;
+
+
+
 }
