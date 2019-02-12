@@ -12,9 +12,6 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class CapabilitiesBuilder extends Setup {
 
-
-
-
     @Override
     protected MatchLevel getMatchLevel() {
         String matchLevel = System.getenv("MATCH_LEVEL");
