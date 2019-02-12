@@ -312,7 +312,7 @@ public class SquizActionMethods implements SquizActions {
         try {
 
             //wait(FeedbackWidget.yourFeedbackWidget)
-            driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+            driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
             if (driver.findElement(FeedbackWidget.yourFeedbackWidget).isEnabled() ) {
                 driver.findElement(FeedbackWidget.yourFeedbackWidget).click();
                 return true;
