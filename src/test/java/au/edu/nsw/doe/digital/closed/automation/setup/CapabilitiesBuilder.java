@@ -12,18 +12,18 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class CapabilitiesBuilder extends Setup {
 
-    @Override
+   @Override
     protected MatchLevel getMatchLevel() {
         String matchLevel = System.getenv("MATCH_LEVEL");
         return MatchLevel.valueOf(matchLevel);
     }
 
-    @Override
+  @Override
     public boolean getForceFullPageScreenshot() {
         return true;
     }
 
-    @Override
+   @Override
     protected RectangleSize getRectangleSize() {
         String rectangleHeight = System.getenv("RECTANGLE_HEIGHT");
         String rectangleWidth = System.getenv("RECTANGLE_WIDTH");
