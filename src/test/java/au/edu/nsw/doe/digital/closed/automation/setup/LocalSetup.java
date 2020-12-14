@@ -1,9 +1,11 @@
 package au.edu.nsw.doe.digital.closed.automation.setup;
 
 import com.applitools.eyes.*;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Rule;
+import com.applitools.eyes.selenium.*;
+import com.applitools.eyes.visualgrid.model.*;
+import com.applitools.eyes.visualgrid.services.*;
+import io.github.bonigarcia.wdm.*;
+import org.junit.*;
 import org.junit.rules.TestRule;
 import org.junit.rules.TestWatcher;
 import org.junit.runner.Description;
@@ -12,6 +14,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import java.text.*;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -27,11 +31,30 @@ public abstract class LocalSetup {
     protected Eyes eyes;
     protected String testName;
     protected String matchLevel = System.getenv("MATCH_LEVEL");
+    public static BatchInfo ExecutionDate;
+    public String appname = System.getenv("APPNAME");
+    public String branchname = System.getenv("BRANCHNAME");
+    public  EyesRunner runner = null;
+    public  Configuration suiteConfig;
+    public static String chromeDriverPath;
+
+    @BeforeClass
+    public static  void setBatch() throws Exception
+    {
+
+        ExecutionDate =new BatchInfo("Holiday Shopping");
+        String batchId =  "Holiday Shopping" +System.getenv("BRANCHNAME");
+        ExecutionDate.setId(batchId);
+
+
+
+    }
+
 
     @Rule
     public TestRule watcher = new TestWatcher() {
         protected void starting(Description description) {
-            testName = description.getMethodName() + " on " + environment;
+            testName = description.getMethodName() /*+ " on " + environment*/;
         }
     };
 
@@ -42,9 +65,12 @@ public abstract class LocalSetup {
     }
 
     private Eyes createApliToolsEyes() {
-        Eyes eyes = new Eyes();
+
+        Eyes eyes = new Eyes(runner);
+        eyes.setConfiguration(suiteConfig);
         eyes.setApiKey(System.getenv("APPLITOOLS.APIKEY"));
         eyes.setMatchLevel(MatchLevel.valueOf(matchLevel));
+        eyes.setSendDom(true);
         try {
             //  if (getForceFullPageScreenshot()== true) {
             eyes.setForceFullPageScreenshot(true);
@@ -63,33 +89,44 @@ public abstract class LocalSetup {
 
     @Before
     public void setUp() throws Exception {
-        System.setProperty("webdriver.chrome.driver","C:/Users/SNAGAREDDI/Downloads/chromedriver_win32/chromedriver.exe");
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("test-type");
-        options.addArguments("--start-maximized");
-        options.addArguments("--disable-extensions");
-        options.addArguments("disable-infobars");
-        driver = new ChromeDriver(options);
+        runner = new VisualGridRunner(new RunnerOptions().testConcurrency(2));
+
+        suiteConfig = new Configuration();
+        suiteConfig.addBrowser(new DesktopBrowserInfo(1200, 800, BrowserType.FIREFOX,"desktopBaseline"));
+        suiteConfig.addBrowser(new DesktopBrowserInfo(1200, 800, BrowserType.CHROME,"desktopBaseline"));
+        suiteConfig.addBrowser(new DesktopBrowserInfo(1200, 800, BrowserType.EDGE_CHROMIUM,"desktopBaseline"));
+        suiteConfig.addBrowser(new DesktopBrowserInfo(1200, 800, BrowserType.SAFARI,"desktopBaseline"));
+        suiteConfig.addBrowser(new IosDeviceInfo(IosDeviceName.iPhone_X, ScreenOrientation.LANDSCAPE));
+
+        suiteConfig.setViewportSize(new RectangleSize(1200, 800));
+
+       
+
+        WebDriverManager.chromedriver().setup();
+
+        driver = new ChromeDriver();
 
         baseUrl = System.getenv("BASEURL");
         driver.manage().timeouts().implicitlyWait(90, TimeUnit.SECONDS);
-       /* eyes = createApliToolsEyes();
+        eyes = createApliToolsEyes();
+        eyes.setBatch(ExecutionDate);
+        eyes.setBranchName(branchname);
         //eyes.setApiKey("rIAas8LXlLDwbaIsnz9gfvuJlRqblSfTyNxsLDATS6Y110");
         if (proxy != null) {
             eyes.setProxy(new ProxySettings(proxy));
         }
-        driver = eyes.open(driver, "DoE", testName + rectangle());
+        driver = eyes.open(driver, appname, testName /*+ rectangle()*/);
          //driver = eyes.open(driver, "DoE", System.getenv(testName),rectangle());
-        MatchLevel.valueOf(matchLevel);
+     //   MatchLevel.valueOf(matchLevel);
         System.out.println("Starting test...");
-        */
+
         doSetup();
     }
 
     @After
     public void tearDown() throws Exception {
         System.out.println("Performing clean up");
-       // driver.quit();
+       driver.quit();
     }
 
     protected void doSetup() {
