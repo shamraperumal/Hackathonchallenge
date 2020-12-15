@@ -7,27 +7,17 @@ import au.edu.nsw.doe.digital.closed.automation.tests.functions.*;
 import com.applitools.eyes.selenium.fluent.*;
 import org.junit.*;
 
-public class Test1 extends LocalSetup {
+public class Test1 extends Setup {
     private ApplifashionActions action;
 
-    //@Override
-  /*   public void doSetUp()throws Exception  {
-         {
-             action = new ApplifashionActionMethods(driver);
-             action.setScreenDimensions();
-             action.getPage("sws-aem-base"," ");
-             action.Login("zuber.hussein5","password1");
-         }
-     }
 
-*/
 
 
   @Test
     public void Test1() throws Exception {
         {
             action = new ApplifashionActionMethods(driver);
-           // action.setScreenDimensions();
+
             action.getPage("AppliFashion", " ");
             action.wait(GlobalElements.filterType);
             eyes.checkWindow("main page");
@@ -39,7 +29,7 @@ public class Test1 extends LocalSetup {
     public void Test2() throws Exception {
         {
             action = new ApplifashionActionMethods(driver);
-       //     action.setScreenDimensions();
+
             action.getPage("AppliFashion", " ");
             action.wait(GlobalElements.filterType);
             action.selectfiltertypeandvalue("colors", "Black");
@@ -55,7 +45,7 @@ public class Test1 extends LocalSetup {
     public void Test3() throws Exception {
         {
             action = new ApplifashionActionMethods(driver);
-            //     action.setScreenDimensions();
+
             action.getPage("AppliFashion", " ");
             action.wait(GlobalElements.filterType);
             action.selectproduct("Appli Air x Night");

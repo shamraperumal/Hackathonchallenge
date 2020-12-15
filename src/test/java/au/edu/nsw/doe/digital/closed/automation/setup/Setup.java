@@ -22,7 +22,7 @@ import java.util.concurrent.TimeUnit;
  * Created by christopherpigden on 22/03/2016.
  */
 
-public abstract class LocalSetup {
+public abstract class Setup {
 
     protected WebDriver driver;
     public String baseUrl;
