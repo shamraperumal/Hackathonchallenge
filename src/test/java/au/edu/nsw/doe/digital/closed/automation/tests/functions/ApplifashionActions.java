@@ -2,9 +2,7 @@ package au.edu.nsw.doe.digital.closed.automation.tests.functions;
 
 import org.openqa.selenium.By;
 
-/**
- * Created by ededios on 7/09/15.
- */
+
 
 public interface ApplifashionActions {
 
@@ -20,6 +18,7 @@ public interface ApplifashionActions {
     void setScreenDimensions() throws Exception;
 
     void hover(By locator) throws Exception;
+
     void selectfiltertypeandvalue(String filtertype, String filtervalue);
     void selectproduct(String producttype);
 

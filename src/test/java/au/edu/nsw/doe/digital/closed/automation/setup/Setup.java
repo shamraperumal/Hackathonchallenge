@@ -18,9 +18,6 @@ import java.text.*;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by christopherpigden on 22/03/2016.
- */
 
 public abstract class Setup {
 
@@ -111,13 +108,12 @@ public abstract class Setup {
         eyes = createApliToolsEyes();
         eyes.setBatch(ExecutionDate);
         eyes.setBranchName(branchname);
-        //eyes.setApiKey("rIAas8LXlLDwbaIsnz9gfvuJlRqblSfTyNxsLDATS6Y110");
+
         if (proxy != null) {
             eyes.setProxy(new ProxySettings(proxy));
         }
         driver = eyes.open(driver, appname, testName /*+ rectangle()*/);
-         //driver = eyes.open(driver, "DoE", System.getenv(testName),rectangle());
-     //   MatchLevel.valueOf(matchLevel);
+
         System.out.println("Starting test...");
 
         doSetup();
