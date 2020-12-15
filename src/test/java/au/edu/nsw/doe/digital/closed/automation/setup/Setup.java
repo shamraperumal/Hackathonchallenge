@@ -91,9 +91,9 @@ public abstract class Setup {
         suiteConfig = new Configuration();
         suiteConfig.addBrowser(new DesktopBrowserInfo(1200, 800, BrowserType.FIREFOX,"desktopBaseline"));
         suiteConfig.addBrowser(new DesktopBrowserInfo(1200, 800, BrowserType.CHROME,"desktopBaseline"));
-        suiteConfig.addBrowser(new DesktopBrowserInfo(1200, 800, BrowserType.EDGE_CHROMIUM,"desktopBaseline"));
+       suiteConfig.addBrowser(new DesktopBrowserInfo(1200, 800, BrowserType.EDGE_CHROMIUM,"desktopBaseline"));
         suiteConfig.addBrowser(new DesktopBrowserInfo(1200, 800, BrowserType.SAFARI,"desktopBaseline"));
-        suiteConfig.addBrowser(new IosDeviceInfo(IosDeviceName.iPhone_X, ScreenOrientation.LANDSCAPE));
+       suiteConfig.addBrowser(new IosDeviceInfo(IosDeviceName.iPhone_X, ScreenOrientation.LANDSCAPE));
 
         suiteConfig.setViewportSize(new RectangleSize(1200, 800));
 
