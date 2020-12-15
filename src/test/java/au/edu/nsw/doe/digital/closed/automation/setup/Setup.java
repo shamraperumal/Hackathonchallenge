@@ -100,7 +100,7 @@ public abstract class LocalSetup {
 
         suiteConfig.setViewportSize(new RectangleSize(1200, 800));
 
-       
+
 
         WebDriverManager.chromedriver().setup();
 
